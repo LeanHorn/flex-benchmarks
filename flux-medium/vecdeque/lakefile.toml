@@ -1,0 +1,11 @@
+name = "lean_proofs"
+version = "0.1.0"
+defaultTargets = ["LeanProofs"]
+
+[[lean_lib]]
+name = "LeanProofs"
+
+[[require]]
+name = "Flex"
+git = "https://github.com/LeanHorn/Flex"
+rev = "6bc56e2cecef1168c00345426b0ea278466d63c6"
