@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.PatternTwoWaySearcherMaximalSuffix
+import LeanProofs.User.Proof.PatternTwoWaySearcherMaximalSuffixProof
+
+#check (F.PatternTwoWaySearcherMaximalSuffix_proof : F.PatternTwoWaySearcherMaximalSuffix)
+#print axioms F.PatternTwoWaySearcherMaximalSuffix_proof

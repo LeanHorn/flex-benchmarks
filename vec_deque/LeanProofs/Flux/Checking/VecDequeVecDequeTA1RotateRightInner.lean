@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.VecDequeVecDequeTA1RotateRightInner
+import LeanProofs.User.Proof.VecDequeVecDequeTA1RotateRightInnerProof
+
+#check (F.VecDequeVecDequeTA1RotateRightInner_proof : F.VecDequeVecDequeTA1RotateRightInner)
+#print axioms F.VecDequeVecDequeTA1RotateRightInner_proof

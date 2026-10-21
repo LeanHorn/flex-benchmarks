@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.VecDequeVecDequeTA1InsertInner
+import LeanProofs.User.Proof.VecDequeVecDequeTA1InsertInnerProof
+
+#check (F.VecDequeVecDequeTA1InsertInner_proof : F.VecDequeVecDequeTA1InsertInner)
+#print axioms F.VecDequeVecDequeTA1InsertInner_proof

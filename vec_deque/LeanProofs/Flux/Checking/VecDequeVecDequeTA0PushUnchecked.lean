@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.VecDequeVecDequeTA0PushUnchecked
+import LeanProofs.User.Proof.VecDequeVecDequeTA0PushUncheckedProof
+
+#check (F.VecDequeVecDequeTA0PushUnchecked_proof : F.VecDequeVecDequeTA0PushUnchecked)
+#print axioms F.VecDequeVecDequeTA0PushUnchecked_proof

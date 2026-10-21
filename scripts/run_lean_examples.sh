@@ -45,8 +45,16 @@ resolve_project_dir() {
 if [ "$#" -gt 0 ]; then
   projects=("$@")
 else
-  mapfile -t projects < <(find_project_dirs)
+  # (no `mapfile`: macOS ships bash 3.2)
+  projects=()
+  while IFS= read -r name; do
+    projects+=("$name")
+  done < <(find_project_dirs)
 fi
+
+# Some Flex revisions pull in mathlib (through lean-smt) without importing it; skip
+# downloading its build cache on `lake update`.
+export MATHLIB_NO_CACHE_ON_UPDATE=1
 
 # Parallel arrays (macOS ships bash 3.2, which has no associative arrays):
 # ran_names[i] / target_summary[i] / failed_target_names[i] describe project i.
@@ -96,12 +104,14 @@ for name in "${projects[@]+"${projects[@]}"}"; do
 done
 
 echo "==================== summary ===================="
-for i in "${!ran_names[@]+"${!ran_names[@]}"}"; do
+i=0
+while [ "$i" -lt "${#ran_names[@]}" ]; do
   name="${ran_names[$i]}"
   echo "$name: ${target_summary[$i]} targets ok"
   if [ -n "${failed_target_names[$i]}" ]; then
     printf '%s\n' "${failed_target_names[$i]}" | sed 's/^/    failed: /'
   fi
+  i=$((i + 1))
 done
 for name in "${setup_failed[@]+"${setup_failed[@]}"}"; do
   echo "$name: SETUP FAILED (dependency resolution) -- see logs/$name.log"

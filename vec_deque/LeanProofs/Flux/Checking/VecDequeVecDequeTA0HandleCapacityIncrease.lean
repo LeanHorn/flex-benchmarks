@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.VecDequeVecDequeTA0HandleCapacityIncrease
+import LeanProofs.User.Proof.VecDequeVecDequeTA0HandleCapacityIncreaseProof
+
+#check (F.VecDequeVecDequeTA0HandleCapacityIncrease_proof : F.VecDequeVecDequeTA0HandleCapacityIncrease)
+#print axioms F.VecDequeVecDequeTA0HandleCapacityIncrease_proof

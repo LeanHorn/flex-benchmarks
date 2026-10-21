@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.PatternReverseSearcherNextRejectBack
+import LeanProofs.User.Proof.PatternReverseSearcherNextRejectBackProof
+
+#check (F.PatternReverseSearcherNextRejectBack_proof : F.PatternReverseSearcherNextRejectBack)
+#print axioms F.PatternReverseSearcherNextRejectBack_proof

@@ -1,0 +1,5 @@
+import LeanProofs.Flux.VC.PatternStrSearcherABAsSearcherANextMatch
+import LeanProofs.User.Proof.PatternStrSearcherABAsSearcherANextMatchProof
+
+#check (F.PatternStrSearcherABAsSearcherANextMatch_proof : F.PatternStrSearcherABAsSearcherANextMatch)
+#print axioms F.PatternStrSearcherABAsSearcherANextMatch_proof
