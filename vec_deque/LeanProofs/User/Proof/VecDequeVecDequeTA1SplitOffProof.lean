@@ -76,9 +76,9 @@ theorem so_case2' {t0 : Type} [Inhabited t0] (ob sb : SmtMap Int t0)
     vec_deque_view_shift (ghost_seq_copy (ghost_seq_copy ob sb a12 0 a11) sb 0 a11 se) 0 L sb h c L t :=
   so_case2 ob sb h c L t (a11 + t) a11 a12 se hc hh hhc hL hLc hcap ht hfe hse (by omega) (by omega) ha12 hLs hse0
 
+set_option maxHeartbeats 2000000 in
 def VecDequeVecDequeTA1SplitOff_proof : VecDequeVecDequeTA1SplitOff := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0 c3
   vc_close [flux_specs_sized_cap]
   all_goals (split_hyps <;> grind [flux_specs_sized_cap, so_case1, so_case2', vs_empty, vec_deque_wrp_idx])

@@ -165,11 +165,10 @@ macro "wc_crush" : tactic =>
              all_goals wc_leaf))
 
 -- ~50 hypotheses per leaf make each `omega` call slow; the whole proof takes ~1.5 min.
-set_option maxHeartbeats 2000000 in
+set_option maxHeartbeats 4000000 in
 attribute [local irreducible] vec_deque_ring_moved ghost_seq_shift in
 def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
   flex
-    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   unfold_defs
   intro c0
   -- k2, k4, k5: path facts on the unchanged input (nothing to carry); k3: the early-return

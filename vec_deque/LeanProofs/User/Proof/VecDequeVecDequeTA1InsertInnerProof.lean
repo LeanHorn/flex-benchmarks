@@ -113,7 +113,6 @@ set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_view_gap vec_deque_ring_moved vec_deque_view_shift in
 def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
   flex
-    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   unfold_defs
   intro c0
   -- k0: the state after the (optional) `grow`: invariants, not full, same view.

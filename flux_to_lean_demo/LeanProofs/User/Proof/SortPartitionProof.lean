@@ -23,7 +23,7 @@ def part_inv (i j : Int)  (arr : Arr Int) (arr_len : Int) (old_elems: Arr Int) (
 
 set_option maxHeartbeats 2000000 in
 def SortPartition_proof : SortPartition := by
-  flex (backends := [])
+  flex
   all_goals
     exists part_inv;
     simp [LeanProofs.Lib.Lemmas.arr_get, LeanProofs.Lib.Lemmas.arr_set, sort_is_perm, is_frame, is_perm, part_inv]

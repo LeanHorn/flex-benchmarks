@@ -212,7 +212,7 @@ private theorem a3_le_merge (a3 old : Arr Int) (lo k mid hi m n : Int)
 set_option maxHeartbeats 2000000
 
 theorem SortMerge_proof : SortMerge := by
-  flex (backends := [])
+  flex
   all_goals
     exists sortmerge_k0 ; exists sortmerge_k1 ; exists sortmerge_k2; exists sortmerge_k3 ;
     intros _ lo

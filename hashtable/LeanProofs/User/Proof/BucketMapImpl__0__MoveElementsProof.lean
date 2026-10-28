@@ -29,11 +29,11 @@ attribute [grind .] BucketMapFraction.ext
 set_option maxHeartbeats 2000000
 
 def BucketMapImpl__0__MoveElements_proof : BucketMapImpl__0__MoveElements := by
-  flex (backends := []) (config := { preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
+  flex
   all_goals
     exists moveelements_inv2, moveelements_inv1
-    elim_leaves
-    · grind [bucket_map_empties, List.eq_replicate_iff,List.mem_iff_get]
-    · grind [Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
+    repeat' (first | intro | apply And.intro)
+    all_goals grind [bucket_map_empties, List.eq_replicate_iff, List.mem_iff_get,
+      Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
 
 end F

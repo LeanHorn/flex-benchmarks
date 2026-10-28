@@ -10,7 +10,6 @@ namespace F
 
 def PatternMatchOf_proof : PatternMatchOf := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   vc_close
 
 end F

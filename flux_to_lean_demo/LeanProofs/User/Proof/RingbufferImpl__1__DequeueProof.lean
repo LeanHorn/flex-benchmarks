@@ -23,17 +23,10 @@ private theorem mod_silly (a b : Int) : 0 <= a -> 0 <= b -> a < b ->  (a % b) = 
   exact Int.emod_eq_of_lt ha hab
 
 def RingbufferImpl__1__Dequeue_proof : RingbufferImpl__1__Dequeue := by
-  flex (config := { preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
+  flex
   all_goals
     simp only [and_imp]
     repeat' (first | (intro) | apply And.intro | grind)
-    · rename_i s hInv hL hH0 hHL hT0 hTL hLeq hHdExtra hTlExtra hHneT
-      apply hInv s.hd hH0 hHL
-      have hz : (s.hd + s.len - s.hd) % s.len = 0 := by
-        have hzz : s.hd + s.len - s.hd = s.len := by omega
-        rw [hzz]; exact Int.emod_self
-      rw [hz]
-      split <;> omega
     · rename_i s hInv hL hH0 hHL hT0 hTL hLeq hHdExtra hTlExtra hHneT
         history hLge0 hLneZero a1 ha0 haL hPos
       have hb1 : 0 ≤ (s.hd + 1) % ringbuffer_fslice_len s.elems := mod_non_neg _ _ (by omega)

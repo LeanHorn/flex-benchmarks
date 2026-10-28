@@ -2,6 +2,7 @@ import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.BucketMapImpl__0__Clear
 import Flex.Tactic
 
+set_option Elab.async false
 set_option maxHeartbeats 2000000
 set_option maxRecDepth 16384
 

@@ -10,7 +10,6 @@ namespace F
 
 def PatternStrSearcherABAsSearcherANext_proof : PatternStrSearcherABAsSearcherANext := by
   flex
-    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   letI : BEq Int := instBEqOfDecidableEq
   refine ⟨
     -- k0: the Empty branch, before the final join

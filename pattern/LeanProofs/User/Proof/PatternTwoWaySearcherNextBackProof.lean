@@ -12,7 +12,6 @@ namespace F
 
 def PatternTwoWaySearcherNextBack_proof : PatternTwoWaySearcherNextBack := by
   flex
-    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   intro c6 c7 c8 c9
   refine ⟨
     (fun _ e m mn k c cb pe pos end0 mem memb0 mh n lp _ => BJ mh n mn k pos mem end0 memb0 e m),

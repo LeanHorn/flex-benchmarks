@@ -11,8 +11,7 @@ namespace F
 
 set_option maxHeartbeats 1000000 in
 def PatternTwoWaySearcherMaximalSuffix_proof : PatternTwoWaySearcherMaximalSuffix := by
-  flex (backends := [])
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
+  flex
   name_witness fun left right offset period k m og => MIF m k og left right offset period
   lazy_unfold k3
   intro k m og hk1 hk

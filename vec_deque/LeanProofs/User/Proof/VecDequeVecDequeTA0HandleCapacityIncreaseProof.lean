@@ -75,9 +75,9 @@ theorem hci_C {t0 : Type} [Inhabited t0] (b b' : SmtMap Int t0) (h l c oc a1 a4 
     exact (hm (h + i - oc)).2 (by omega)
 
 attribute [local irreducible] vec_deque_view_shift ghost_seq_moved in
+set_option maxHeartbeats 2000000 in
 def VecDequeVecDequeTA0HandleCapacityIncrease_proof : VecDequeVecDequeTA0HandleCapacityIncrease := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
   vc_close [flux_specs_sized_cap, hci_A, hci_B, hci_C, vec_deque_abs]
 

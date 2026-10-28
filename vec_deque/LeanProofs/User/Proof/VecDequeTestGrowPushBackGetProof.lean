@@ -11,7 +11,6 @@ namespace F
 
 def VecDequeTestGrowPushBackGet_proof : VecDequeTestGrowPushBackGet := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
   vc_close [vs_at]
 

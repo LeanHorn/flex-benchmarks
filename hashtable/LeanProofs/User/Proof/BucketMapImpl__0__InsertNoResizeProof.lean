@@ -11,7 +11,7 @@ open Classical
 namespace F
 
 def BucketMapImpl__0__InsertNoResize_proof : BucketMapImpl__0__InsertNoResize := by
-  flex (backends := []) (config := { closeLeaves := false, postprocess := false, splitFree := false, preprocess := false })
+  flex
   all_goals
     intros slf key val
     elim_leaves

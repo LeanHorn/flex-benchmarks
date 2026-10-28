@@ -56,7 +56,6 @@ elab "rot_leaf" : tactic => withMainContext do
 attribute [local irreducible] vec_deque_view_rot vec_deque_ring_moved in
 def VecDequeVecDequeTA1RotateLeftInner_proof : VecDequeVecDequeTA1RotateLeftInner := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   unfold_defs
   intro c0
   by_cases hc : c0 = 0

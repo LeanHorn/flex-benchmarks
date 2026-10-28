@@ -72,15 +72,13 @@ end F
 namespace F
 
 theorem SortQuicksortRange_proof : SortQuicksortRange := by
-  flex (config := { preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
+  flex
   all_goals
     intro old₀ lo₀ hi₀ hlolen hhilen hlen hlo hhi
     refine ⟨?_, ?_⟩
     · -- base case: ¬ lo₀ < hi₀
       intro hnlt
-      refine ⟨rfl, ?_, ?_⟩
-      · simp [sort_is_sorted_between]; grind
-      · apply sort_is_perm_id
+      simp [sort_is_sorted_between, is_frame] <;> grind
     · -- recursive case: lo₀ < hi₀
       intro hlt p₀ v₀ hv₀ hv₀len hp₀
       obtain ⟨hv₀_len, hpart, hperm₀, hlop, hphi⟩ := hv₀

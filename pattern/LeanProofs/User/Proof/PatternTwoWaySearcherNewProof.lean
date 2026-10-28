@@ -12,7 +12,6 @@ namespace F
 -- `TwoWaySearcher::new`: the selected critical factorization has the facts of `maximal_suffix`.
 def PatternTwoWaySearcherNew_proof : PatternTwoWaySearcherNew := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   vc_close [ghost_tw_static, num_max, beq_nil]
 
 end F

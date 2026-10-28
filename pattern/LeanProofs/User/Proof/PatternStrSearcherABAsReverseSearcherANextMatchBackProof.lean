@@ -11,8 +11,7 @@ namespace F
 
 set_option maxHeartbeats 1000000 in
 def PatternStrSearcherABAsReverseSearcherANextMatchBack_proof : PatternStrSearcherABAsReverseSearcherANextMatchBack := by
-  flex (backends := [])
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
+  flex
   name_witness fun n' mh' k' mn' tag' p' e' c' cb' pe' m' mb' n mh k mn tag p e c cb pe m mb p0 e0 => n' = n ∧ mh' = mh ∧ k' = k ∧ mn' = mn ∧ ghost_str_inv n' mh' k' mn' tag' p' e' c' cb' pe' m' mb'
   lazy_unfold k4
   intro s0 hinv hn hk

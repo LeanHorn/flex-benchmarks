@@ -12,7 +12,6 @@ namespace F
 
 def VecDequeTestRemoveGet_proof : VecDequeTestRemoveGet := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
   vc_close [vs_at, vg_at, vr_at]
 

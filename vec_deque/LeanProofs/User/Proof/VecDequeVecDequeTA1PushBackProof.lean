@@ -30,8 +30,7 @@ theorem vs_comp_pb {t0 : Type} [Inhabited t0] (b0 b1 b2 : SmtMap Int t0) (h0 h1 
 
 def VecDequeVecDequeTA1PushBack_proof : VecDequeVecDequeTA1PushBack := by
   flex
-    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
-  vc_close [flux_specs_sized_cap, vs_refl_pb, vs_comp_pb]
+  vc_close [vs_at, flux_specs_sized_cap, vs_refl_pb, vs_comp_pb]
 
 end F
