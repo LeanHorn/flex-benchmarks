@@ -33,6 +33,21 @@ theorem vs_comp_pf {t0 : Type} [Inhabited t0] (b0 b1 b2 : SmtMap Int t0) (h0 h1 
 def VecDequeVecDequeTA1PushFront_proof : VecDequeVecDequeTA1PushFront := by
   flex
   intro c0
+  have idx (h c i : Int) :
+      (if (h + i) % (num_usize_MAX + 1) ≥ c then
+        (h + i) % (num_usize_MAX + 1) - c else (h + i) % (num_usize_MAX + 1)) =
+      vec_deque_phys_idx h c i := rfl
+  simp only [idx]
   vc_close [vs_at, flux_specs_sized_cap, vs_refl_pf, vs_comp_pf, phys_zero]
 
+  rename_i old x hMax hMax' hCap hCapMax hLen hHead new hGrowth hNewMax hNewCap
+    hNewCapMax hNewLen hNewHead hWrite hNonzero i hOldBound hOldStrict hNewBound
+    hNewStrict hi0 hi
+  have hlen : new.len = old.len := by grind
+  have grow : vec_deque_view_shift old.buf old.head (flux_specs_sized_cap c0 old.cap)
+      new.buf new.head (flux_specs_sized_cap c0 new.cap) old.len 0 := by
+    grind [vs_refl_pf]
+  have write := hWrite hNonzero
+  rw [hlen] at write
+  exact (vs_comp_pf _ _ _ _ _ _ _ _ _ _ _ grow write) i ⟨hi0, hi⟩
 end F
