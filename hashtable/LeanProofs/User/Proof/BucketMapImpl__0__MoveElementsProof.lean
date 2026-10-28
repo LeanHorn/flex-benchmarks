@@ -26,14 +26,17 @@ theorem absorb_buckets_app (v : OVec (ASeq Int Int))
 
 attribute [grind .] BucketMapFraction.ext
 
-set_option maxHeartbeats 2000000
+set_option maxHeartbeats 4000000
 
 def BucketMapImpl__0__MoveElements_proof : BucketMapImpl__0__MoveElements := by
   flex
   all_goals
     exists moveelements_inv2, moveelements_inv1
-    repeat' (first | intro | apply And.intro)
-    all_goals grind [bucket_map_empties, List.eq_replicate_iff, List.mem_iff_get,
-      Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
+    repeat' (first | (intro) | apply And.intro)
+    all_goals first
+      | rfl
+      | omega
+      | grind [bucket_map_empties, List.eq_replicate_iff, List.mem_iff_get,
+          Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
 
 end F

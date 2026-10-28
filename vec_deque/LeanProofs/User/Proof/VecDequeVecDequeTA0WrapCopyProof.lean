@@ -153,6 +153,8 @@ elab "wc_leaf" : tactic => do
   withMainContext do
     let tgt := (← instantiateMVars (← getMainTarget)).headBeta
     if tgt.isAppOf ``vec_deque_ring_moved then evalTactic (← `(tactic| wc_ring))
+    else if (tgt.find? fun e => e.isAppOf ``SmtMap_select).isSome then
+      evalTactic (← `(tactic| grind [wc_arm0, wc_arm1, wc_arm2, wc_arm3, wc_arm4, wc_arm5, wc_arm6, wc_arm7, vec_deque_ring_moved]))
     else if tgt.isConstOf ``True then evalTactic (← `(tactic| exact True.intro))
     else if tgt.isAppOf ``Or && !(tgt.find? fun e => e.isConstOf ``HMod.hMod).isSome then
       evalTactic (← `(tactic| first | (left; trivial) | (right; left; rfl) | (clear_junk; omega)))
@@ -171,15 +173,6 @@ def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
   flex
   unfold_defs
   intro c0
-  -- k2, k4, k5: path facts on the unchanged input (nothing to carry); k3: the early-return
-  -- join; k0: the exit state `(nh, nl, nc, nb)` keeps head/len/cap and `nb` is the ring move.
-  refine ⟨fun _ _ _ _ _ _ _ => True,
-          fun nh nl nc nb n s h l c b d _ _ _ =>
-            nh = h ∧ nl = l ∧ nc = c ∧
-              (c0 ≠ 0 → vec_deque_ring_moved b nb s d n (if c0 = 0 then num_usize_MAX else c)),
-          fun _ _ _ _ _ _ _ _ _ _ => True,
-          fun _ _ _ _ _ _ _ _ _ _ => True,
-          fun n s _ _ _ _ d => c0 = 0 ∨ s = d ∨ n = 0, ?_⟩
   intro len src S dst
   -- Name the `abs` in the precondition so `omega` can use it.
   generalize ha : (if dst - src < 0 then -(dst - src) else dst - src) = ad

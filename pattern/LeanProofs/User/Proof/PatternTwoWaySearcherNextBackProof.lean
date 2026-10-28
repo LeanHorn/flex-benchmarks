@@ -4,7 +4,7 @@ import LeanProofs.Flux.VC.PatternTwoWaySearcherNextBack
 import LeanProofs.User.BackLemmas
 open Classical
 set_option linter.unusedVariables false
-set_option maxHeartbeats 2000000
+set_option maxHeartbeats 8000000
 set_option maxRecDepth 16384
 
 

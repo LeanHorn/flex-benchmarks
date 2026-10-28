@@ -103,6 +103,8 @@ elab "ins_leaf" : tactic => withMainContext do
     evalTactic (← `(tactic| first | ins_gap | (exfalso; vd_arith)))
   else if tgt.isAppOf ``vec_deque_view_shift then
     evalTactic (← `(tactic| first | syn_asm | apply vs_refl))
+  else if (tgt.find? fun e => e.isAppOf ``SmtMap_select).isSome then
+    evalTactic (← `(tactic| grind [ins_back, ins_front, vs_refl, vec_deque_view_gap, vec_deque_view_shift]))
   else if tgt.isConstOf ``True then evalTactic (← `(tactic| exact True.intro))
   else if (tgt.find? fun e => e.isAppOf ``SmtMap_store).isSome then
     evalTactic (← `(tactic| exact sel_store_eq _ _ _))
@@ -115,23 +117,6 @@ def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
   flex
   unfold_defs
   intro c0
-  -- k0: the state after the (optional) `grow`: invariants, not full, same view.
-  -- k1: the state and slot at the end: the postcondition.
-  refine ⟨fun nh nl nc nb _ h l c b _ =>
-            nl = l ∧ nc ≥ c ∧ nl < (if c0 = 0 then num_usize_MAX else nc) ∧
-            nl ≤ (if c0 = 0 then num_usize_MAX else num_isize_MAX) ∧ nc ≤ num_isize_MAX ∧
-            0 ≤ nh ∧ nh ≤ (if c0 = 0 then num_usize_MAX else nc) ∧
-            ((if c0 = 0 then num_usize_MAX else nc) = 0 ∨ nh < (if c0 = 0 then num_usize_MAX else nc)) ∧
-            (c0 ≠ 0 → vec_deque_view_shift b h (if c0 = 0 then num_usize_MAX else c)
-                                            nb nh (if c0 = 0 then num_usize_MAX else nc) l 0),
-          fun off nh nl nc nb idx h l c b x _ _ _ _ _ =>
-            nl = l + 1 ∧ nc ≥ c ∧ off < (if c0 = 0 then num_usize_MAX else nc) ∧
-            off = (if (nh + idx) % (num_usize_MAX + 1) ≥ (if c0 = 0 then num_usize_MAX else nc)
-                   then (nh + idx) % (num_usize_MAX + 1) - (if c0 = 0 then num_usize_MAX else nc)
-                   else (nh + idx) % (num_usize_MAX + 1)) ∧
-            SmtMap_select nb off = x ∧
-            (c0 ≠ 0 → vec_deque_view_gap b h (if c0 = 0 then num_usize_MAX else c)
-                                          nb nh (if c0 = 0 then num_usize_MAX else nc) l idx), ?_⟩
   by_cases hc : c0 = 0
   · simp only [hc, ↓reduceIte, ne_eq, not_true_eq_false, false_implies, implies_true, and_true,
                and_imp]

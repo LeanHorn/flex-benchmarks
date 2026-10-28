@@ -9,17 +9,20 @@ set_option linter.unusedVariables false
 
 namespace F
 
-set_option maxHeartbeats 1000000 in
+set_option maxHeartbeats 4000000 in
 def PatternStrSearcherABAsReverseSearcherANextMatchBack_proof : PatternStrSearcherABAsReverseSearcherANextMatchBack := by
   flex
-  name_witness fun n' mh' k' mn' tag' p' e' c' cb' pe' m' mb' n mh k mn tag p e c cb pe m mb p0 e0 => n' = n ∧ mh' = mh ∧ k' = k ∧ mn' = mn ∧ ghost_str_inv n' mh' k' mn' tag' p' e' c' cb' pe' m' mb'
-  lazy_unfold k4
-  intro s0 hinv hn hk
-  rcases s0 with ⟨n, mh, k, mn, tag, p, e, crit, critb, period, mem, memb⟩
-  dsimp only at *
-  refine ⟨?_, ?_⟩
-  · vc_close [→ static_k1, sinv0_mk, sinv1_mk, ghost_is_boundary]
-  · intro crit0 critb0 period0 p1 e1 mem0 memb0 himpl hc0 hc1 hcb0 hcb1 hpe0 hpe1 a31 ha0 ha1 hp10 hp11 he10 he11 hm0 hm1 hmb0 hmb1
+  constructor
+  · refine ⟨fun n' mh' k' mn' tag' p' e' c' cb' pe' m' mb' n mh k mn tag p e c cb pe m mb p0 e0 => n' = n ∧ mh' = mh ∧ k' = k ∧ mn' = mn ∧ ghost_str_inv n' mh' k' mn' tag' p' e' c' cb' pe' m' mb', ?_⟩
+    intro s0 hinv hn hk
+    rcases s0 with ⟨n, mh, k, mn, tag, p, e, crit, critb, period, mem, memb⟩
+    dsimp only at *
+    vc_close [→ static_k1, sinv0_mk, sinv1_mk, ghost_is_boundary]
+  ·
+    intro s0 hinv hn hk
+    rcases s0 with ⟨n, mh, k, mn, tag, p, e, crit, critb, period, mem, memb⟩
+    dsimp only at *
+    intro crit0 critb0 period0 p1 e1 mem0 memb0 himpl hc0 hc1 hcb0 hcb1 hpe0 hpe1 a31 ha0 ha1 hp10 hp11 he10 he11 hm0 hm1 hmb0 hmb1
     injection himpl with ht hp he hc hcb hpe hm hmb
     subst ht hp he hc hcb hpe hm hmb
     obtain ⟨hu, hun, hbp, hbe, hst, hdy, hmb'⟩ := sinv1_parts hinv
@@ -48,5 +51,6 @@ def PatternStrSearcherABAsReverseSearcherANextMatchBack_proof : PatternStrSearch
           rw [hteo h1]; exact bd_start hu
       exact sinv1_back hinv htmm (by rw [htpos, htm] at htd; exact htd) hbdend (fun h h2 => htmb ⟨h, h2⟩)
     vc_close [→ static_k1, ghost_tw_static, ghost_tw_dyn]
+
 
 end F

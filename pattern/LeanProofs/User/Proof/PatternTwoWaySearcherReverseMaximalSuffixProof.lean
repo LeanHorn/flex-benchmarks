@@ -13,7 +13,7 @@ set_option maxHeartbeats 2000000 in
 def PatternTwoWaySearcherReverseMaximalSuffix_proof : PatternTwoWaySearcherReverseMaximalSuffix := by
   flex
   name_witness fun left right offset period k m og kp => MIF (fun i => m (k - 1 - i)) k og left right offset period
-  lazy_unfold k3
+  lazy_unfold witness
   intro k m og hk1 hk kp hkp0 hkp1 hk0 hk1'
   refine ⟨MIF_init hk1, ?_⟩
   intro left right offset period hI a8 hr0 hr1 hg8

@@ -78,7 +78,7 @@ theorem SortQuicksortRange_proof : SortQuicksortRange := by
     refine ⟨?_, ?_⟩
     · -- base case: ¬ lo₀ < hi₀
       intro hnlt
-      simp [sort_is_sorted_between, is_frame] <;> grind
+      simp [sort_is_sorted_between, is_frame] <;> grind [sort_is_perm_id]
     · -- recursive case: lo₀ < hi₀
       intro hlt p₀ v₀ hv₀ hv₀len hp₀
       obtain ⟨hv₀_len, hpart, hperm₀, hlop, hphi⟩ := hv₀
