@@ -5,11 +5,12 @@ import LeanProofs.Flux.VC.PatternTwoWaySearcherReverseMaximalSuffix
 import LeanProofs.User.MaxSufLemmas
 open Classical
 set_option linter.unusedVariables false
+set_option maxRecDepth 16384
 
 
 namespace F
 
-set_option maxHeartbeats 2000000 in
+set_option maxHeartbeats 4000000 in
 def PatternTwoWaySearcherReverseMaximalSuffix_proof : PatternTwoWaySearcherReverseMaximalSuffix := by
   flex
   name_witness fun left right offset period k m og kp => MIF (fun i => m (k - 1 - i)) k og left right offset period
