@@ -79,39 +79,110 @@ theorem ins_front (hd off nh C' : Int)
 
 end
 
--- A lemma's `view_shift` / `ring_moved` premise, from the context (this assigns the
--- lemma's remaining arguments); any other goal is left alone.
-open Lean Elab Tactic Meta in
-elab "fact_asm" : tactic => withMainContext do
-  let tgt ← instantiateMVars (← getMainTarget)
-  if tgt.isAppOf ``vec_deque_ring_moved || tgt.isAppOf ``vec_deque_view_shift then
-    evalTactic (← `(tactic| assumption))
+open Lean Meta Elab Tactic in
+elab "split_insert_state" : tactic => withMainContext do
+  for declaration in ← getLCtx do
+    if declaration.isAuxDecl then continue
+    let type ← whnf (← instantiateMVars declaration.type)
+    unless type.isAppOfArity ``Or 2 do continue
+    unless (type.find? fun e => e.isConstOf ``vec_deque_view_shift ||
+      e.isConstOf ``vec_deque_ring_moved || e.isAppOfArity ``Exists 2).isSome do continue
+    let name := mkIdent declaration.userName
+    evalTactic (← `(tactic| cases $name:ident))
+    return
+  throwError "no insertion-state alternative"
 
--- The `view_gap` leaves: by the branch lemma whose side conditions hold.
-macro "ins_gap" : tactic =>
-  `(tactic| first
-      | syn_asm
-      | (apply ins_back; all_goals fact_asm
-         all_goals vd_arith)
-      | (apply ins_front; all_goals fact_asm
-         all_goals vd_arith))
+-- Preserve bounds on complete wrapped expressions when clearing modular history.
+open Lean Meta Elab Tactic in
+elab "generalize_insert_wraps" : tactic => withMainContext do
+  let mut abstract : Array GeneralizeArg := #[]
+  for declaration in ← getLCtx do
+    if declaration.isImplementationDetail then continue
+    if let some expression := declaration.type.find? (fun e =>
+        e.isAppOfArity ``ite 5 && !e.hasLooseBVars &&
+        (e.find? (·.isConstOf ``HMod.hMod)).isSome) then
+      unless abstract.any (fun arg => Expr.equal arg.expr expression) do
+        abstract := abstract.push { expr := expression, xName? := some `wrapped }
+  unless abstract.isEmpty do
+    let (_, _, goal) ← (← getMainGoal).generalizeHyp abstract (← getLCtx).getFVarIds
+    replaceMainGoal [goal]
 
-open Lean Elab Tactic Meta in
+-- Instantiate the insertion lemma from the retained concrete ring move.
+open Lean Meta Elab Tactic in
+elab "ins_gap" : tactic => withMainContext do
+  let target := (← instantiateMVars (← getMainTarget)).consumeMData.headBeta
+  let args := target.getAppArgs
+  let atEnd (xs : Array Expr) (n : Nat) := xs[xs.size - n]!
+  let B0 := atEnd args 8
+  let h0 := atEnd args 7
+  let C0 := atEnd args 6
+  let store := (atEnd args 5).getAppArgs
+  let B2 := atEnd store 3
+  let off := atEnd store 2
+  let x := atEnd store 1
+  let nh := atEnd args 4
+  let C' := atEnd args 3
+  let n := atEnd args 2
+  let idx := atEnd args 1
+  for declaration in ← getLCtx do
+    let type := (← instantiateMVars declaration.type).consumeMData.headBeta
+    unless type.isAppOf ``vec_deque_ring_moved do continue
+    let ring := type.getAppArgs
+    unless ← isDefEq (atEnd ring 5) B2 do continue
+    let B1 := atEnd ring 6
+    let src := atEnd ring 4
+    let dst := atEnd ring 3
+    let k := atEnd ring 2
+    let C1 := atEnd ring 1
+    let front ← isDefEq k idx
+    let h1 := if front then src else nh
+    let initialArgs : Array Expr := #[B0, B1, B2, x, h0, C0, h1, C1, idx, n]
+    let proofTerm ← if front then
+      mkAppM ``ins_front (initialArgs ++ #[dst, off, nh, C'])
+    else
+      mkAppM ``ins_back (initialArgs ++ #[src, dst, k, off, nh, C'])
+    let goals ← (← getMainGoal).apply proofTerm
+    replaceMainGoal goals
+    evalTactic (← `(tactic| all_goals first | assumption | apply vs_refl | vd_arith | (generalize_insert_wraps; vd_arith)))
+    return
+  throwError "no matching insertion move"
+
+open Lean Meta Elab Tactic in
+elab "normalize_insert_fields" : tactic => withMainContext do
+  let env ← getEnv
+  let mut terms : Array (TSyntax `Lean.Parser.Tactic.simpLemma) := #[]
+  for declaration in ← getLCtx do
+    if declaration.isAuxDecl then continue
+    let type ← instantiateMVars declaration.type
+    unless type.isAppOfArity ``Eq 3 do continue
+    let lhs := type.getAppArgs[1]!
+    let field := match lhs with
+      | .proj .. => true
+      | _ => lhs.getAppFn.constName?.any fun n => (env.getProjectionFnInfo? n).isSome
+    if field then
+      let name := mkIdent declaration.userName
+      terms := terms.push (← `(Lean.Parser.Tactic.simpLemma| $name:ident))
+  terms := terms.push (← `(Lean.Parser.Tactic.simpLemma| sel_store_eq))
+  evalTactic (← `(tactic| simp only [$terms,*] at *))
+
+open Lean Meta Elab Tactic in
 elab "ins_leaf" : tactic => withMainContext do
-  let tgt := (← instantiateMVars (← getMainTarget)).headBeta
-  if tgt.isAppOf ``vec_deque_view_gap then
-    evalTactic (← `(tactic| first | ins_gap | (exfalso; vd_arith)))
-  else if tgt.isAppOf ``vec_deque_view_shift then
+  try evalTactic (← `(tactic| dsimp only)) catch _ => pure ()
+  if (← getGoals).isEmpty then return
+  let target := (← instantiateMVars (← getMainTarget)).consumeMData.headBeta
+  if target.isAppOf ``vec_deque_view_gap then
+    evalTactic (← `(tactic| normalize_insert_fields; all_goals ins_gap))
+  else if target.isAppOf ``vec_deque_view_shift then
     evalTactic (← `(tactic| first | syn_asm | apply vs_refl))
-  else if (tgt.find? fun e => e.isAppOf ``SmtMap_select).isSome then
-    evalTactic (← `(tactic| grind [ins_back, ins_front, vs_refl, vec_deque_view_gap, vec_deque_view_shift]))
-  else if tgt.isConstOf ``True then evalTactic (← `(tactic| exact True.intro))
-  else if (tgt.find? fun e => e.isAppOf ``SmtMap_store).isSome then
-    evalTactic (← `(tactic| exact sel_store_eq _ _ _))
-  else evalTactic (← `(tactic| first | syn_asm | vd_arith | vd_idx))
+  else if target.isConstOf ``True then
+    evalTactic (← `(tactic| exact True.intro))
+  else if (target.find? fun e => e.isAppOf ``SmtMap_select).isSome then
+    evalTactic (← `(tactic| normalize_insert_fields))
+  else
+    evalTactic (← `(tactic| first | syn_asm | vd_arith | vd_idx))
 
--- many `omega` calls over a ~50-hypothesis context: raise the budget (~15s)
-set_option maxHeartbeats 2000000 in
+set_option maxHeartbeats 8000000 in
+set_option maxRecDepth 16384 in
 attribute [local irreducible] vec_deque_view_gap vec_deque_ring_moved vec_deque_view_shift in
 def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
   flex
@@ -120,10 +191,28 @@ def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
   by_cases hc : c0 = 0
   · simp only [hc, ↓reduceIte, ne_eq, not_true_eq_false, false_implies, implies_true, and_true,
                and_imp]
-    repeat' (first | (intro _) | (apply And.intro))
+    repeat' (first | (with_reducible intro _) | (with_reducible apply And.intro))
+    all_goals try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false }))
+    all_goals
+      repeat' first
+        | (split_hyp_ands; try subst_vars
+           try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
+        | (split_hyp_exists; try subst_vars
+           try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
+        | (split_insert_state <;> try split_hyp_and_exist <;> try subst_vars <;>
+            try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
     all_goals ins_leaf
   · simp only [hc, ↓reduceIte, ne_eq, not_false_eq_true, true_implies, and_imp]
-    repeat' (first | (intro _) | (apply And.intro))
+    repeat' (first | (with_reducible intro _) | (with_reducible apply And.intro))
+    all_goals try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false }))
+    all_goals
+      repeat' first
+        | (split_hyp_ands; try subst_vars
+           try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
+        | (split_hyp_exists; try subst_vars
+           try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
+        | (split_insert_state <;> try split_hyp_and_exist <;> try subst_vars <;>
+            try (first | syn_asm | rfl | omega (config := { splitDisjunctions := false })))
     all_goals ins_leaf
 
 end F

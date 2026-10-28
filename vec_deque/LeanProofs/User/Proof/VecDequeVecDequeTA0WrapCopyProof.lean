@@ -121,7 +121,7 @@ macro "wc_ring" : tactic =>
   `(tactic| (clear_junk
              first
                | assumption
-               | (apply wc_arm0; assumption) | apply wc_arm1 | apply wc_arm2 | apply wc_arm3
+               | (apply wc_arm0; simp only [not_not, and_true, not_true_eq_false, or_false] at *; omega) | apply wc_arm1 | apply wc_arm2 | apply wc_arm3
                | apply wc_arm4 | apply wc_arm5 | apply wc_arm6 | apply wc_arm7
              all_goals wc_side))
 
@@ -166,8 +166,57 @@ macro "wc_crush" : tactic =>
   `(tactic| (repeat' (first | (intro _) | (apply And.intro))
              all_goals wc_leaf))
 
--- ~50 hypotheses per leaf make each `omega` call slow; the whole proof takes ~1.5 min.
-set_option maxHeartbeats 4000000 in
+section
+attribute [local instance 100] instBEqOfDecidableEq
+
+syntax "wc_residual" : tactic
+open Lean Elab Tactic Meta in
+elab_rules : tactic
+  | `(tactic| wc_residual) => withMainContext do
+    let tgt ← instantiateMVars (← getMainTarget)
+    if tgt.isConstOf ``True then
+      evalTactic (← `(tactic| trivial))
+    else if tgt.isEq || tgt.isAppOf ``vec_deque_ring_moved then
+      evalTactic (← `(tactic| split_hyp_and_exist))
+      evalTactic (← `(tactic| try subst_vars))
+      if (← getGoals).isEmpty then return
+      withMainContext do
+        let tgt ← instantiateMVars (← getMainTarget)
+        let output := if tgt.isEq then tgt.getAppArgs[1]! else tgt.getAppArgs[3]!
+        if output.isFVar then
+          for d in (← getLCtx) do
+            if d.isImplementationDetail then continue
+            let ty ← instantiateMVars d.type
+            if ty.isAppOf ``Or && (ty.find? (· == output)).isSome then
+              let gs ← (← getMainGoal).cases d.fvarId
+              replaceMainGoal (gs.map (·.mvarId)).toList
+              evalTactic (← `(tactic| all_goals wc_residual))
+              return
+        -- Keep wrapped-index equations when discarding irrelevant modular facts.
+        let mut abstract : Array GeneralizeArg := #[]
+        for d in (← getLCtx) do
+          if d.isImplementationDetail then continue
+          if let some e := d.type.find? (fun e =>
+              e.isAppOfArity ``ite 5 && !e.hasLooseBVars &&
+              (e.find? (·.isConstOf ``HMod.hMod)).isSome) then
+            unless abstract.any (·.expr == e) do
+              abstract := abstract.push { expr := e, xName? := some `wrapped }
+        unless abstract.isEmpty do
+          let (_, _, g) ← (← getMainGoal).generalizeHyp abstract (← getLCtx).getFVarIds
+          replaceMainGoal [g]
+        evalTactic (← `(tactic| first | rfl | wc_ring | (exfalso; clear_junk; omega)))
+    else
+      let mut g ← getMainGoal
+      for d in (← getLCtx) do
+        if d.isImplementationDetail then continue
+        if d.type.isAppOf ``Exists then g ← g.tryClear d.fvarId
+      replaceMainGoal [g]
+      evalTactic (← `(tactic| wc_leaf))
+
+end
+
+set_option maxHeartbeats 8000000 in
+set_option maxRecDepth 16384 in
 attribute [local irreducible] vec_deque_ring_moved ghost_seq_shift in
 def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
   flex
@@ -184,7 +233,8 @@ def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
     generalize hm : (if ad < 18446744073709551615 - ad then ad else 18446744073709551615 - ad) = md
     have hmd : md ≤ ad ∧ md ≤ 18446744073709551615 - ad ∧ (md = ad ∨ md = 18446744073709551615 - ad) := by
       split at hm <;> omega
-    wc_crush
+    repeat' (first | (intro _) | (apply And.intro))
+    all_goals wc_residual
   · simp only [hc, ↓reduceIte, ne_eq, not_false_eq_true, true_implies, implies_true, true_and]
     unfold num_usize_MAX num_isize_MAX
     -- the `min` in the precondition
@@ -194,6 +244,7 @@ def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
     generalize hr : (if dst ≥ src then dst - src else dst + S.cap - src) = rd
     have hrd : (src ≤ dst ∧ rd = dst - src) ∨ (dst < src ∧ rd = dst + S.cap - src) := by
       split at hr <;> omega
-    wc_crush
+    repeat' (first | (intro _) | (apply And.intro))
+    all_goals wc_residual
 
 end F
