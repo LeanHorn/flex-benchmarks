@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.User.Lib.VecDequeViews
@@ -75,9 +76,9 @@ theorem hci_C {t0 : Type} [Inhabited t0] (b b' : SmtMap Int t0) (h l c oc a1 a4 
 
 attribute [local irreducible] vec_deque_view_shift ghost_seq_moved in
 def VecDequeVecDequeTA0HandleCapacityIncrease_proof : VecDequeVecDequeTA0HandleCapacityIncrease := by
-  unfold VecDequeVecDequeTA0HandleCapacityIncrease
+  flex
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
-  zap
   vc_close [flux_specs_sized_cap, hci_A, hci_B, hci_C, vec_deque_abs]
 
 end F

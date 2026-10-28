@@ -1,8 +1,11 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.PatternTwoWaySearcherNext
 import LeanProofs.User.TwoWayLemmas
 open Classical
 set_option linter.unusedVariables false
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 
 namespace F
@@ -46,7 +49,8 @@ theorem S1_bounds (mem0 crit m k : Int) (hc : 0 ≤ crit ∧ crit ≤ k) (hmk : 
     split <;> omega
 
 def PatternTwoWaySearcherNext_proof : PatternTwoWaySearcherNext := by
-  unfold PatternTwoWaySearcherNext
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   intro c3 c2 c4 c5
   refine ⟨(fun j p m mn k crit critb period pos0 end0 mem0 memb0 mh n lp b7 a8 => TwJ mh n mn k pos0 end0 memb0 mem0 p m),
     (fun mn k crit critb period pos0 end0 mem0 memb0 mh n lp b7 a8 j p m a12 _o _o a13 => Base mh n mn k pos0 end0 memb0 mem0 p m c2),

@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.User.Lib.VecDequeViews
@@ -84,12 +85,13 @@ elab "rm_leaf" : tactic => withMainContext do
          · assumption
          · vd_idx)))
 
+set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_view_gap vec_deque_ring_moved in
 def VecDequeVecDequeTA1Remove_proof : VecDequeVecDequeTA1Remove := by
-  unfold VecDequeVecDequeTA1Remove
+  flex
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   unfold_defs
   intro c0
-  zap
   by_cases hc : c0 = 0
   · simp only [hc, ↓reduceIte, ne_eq, not_true_eq_false, false_implies, implies_true, and_true, and_imp] at *
     repeat' (first | (intro _) | (apply And.intro))

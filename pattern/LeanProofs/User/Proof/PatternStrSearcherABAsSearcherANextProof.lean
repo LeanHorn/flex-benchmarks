@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.PatternStrSearcherABAsSearcherANext
 import LeanProofs.User.StrLemmas
@@ -8,7 +9,9 @@ set_option linter.unusedVariables false
 namespace F
 
 def PatternStrSearcherABAsSearcherANext_proof : PatternStrSearcherABAsSearcherANext := by
-  unfold PatternStrSearcherABAsSearcherANext
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
+  letI : BEq Int := instBEqOfDecidableEq
   refine ⟨
     -- k0: the Empty branch, before the final join
     (fun _ _ kind a b pos _ n mh k mn tag p e c cb pe m mb p0 e0 _ _ _ _ _ _ _ _ _ _ =>

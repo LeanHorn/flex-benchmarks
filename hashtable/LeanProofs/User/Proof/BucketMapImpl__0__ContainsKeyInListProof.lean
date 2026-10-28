@@ -1,12 +1,13 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.BucketMapImpl__0__ContainsKeyInList
-import LeanProofs.User.Proof.Qualifs
-import Flex
-open Classical
+import Flex.Tactic
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
 def BucketMapImpl__0__ContainsKeyInList_proof : BucketMapImpl__0__ContainsKeyInList := by
-  solve_fixpoint
+  flex
 
 end F

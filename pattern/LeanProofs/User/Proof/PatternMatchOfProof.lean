@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.PatternMatchOf
@@ -8,8 +9,8 @@ set_option linter.unusedVariables false
 namespace F
 
 def PatternMatchOf_proof : PatternMatchOf := by
-  unfold PatternMatchOf
-  zap
+  flex
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   vc_close
 
 end F

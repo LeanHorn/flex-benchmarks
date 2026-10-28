@@ -1,14 +1,18 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.PatternTwoWaySearcherNextBack
 import LeanProofs.User.BackLemmas
 open Classical
 set_option linter.unusedVariables false
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 
 namespace F
 
 def PatternTwoWaySearcherNextBack_proof : PatternTwoWaySearcherNextBack := by
-  unfold PatternTwoWaySearcherNextBack
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   intro c6 c7 c8 c9
   refine ⟨
     (fun _ e m mn k c cb pe pos end0 mem memb0 mh n lp _ => BJ mh n mn k pos mem end0 memb0 e m),
@@ -95,7 +99,7 @@ def PatternTwoWaySearcherNextBack_proof : PatternTwoWaySearcherNextBack := by
         · have := hc1b hl; unfold num_min at this; split at this <;> omega
       have hc1c : c1 ≤ critb := by
         by_cases hl : lp
-        · rw [hc1a hl]; exact Int.le_refl _
+        · rw [hc1a hl]
         · have := hc1b hl; unfold num_min at this; split at this <;> omega
       have hmem : ¬lp → ghost_bytes_eq mh ((e - k) + m) mn m (k - m) := by
         intro hnlp
@@ -119,7 +123,7 @@ def PatternTwoWaySearcherNextBack_proof : PatternTwoWaySearcherNextBack := by
         obtain ⟨_, _, _, _, hne1, hne2, _, _, _⟩ := hk4
         have hnek : ne ≤ k := by
           by_cases hl : lp
-          · rw [hne1 hl]; exact Int.le_refl _
+          · rw [hne1 hl]
           · rw [hne2 hl]; exact hmk hl
         refine ⟨⟨by omega, hnek⟩, ?_⟩
         intro i1 ⟨hR1, hR2⟩ r12 r13

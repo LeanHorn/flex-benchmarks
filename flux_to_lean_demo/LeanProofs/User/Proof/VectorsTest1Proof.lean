@@ -4,11 +4,14 @@ import LeanProofs.Flux.VC.VectorsTest1
 import Flex
 import LeanProofs.Lib.Lemmas
 
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
+
 namespace F
 
 def VectorsTest1_proof : VectorsTest1 := by
-  unfold VectorsTest1
-  fusion
-  solve_fixpoint
+  flex
+  all_goals
+    solve_fixpoint
 
 end F

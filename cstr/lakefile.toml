@@ -5,7 +5,7 @@ defaultTargets = ["LeanProofs"]
 [[require]]
 name = "Flex"
 git = "https://github.com/LeanHorn/Flex"
-rev = "b48c0f33ab6efe324c4a8af74eef15d43952c21f"
+rev = "d8a01a77053e95274742ebdd53ecd88e807a38a4"
 
 [[lean_lib]]
 name = "LeanProofs"

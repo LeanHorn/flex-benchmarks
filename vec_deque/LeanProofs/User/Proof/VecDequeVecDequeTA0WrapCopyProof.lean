@@ -1,3 +1,4 @@
+import Flex.Tactic
 import Lean
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.VecDequeVecDequeTA0WrapCopy
@@ -9,6 +10,8 @@ set_option linter.unusedSimpArgs false
 
 
 namespace F
+
+attribute [local instance 2000] instBEqOfDecidableEq
 
 -- `ghost_seq_shift` is memmove on the ghost map (consistent with the `seq_moved` axiom
 -- behind `copy`, as `ptr::copy` is on memory).
@@ -165,7 +168,8 @@ macro "wc_crush" : tactic =>
 set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_ring_moved ghost_seq_shift in
 def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
-  unfold VecDequeVecDequeTA0WrapCopy
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   unfold_defs
   intro c0
   -- k2, k4, k5: path facts on the unchanged input (nothing to carry); k3: the early-return

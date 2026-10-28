@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.PatternCharSearcherAAsSearcherANextMatch
 import LeanProofs.User.PatternLemmas
@@ -14,7 +15,8 @@ theorem char_len_pos (c : Int) : 1 ≤ ghost_char_len c := by
 -- The loop of `CharSearcher::next_match`: the fingers stay in order inside the haystack, `finger` only
 -- increases, the haystack and `finger_back` do not change, and `finger_back` stays a boundary.
 def PatternCharSearcherAAsSearcherANextMatch_proof : PatternCharSearcherAAsSearcherANextMatch := by
-  unfold PatternCharSearcherAAsSearcherANextMatch
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   refine ⟨(fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 => a0 = a5 ∧ a1 = a6 ∧ a3 = a8 ∧ a4 = a9 ∧ a7 ≤ a2 ∧ a2 ≤ a3 ∧ a3 ≤ a0 ∧ ghost_is_boundary a1 a0 a3), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 _o13 _o14 _o15 => a0 = a10 - a9), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 _o11 _o12 _o13 a11 a12 a13 a14 a15 _o19 a16 a17 a18 a19 => a7 ≤ a19 ∧ a19 ≤ a8), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 => a10 ≤ a26 ∧ a26 ≤ a11), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 _o11 _o12 _o13 a11 a12 a13 a14 a15 _o19 a16 a17 a18 a19 a20 a21 a22 _o27 _o28 _o29 a23 a24 a25 a26 a27 a28 => True), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 _o12 _o13 _o14 a12 a13 a14 a15 a16 _o20 a17 a18 a19 a20 a21 a22 a23 _o28 _o29 _o30 a24 a25 a26 a27 a28 a29 => a0 = a22), (fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 _o12 _o13 _o14 a12 a13 a14 a15 a16 _o20 a17 a18 a19 a20 a21 a22 a23 _o28 _o29 _o30 a24 a25 a26 a27 a28 a29 => a0 = a20), (fun a0 _o1 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 _o16 _o17 _o18 a15 a16 a17 a18 a19 _o24 => a3 = a13 ∧ a2 ≤ a12 ∧ ghost_is_boundary a10 a9 a2 ∧ a6 ≤ a2), (fun a0 _o1 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 _o16 _o17 _o18 a15 a16 a17 a18 a19 _o24 => True), (fun a0 a1 _o2 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 _o17 _o18 _o19 a16 a17 a18 a19 a20 _o25 => a0 ≤ a8 ∧ ghost_is_boundary a6 a5 a0), (fun a0 a1 _o2 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 _o17 _o18 _o19 a16 a17 a18 a19 a20 _o25 => a0 ≤ a8 ∧ ghost_is_boundary a6 a5 a0), ?_⟩
   intro s0 ⟨hf, hb, hbf, hbb⟩
   refine ⟨⟨rfl, rfl, rfl, rfl, Int.le_refl _, hf, hb, hbb⟩, ?_⟩

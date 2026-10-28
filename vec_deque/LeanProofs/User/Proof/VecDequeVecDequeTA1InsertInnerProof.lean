@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.VecDequeVecDequeTA1InsertInner
 import LeanProofs.User.Lib.UnfoldDefs
@@ -8,6 +9,8 @@ set_option linter.unusedSimpArgs false
 
 
 namespace F
+
+attribute [local instance 2000] instBEqOfDecidableEq
 
 section
 variable {t : Type} [Inhabited t] (B0 B1 B2 : SmtMap Int t) (x : t) (h0 C0 h1 C1 idx n : Int)
@@ -109,7 +112,8 @@ elab "ins_leaf" : tactic => withMainContext do
 set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_view_gap vec_deque_ring_moved vec_deque_view_shift in
 def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
-  unfold VecDequeVecDequeTA1InsertInner
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   unfold_defs
   intro c0
   -- k0: the state after the (optional) `grow`: invariants, not full, same view.

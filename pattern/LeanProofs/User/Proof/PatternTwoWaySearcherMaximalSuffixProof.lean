@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.PatternTwoWaySearcherMaximalSuffix
@@ -10,8 +11,8 @@ namespace F
 
 set_option maxHeartbeats 1000000 in
 def PatternTwoWaySearcherMaximalSuffix_proof : PatternTwoWaySearcherMaximalSuffix := by
-  unfold PatternTwoWaySearcherMaximalSuffix
-  zap
+  flex (backends := [])
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   name_witness fun left right offset period k m og => MIF m k og left right offset period
   lazy_unfold k3
   intro k m og hk1 hk

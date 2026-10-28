@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.User.Lib.VecDequeViews
@@ -76,9 +77,9 @@ theorem so_case2' {t0 : Type} [Inhabited t0] (ob sb : SmtMap Int t0)
   so_case2 ob sb h c L t (a11 + t) a11 a12 se hc hh hhc hL hLc hcap ht hfe hse (by omega) (by omega) ha12 hLs hse0
 
 def VecDequeVecDequeTA1SplitOff_proof : VecDequeVecDequeTA1SplitOff := by
-  unfold VecDequeVecDequeTA1SplitOff
+  flex
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0 c3
-  zap
   vc_close [flux_specs_sized_cap]
   all_goals (split_hyps <;> grind [flux_specs_sized_cap, so_case1, so_case2', vs_empty, vec_deque_wrp_idx])
 

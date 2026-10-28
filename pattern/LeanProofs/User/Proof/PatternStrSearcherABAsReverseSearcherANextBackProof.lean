@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.PatternStrSearcherABAsReverseSearcherANextBack
 import LeanProofs.User.StrLemmas
@@ -8,7 +9,8 @@ set_option linter.unusedVariables false
 namespace F
 
 def PatternStrSearcherABAsReverseSearcherANextBack_proof : PatternStrSearcherABAsReverseSearcherANextBack := by
-  unfold PatternStrSearcherABAsReverseSearcherANextBack
+  flex
+    (config := {zap := false, preprocess := false, postprocess := false, closeLeaves := false, splitFree := false })
   refine ⟨
     -- k0: the Empty branch, before the final join
     (fun _ _ kind a b e' _ n mh k mn tag p e c cb pe m mb p0 e0 _ _ _ _ _ _ _ _ _ _ =>

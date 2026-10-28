@@ -1,15 +1,15 @@
 import LeanProofs.Flux.Prelude
-import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.GhostGPtrStrlen
-open Classical
-set_option linter.unusedVariables false
+import Flex.Tactic
 
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
 def GhostGPtrStrlen_proof : GhostGPtrStrlen := by
-  unfold GhostGPtrStrlen
-  zap
-  fix (scrape := standard)
+  unfold F.GhostGPtrStrlen
+  flex
+  all_goals flex_discharge
 
 end F

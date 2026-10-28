@@ -1,6 +1,9 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.BucketMapImpl__0__MoveElementsFromList
 import Flex
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 open Classical
 
 namespace F
@@ -23,16 +26,18 @@ def moveelementsfromlist_inv :
 attribute [grind .] BucketMapFraction.ext
 
 def BucketMapImpl__0__MoveElementsFromList_proof : BucketMapImpl__0__MoveElementsFromList := by
-  unfold BucketMapImpl__0__MoveElementsFromList
-  exists moveelementsfromlist_inv ; unfold moveelementsfromlist_inv at *
-  elim_leaves
-  · exists .nil
-  · rename_i ls1 invholds k t l0 ls1eq _ newslf _ _ _ _ _ _ _ _ _ _ _ nslotseq
-    split_hyps
-    rename_i pref peq aslotseq
-    rw [ls1eq] at peq ; exists pref ++ [(k, t)]
-    and_intros
-    simp at peq ; grind only [usr List.append_assoc, = List.cons_append]
-    rw [nslotseq, absorb_app, aslotseq]
-    grind only [= bucket_map_absorb_bucket.eq_2, = bucket_map_absorb_bucket.eq_1, insert]
+  flex
+  all_goals
+    exists moveelementsfromlist_inv ; unfold moveelementsfromlist_inv at *
+    elim_leaves
+    · exists .nil
+    · rename_i ls1 invholds k t l0 ls1eq _ newslf _ _ _ _ _ _ _ _ _ _ _ nslotseq
+      split_hyps
+      rename_i pref peq aslotseq
+      rw [ls1eq] at peq ; exists pref ++ [(k, t)]
+      and_intros
+      simp at peq ; grind only [usr List.append_assoc, = List.cons_append]
+      rw [nslotseq, absorb_app, aslotseq]
+      grind only [= bucket_map_absorb_bucket.eq_2, = bucket_map_absorb_bucket.eq_1, insert]
+
 end F

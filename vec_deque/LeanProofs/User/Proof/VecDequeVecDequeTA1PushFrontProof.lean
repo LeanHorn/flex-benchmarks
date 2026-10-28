@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.User.Lib.VecDequeViews
@@ -28,9 +29,9 @@ theorem vs_comp_pf {t0 : Type} [Inhabited t0] (b0 b1 b2 : SmtMap Int t0) (h0 h1 
   exact hp
 
 def VecDequeVecDequeTA1PushFront_proof : VecDequeVecDequeTA1PushFront := by
-  unfold VecDequeVecDequeTA1PushFront
+  flex
+    (config := {closeLeaves := false, postprocess := false, splitFree := false })
   intro c0
-  zap
   vc_close [flux_specs_sized_cap, vs_refl_pf, vs_comp_pf, phys_zero]
 
 end F
