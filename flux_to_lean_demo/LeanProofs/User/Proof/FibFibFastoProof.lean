@@ -3,6 +3,8 @@ import LeanProofs.Flux.VC.FibFibFasto
 import Flex
 open Classical
 set_option linter.unusedVariables false
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 
 namespace F
@@ -18,9 +20,10 @@ theorem spec_fib_mono: ∀ (i j : Int), 0 ≤ i → 0 ≤ j → i ≤ j → fib_
   induction j using fib_spec_fib.induct generalizing i with grind
 
 def FibFibFasto_proof : FibFibFasto := by
-  unfold FibFibFasto
-  solve_fixpoint
-  have _ : fib_spec_fib (i₀ + 1) <= fib_spec_fib n₀ := by apply spec_fib_mono <;> grind
-  grind
+  flex
+  all_goals
+    solve_fixpoint
+    have _ : fib_spec_fib (i₀ + 1) <= fib_spec_fib n₀ := by apply spec_fib_mono <;> grind
+    grind
 
 end F

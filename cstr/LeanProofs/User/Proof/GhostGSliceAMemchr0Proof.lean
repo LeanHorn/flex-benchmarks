@@ -1,15 +1,14 @@
 import LeanProofs.Flux.Prelude
-import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.GhostGSliceAMemchr0
-open Classical
-set_option linter.unusedVariables false
+import Flex.Tactic
 
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
 def GhostGSliceAMemchr0_proof : GhostGSliceAMemchr0 := by
-  unfold GhostGSliceAMemchr0
-  zap
-  fix (scrape := standard)
+  unfold F.GhostGSliceAMemchr0
+  flex
 
 end F

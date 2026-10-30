@@ -3,6 +3,9 @@ import LeanProofs.Flux.VC.SortMerge
 import LeanProofs.Lib.Lemmas
 import Flex
 
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
+
 open Classical
 set_option linter.unusedVariables false
 
@@ -100,8 +103,7 @@ theorem sorted_set (v : Arr Int) (l r elem : Int)
     · subst i
       calc
         (vectors_arr_set v r elem) (r - 1) = v (r - 1) := by
-          simp [vectors_arr_set]
-          grind
+          simp [vectors_arr_set] <;> grind
         _ ≤ elem := h2
         _ = (vectors_arr_set v r elem) r := by
           symm
@@ -111,8 +113,7 @@ theorem sorted_set (v : Arr Int) (l r elem : Int)
         omega
       calc
         (vectors_arr_set v r elem) i = v i := by
-          simp [vectors_arr_set]
-          grind
+          simp [vectors_arr_set] <;> grind
         _ ≤ v (r - 1) := hivrm1
         _ ≤ elem := h2
         _ = (vectors_arr_set v r elem) r := by
@@ -208,33 +209,34 @@ private theorem a3_le_merge (a3 old : Arr Int) (lo k mid hi m n : Int)
   · exact hL m n ⟨h1, hmn, h2⟩
   · exact hR m n ⟨h1, hmn, h2⟩
 
-set_option maxHeartbeats 1500000
+set_option maxHeartbeats 2000000
 
 theorem SortMerge_proof : SortMerge := by
-  unfold SortMerge
-  fusion
-  exists sortmerge_k0 ; exists sortmerge_k1 ; exists sortmerge_k2; exists sortmerge_k3 ;
-  intros _ lo
-  elim_leaves
-  all_goals (try unfold sortmerge_k0 sortmerge_k2 sortmerge_k3 at *)
-  all_goals (try split_hyps)
+  flex
   all_goals
-    first
-      | (apply sorted_set <;> (first | assumption | grind | (simp_all <;> grind)))
-      | (apply is_mix_set_l <;> assumption)
-      | (apply is_mix_set_r <;> assumption)
-      | (right ; and_intros <;>
-          (first
-            | grind only
-            | (intros; subst_vars;
-                simp only [vectors_arr_set, vectors_arr_get, arr_set, arr_get,
-                           show ∀ z : Int, z + 1 - 1 = z from fun z => by omega, if_true];
-                (first | (apply a3_le_merge <;> (first | assumption | omega)) | omega))
-            | simp_all))
-      | (simp only [vectors_arr_set, vectors_arr_get, arr_set, arr_get] <;> grind [is_frame])
-      | grind only [is_mix]
-      | (simp_all [vectors_arr_eq_between] ; grind only)
-      | grind only [eq_mix_perm]
-  -- mop up the trivial ≤ comparison leftovers from the merge-ordering branches
-  all_goals omega
+    exists sortmerge_k0 ; exists sortmerge_k1 ; exists sortmerge_k2; exists sortmerge_k3 ;
+    intros _ lo
+    elim_leaves
+    all_goals (try unfold sortmerge_k0 sortmerge_k2 sortmerge_k3 at *)
+    all_goals (try split_hyps)
+    all_goals
+      first
+        | (apply sorted_set <;> (first | assumption | grind | (simp_all <;> grind)))
+        | (apply is_mix_set_l <;> assumption)
+        | (apply is_mix_set_r <;> assumption)
+        | (right ; and_intros <;>
+            (first
+              | grind only
+              | (intros; subst_vars;
+                  simp only [vectors_arr_set, vectors_arr_get, arr_set, arr_get,
+                             show ∀ z : Int, z + 1 - 1 = z from fun z => by omega, if_true];
+                  (first | (apply a3_le_merge <;> (first | assumption | omega)) | omega))
+              | simp_all))
+        | (simp only [vectors_arr_set, vectors_arr_get, arr_set, arr_get] <;> grind [is_frame])
+        | grind only [is_mix]
+        | (simp_all [vectors_arr_eq_between] ; grind only)
+        | grind only [eq_mix_perm]
+    -- mop up the trivial ≤ comparison leftovers from the merge-ordering branches
+    all_goals omega
+
 end F

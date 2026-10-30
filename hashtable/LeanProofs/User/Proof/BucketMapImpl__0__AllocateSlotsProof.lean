@@ -1,13 +1,14 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.BucketMapImpl__0__AllocateSlots
-import LeanProofs.User.Proof.Qualifs
-import Flex
-open Classical
+import Flex.Tactic
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
-attribute [grind .] List.eq_replicate_iff
-
 def BucketMapImpl__0__AllocateSlots_proof : BucketMapImpl__0__AllocateSlots := by
-  solve_fixpoint
+  unfold F.BucketMapImpl__0__AllocateSlots
+  flex
+
 end F

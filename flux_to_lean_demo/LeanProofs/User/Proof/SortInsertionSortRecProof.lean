@@ -1,20 +1,13 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.SortInsertionSortRec
-import LeanProofs.Lib.Tactics
-import LeanProofs.Lib.Lemmas
+import Flex.Tactic
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
-def isort_inv (n : Int) (arr_elems : Arr Int) (arr_len : Int) (_old_elems : Arr Int) (old_len : Int) : Prop :=
-     0 < n
-  /\ n <= arr_len
-  /\ arr_len = old_len
-  /\ sort_is_sorted_between arr_elems 0 n
-
-
 def SortInsertionSortRec_proof : SortInsertionSortRec := by
-  unfold SortInsertionSortRec
-  exists isort_inv; simp [isort_inv]
-  zapNamed
+  flex
 
 end F

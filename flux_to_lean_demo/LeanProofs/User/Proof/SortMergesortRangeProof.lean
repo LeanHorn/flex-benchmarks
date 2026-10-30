@@ -2,6 +2,9 @@ import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.SortMergesortRange
 import Flex
 
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
+
 open Classical
 
 namespace F
@@ -47,11 +50,11 @@ attribute [grind .] is_sorted_between_h
 attribute [grind] vectors_arr_get
 attribute [grind] sort_is_sorted_between
 
-set_option maxHeartbeats 1000000
+set_option maxHeartbeats 2000000
 
 def SortMergesortRange_proof : SortMergesortRange := by
-  unfold SortMergesortRange
-  fusion
-  elim_leaves
+  flex
+  all_goals
+    elim_leaves
 
 end F

@@ -1,14 +1,14 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.FibSumLoop
-import LeanProofs.Lib.Tactics
+import Flex.Tactic
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
-@[simp]
-def inv (total : Int) (i : Int)  (n : Int) : Prop :=
-  0 <= i /\ i <= n /\ total = fib_spec_sum i
-
 def FibSumLoop_proof : FibSumLoop := by
-  unfold FibSumLoop; exists inv; simp; grind
+  unfold F.FibSumLoop
+  flex
 
 end F

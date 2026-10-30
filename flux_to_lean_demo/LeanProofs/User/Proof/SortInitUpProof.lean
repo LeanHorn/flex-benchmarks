@@ -1,25 +1,14 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.SortInitUp
--- import LeanProofs.Lib.Tactics
-import Flex
-import LeanProofs.Lib.Lemmas
+import Flex.Tactic
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 namespace F
 
-@[grind]
-def bigger (a: Arr Int) (i: Int) (v: Int) : Prop :=
-    (∀ j, 0 <= j /\ j < i → a j < v)
-
-def init_up_inv (i : Int) (this_elems : Arr Int) (this_len : Int) (_old_elems : Arr Int) (old_len : Int) : Prop :=
-     0 <= i
-  /\ i <= old_len
-  /\ this_len = old_len
-  /\ sort_is_sorted_between this_elems 0 i
-  /\ bigger this_elems i i
-
 def SortInitUp_proof : SortInitUp := by
-   unfold SortInitUp
-   exists init_up_inv; simp [init_up_inv]
-   grind
+  unfold F.SortInitUp
+  flex
 
 end F

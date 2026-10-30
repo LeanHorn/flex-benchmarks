@@ -2,6 +2,9 @@ import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.SortPartition
 import LeanProofs.Lib.Lemmas
 import Flex
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 --import LeanProofs.Lib.Tactics
 
 open Classical
@@ -18,12 +21,12 @@ def part_inv (i j : Int)  (arr : Arr Int) (arr_len : Int) (old_elems: Arr Int) (
   /\ sort_is_perm old_elems arr lo hi
   /\ (sort_is_partitioned_by arr lo i j hi)
 
-set_option maxHeartbeats 1600000 in
+set_option maxHeartbeats 2000000 in
 def SortPartition_proof : SortPartition := by
-  unfold SortPartition
-  fusion
-  exists part_inv;
-  simp [LeanProofs.Lib.Lemmas.arr_get, LeanProofs.Lib.Lemmas.arr_set, sort_is_perm, is_frame, is_perm, part_inv]
-  solve_fixpoint
+  flex
+  all_goals
+    exists part_inv;
+    simp [LeanProofs.Lib.Lemmas.arr_get, LeanProofs.Lib.Lemmas.arr_set, sort_is_perm, is_frame, is_perm, part_inv]
+    solve_fixpoint
 
 end F

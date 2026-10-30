@@ -1,6 +1,9 @@
 import Flex
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.RingbufferImpl__1__Push
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 open Classical
 set_option linter.unusedVariables false
 
@@ -97,78 +100,75 @@ theorem circ_step (hd tl len a5 : Int) (h1 : 1 < len) (h2 : 0 ≤ hd) (h3 : hd <
     omega
 
 def RingbufferImpl__1__Push_proof : RingbufferImpl__1__Push := by
-  unfold RingbufferImpl__1__Push
-  fusion
-  repeat' (first | (intro) | apply And.intro | grind)
-  · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0
-    obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
-    rw [← hlenset] at hC
-    have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hC
-    refine inv_hyp s0.hd ⟨hd_ge0, hhdl⟩ ?_
-    dsimp only
-    rw [circ_diff s0.hd s0.hd s0.len hd_ge0 hhdl hd_ge0 hhdl]
-    rcases mod_succ s0.tl s0.len (by omega) (by omega) with hm | ⟨hm, hm2⟩ <;> omega
-  · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0 hex len_ge0 len_ne0 a2 ha2bound hdist
-    obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
-    rw [← hlenset] at hC
-    have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hC
-    obtain ⟨ha20, ha2l⟩ := ha2bound
-    dsimp only at hdist
-    exact inv_hyp a2 ⟨ha20, ha2l⟩
-      (circ_shift s0.hd s0.tl s0.len a2 hlen1 hd_ge0 hhdl tl_ge0 htll hC' ha20 ha2l hdist)
-  · apply mod_non_neg; rename_i s0 val0 inv_hyp inv0 _; omega
-  · apply mod_lt; rename_i s0 val0 inv_hyp inv0 _; omega
-  · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0 a5 ha5bound hdist
-    have hlen : a3.len = s0.len := by grind
-    have htl : a3.tl = s0.tl := by grind
-    have hinit : a3.init = s0.init := by grind
-    obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
-    dsimp only at hdist ha5bound ⊢
-    rw [hlen] at ha5bound hdist
-    obtain ⟨ha50, ha5l⟩ := ha5bound
-    rw [hinit, htl]
-    by_cases hcond : s0.hd ≠ (s0.tl + 1) % s0.len
-    · have hhd : a3.hd = s0.hd := by grind
-      rw [htl, hhd] at hdist
-      by_cases heq : a5 = s0.tl
-      · simp [SmtMap_select, SmtMap_store, heq]
-      · have hsel : SmtMap_select s0.init a5 :=
-          inv_hyp a5 ⟨ha50, by omega⟩
-            (circ_step s0.hd s0.tl s0.len a5 hlen1 hhd0 hhdl htl0 htll ha50 ha5l heq hdist)
-        simp only [SmtMap_select, SmtMap_store]
-        rw [if_neg]
-        · exact hsel
-        · simp [heq]
-    · have hhd : a3.hd = (s0.hd + 1) % s0.len := by grind
-      have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hcond
-      by_cases heq : a5 = s0.tl
-      · simp [SmtMap_select, SmtMap_store, heq]
-      · have hcd5 : (a5 + s0.len - s0.hd) % s0.len =
-            if a5 ≥ s0.hd then a5 - s0.hd else s0.len - s0.hd + a5 :=
-          circ_diff a5 s0.hd s0.len ha50 ha5l hhd0 hhdl
-        have holddist : (a5 + s0.len - s0.hd) % s0.len <
-            (if s0.tl > s0.hd then s0.tl - s0.hd else if s0.tl < s0.hd then s0.len - s0.hd + s0.tl else 0) := by
-          rcases mod_succ s0.tl s0.len (by omega) (by omega) with hm | ⟨hm, hm2⟩ <;> omega
-        have hsel : SmtMap_select s0.init a5 := inv_hyp a5 ⟨ha50, by omega⟩ holddist
-        simp only [SmtMap_select, SmtMap_store]
-        rw [if_neg]
-        · exact hsel
-        · simp [heq]
-  · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
-    have hlen : a3.len = s0.len := by grind
-    by_cases hcond : s0.hd ≠ (s0.tl + 1) % ringbuffer_fslice_len s0.elems
-    · have hhd : a3.hd = s0.hd := by grind
+  flex
+  all_goals
+    repeat' (first | (intro) | apply And.intro | grind)
+    · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0
+      obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
+      rw [← hlenset] at hC
+      have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hC
+      refine inv_hyp s0.hd ⟨hd_ge0, hhdl⟩ ?_
+      rw [circ_diff s0.hd s0.hd s0.len hd_ge0 hhdl hd_ge0 hhdl]
+      rcases mod_succ s0.tl s0.len (by omega) (by omega) with hm | ⟨hm, hm2⟩ <;> omega
+    · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0 hex len_ge0 len_ne0 a2 ha2bound hdist
+      obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
+      rw [← hlenset] at hC
+      have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hC
+      obtain ⟨ha20, ha2l⟩ := ha2bound
+      exact inv_hyp a2 ⟨ha20, ha2l⟩
+        (circ_shift s0.hd s0.tl s0.len a2 hlen1 hd_ge0 hhdl tl_ge0 htll hC' ha20 ha2l hdist)
+    · apply mod_non_neg; rename_i s0 val0 inv_hyp inv0 _; omega
+    · apply mod_lt; rename_i s0 val0 inv_hyp inv0 _; omega
+    · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0 a5 ha5bound hdist
+      have hlen : a3.len = s0.len := by grind
+      have htl : a3.tl = s0.tl := by grind
+      have hinit : a3.init = s0.init := by grind
+      obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
+      rw [hlen] at ha5bound hdist
+      obtain ⟨ha50, ha5l⟩ := ha5bound
+      rw [hinit, htl]
+      by_cases hcond : s0.hd ≠ (s0.tl + 1) % s0.len
+      · have hhd : a3.hd = s0.hd := by grind
+        rw [htl, hhd] at hdist
+        by_cases heq : a5 = s0.tl
+        · simp [SmtMap_select, SmtMap_store, heq]
+        · have hsel : s0.init a5 :=
+            inv_hyp a5 ⟨ha50, by omega⟩
+              (circ_step s0.hd s0.tl s0.len a5 hlen1 hhd0 hhdl htl0 htll ha50 ha5l heq hdist)
+          simp only [SmtMap_select, SmtMap_store]
+          rw [if_neg]
+          · exact hsel
+          · simp [heq]
+      · have hhd : a3.hd = (s0.hd + 1) % s0.len := by grind
+        have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hcond
+        by_cases heq : a5 = s0.tl
+        · simp [SmtMap_select, SmtMap_store, heq]
+        · have hcd5 : (a5 + s0.len - s0.hd) % s0.len =
+              if a5 ≥ s0.hd then a5 - s0.hd else s0.len - s0.hd + a5 :=
+            circ_diff a5 s0.hd s0.len ha50 ha5l hhd0 hhdl
+          have holddist : (a5 + s0.len - s0.hd) % s0.len <
+              (if s0.tl > s0.hd then s0.tl - s0.hd else if s0.tl < s0.hd then s0.len - s0.hd + s0.tl else 0) := by
+            rcases mod_succ s0.tl s0.len (by omega) (by omega) with hm | ⟨hm, hm2⟩ <;> omega
+          have hsel : s0.init a5 := inv_hyp a5 ⟨ha50, by omega⟩ holddist
+          simp only [SmtMap_select, SmtMap_store]
+          rw [if_neg]
+          · exact hsel
+          · simp [heq]
+    · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
+      have hlen : a3.len = s0.len := by grind
+      by_cases hcond : s0.hd ≠ (s0.tl + 1) % ringbuffer_fslice_len s0.elems
+      · have hhd : a3.hd = s0.hd := by grind
+        omega
+      · have hhd : a3.hd = (s0.hd + 1) % s0.len := by grind
+        have hmod2 : (s0.hd + 1) % s0.len < s0.len := by apply mod_lt; omega
+        omega
+    · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
+      apply mod_non_neg
+      have hlen : a3.len = s0.len := by grind
       omega
-    · have hhd : a3.hd = (s0.hd + 1) % s0.len := by grind
-      have hmod2 : (s0.hd + 1) % s0.len < s0.len := by apply mod_lt; omega
+    · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
+      apply mod_lt
+      have hlen : a3.len = s0.len := by grind
       omega
-  · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
-    apply mod_non_neg
-    have hlen : a3.len = s0.len := by grind
-    omega
-  · rename_i s0 val0 inv_hyp inv0 result a3 hbig len_eq hd_ge0 tl_ge0 set_eq len_ge0 len_ne0
-    apply mod_lt
-    have hlen : a3.len = s0.len := by grind
-    omega
 
 end F

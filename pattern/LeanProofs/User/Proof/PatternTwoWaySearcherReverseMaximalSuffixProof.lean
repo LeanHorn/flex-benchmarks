@@ -1,19 +1,20 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.PatternTwoWaySearcherReverseMaximalSuffix
 import LeanProofs.User.MaxSufLemmas
 open Classical
 set_option linter.unusedVariables false
+set_option maxRecDepth 16384
 
 
 namespace F
 
-set_option maxHeartbeats 2000000 in
+set_option maxHeartbeats 4000000 in
 def PatternTwoWaySearcherReverseMaximalSuffix_proof : PatternTwoWaySearcherReverseMaximalSuffix := by
-  unfold PatternTwoWaySearcherReverseMaximalSuffix
-  zap
+  flex
   name_witness fun left right offset period k m og kp => MIF (fun i => m (k - 1 - i)) k og left right offset period
-  lazy_unfold k3
+  lazy_unfold witness
   intro k m og hk1 hk kp hkp0 hkp1 hk0 hk1'
   refine ⟨MIF_init hk1, ?_⟩
   intro left right offset period hI a8 hr0 hr1 hg8

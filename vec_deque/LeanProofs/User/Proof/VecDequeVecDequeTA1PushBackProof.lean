@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.User.Lib.VecDequeViews
@@ -5,6 +6,8 @@ import LeanProofs.Flux.VC.VecDequeVecDequeTA1PushBack
 import LeanProofs.User.Lib.UnfoldDefs
 open Classical
 set_option linter.unusedVariables false
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 
 
 namespace F
@@ -28,9 +31,13 @@ theorem vs_comp_pb {t0 : Type} [Inhabited t0] (b0 b1 b2 : SmtMap Int t0) (h0 h1 
   exact hp
 
 def VecDequeVecDequeTA1PushBack_proof : VecDequeVecDequeTA1PushBack := by
-  unfold VecDequeVecDequeTA1PushBack
+  flex
   intro c0
-  zap
-  vc_close [flux_specs_sized_cap, vs_refl_pb, vs_comp_pb]
+  have idx (h c i : Int) :
+      (if (h + i) % (num_usize_MAX + 1) ≥ c then
+        (h + i) % (num_usize_MAX + 1) - c else (h + i) % (num_usize_MAX + 1)) =
+      vec_deque_phys_idx h c i := rfl
+  simp only [idx]
+  vc_close [vs_at, flux_specs_sized_cap, vs_refl_pb, vs_comp_pb]
 
 end F

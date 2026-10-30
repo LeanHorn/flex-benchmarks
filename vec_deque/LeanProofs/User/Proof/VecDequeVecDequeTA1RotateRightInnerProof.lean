@@ -1,3 +1,4 @@
+import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.VecDequeVecDequeTA1RotateRightInner
@@ -54,12 +55,12 @@ elab "rotr_leaf" : tactic => withMainContext do
     evalTactic (← `(tactic| (apply Eq.symm; apply eq_false; vd_arith)))
   else evalTactic (← `(tactic| first | syn_asm | vd_arith | vd_idx))
 
+set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_view_rot vec_deque_ring_moved in
 def VecDequeVecDequeTA1RotateRightInner_proof : VecDequeVecDequeTA1RotateRightInner := by
-  unfold VecDequeVecDequeTA1RotateRightInner
+  flex
   unfold_defs
   intro c0
-  zap
   by_cases hc : c0 = 0
   · simp only [hc, ↓reduceIte, ne_eq, not_true_eq_false, false_implies, implies_true, and_true,
                and_imp]

@@ -1,6 +1,9 @@
 import LeanProofs.Flux.Prelude
 import LeanProofs.Flux.VC.BucketMapImpl__0__MoveElements
 import Flex
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 16384
 open Classical
 
 namespace F
@@ -23,13 +26,24 @@ theorem absorb_buckets_app (v : OVec (ASeq Int Int))
 
 attribute [grind .] BucketMapFraction.ext
 
-set_option maxHeartbeats 300000
+set_option maxHeartbeats 4000000
+
+private theorem move_take_all {α : Type} (xs : List α) (i : Int)
+    (hi : (xs.length : Int) ≤ i) : xs.take i.toNat = xs := by
+  apply List.take_of_length_le
+  omega
 
 def BucketMapImpl__0__MoveElements_proof : BucketMapImpl__0__MoveElements := by
-  unfold BucketMapImpl__0__MoveElements
-  rewriteKs ; fusion
-  exists moveelements_inv2, moveelements_inv1
-  elim_leaves
-  · grind [bucket_map_empties, List.eq_replicate_iff,List.mem_iff_get]
-  · grind [Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
+  flex
+  all_goals
+    exists moveelements_inv2, moveelements_inv1
+    simp only [moveelements_inv1, moveelements_inv2, svec_len, and_imp] at *
+    repeat' (first | (intro) | apply And.intro)
+    all_goals first
+      | rfl
+      | omega
+      | grind [move_take_all, bucket_map_empties, List.eq_replicate_iff, List.mem_iff_get,
+          Int.toNat_add, List.take_add_one, List.getElem?_eq_getElem, absorb_buckets_app]
+
+
 end F

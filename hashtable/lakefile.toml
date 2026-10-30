@@ -8,4 +8,4 @@ name = "LeanProofs"
 [[require]]
 name = "Flex"
 git = "https://github.com/LeanHorn/Flex"
-rev = "6bc56e2cecef1168c00345426b0ea278466d63c6"
+rev = "d8a01a77053e95274742ebdd53ecd88e807a38a4"
