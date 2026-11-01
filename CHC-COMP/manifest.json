@@ -1,0 +1,33 @@
+{
+  "archives": [
+    {
+      "bytes": 1398122,
+      "files": 3461,
+      "path": "archives/smt2.tar.gz",
+      "sha256": "e9dfd923e67d86a12a514ee7f5e266f325bd0e55ff07ad533df5a8b8f3a405e6"
+    },
+    {
+      "bytes": 3791504,
+      "files": 1742,
+      "path": "archives/lean4.tar.gz",
+      "sha256": "704da237084634a455fcd3cc7d4b2c77af7e2bc791750ce0663d2ca44d588502"
+    }
+  ],
+  "counts": {
+    "LIA": 820,
+    "LIA-Lin": 910,
+    "distinct_smt_contents": 1559,
+    "duplicate_task_copies": 171,
+    "majority_sat": 99,
+    "tasks": 1730,
+    "validated_sat": 1631
+  },
+  "schema_version": 1,
+  "translation": {
+    "layout": "inline",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mode": "chc",
+    "revision": "9fd49dfecfc1bdc2c3b5f031f76b8dc65fe55cee",
+    "statement_check_toolchain": "leanprover/lean4:v4.34.0"
+  }
+}
