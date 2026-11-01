@@ -1,0 +1,40 @@
+{
+  "source": {
+    "original_archive": {
+      "archive": "chc-comp26-benchmarks-main.zip",
+      "compressed_bytes": 133109093,
+      "download_url": "https://github.com/chc-comp/chc-comp26-benchmarks/archive/refs/heads/main.zip",
+      "git_commit": "b4fa7a708e5863bbcdb5de50d692ead3a67cbedc",
+      "sha256": "912aa7b44471c9e1ed49ba0c2c034dcafa4300a821edaf3bf016618fd0e99b25"
+    },
+    "pinned_tree": "https://github.com/chc-comp/chc-comp26-benchmarks/tree/b4fa7a708e5863bbcdb5de50d692ead3a67cbedc",
+    "repository": "https://github.com/chc-comp/chc-comp26-benchmarks",
+    "revision": "b4fa7a708e5863bbcdb5de50d692ead3a67cbedc",
+    "selected_files_match_upstream_inventory": true
+  },
+  "translation": {
+    "code_bytes_unchanged": true,
+    "flags": [
+      "--mode",
+      "chc",
+      "--layout",
+      "inline",
+      "--max-rec-depth",
+      "4096"
+    ],
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifests": "Compact portable metadata; redundant source positions omitted.",
+    "repository": "https://github.com/LeanHorn/SMTLib-to-Lean",
+    "revision": "9fd49dfecfc1bdc2c3b5f031f76b8dc65fe55cee"
+  },
+  "validation": {
+    "flex_revision_for_original_checks": "71ec93343cf9e7bdac33a21e3d37a0f808fd1bdf",
+    "lean_version": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+    "prepared_on": "2026-10-21",
+    "proof_templates_contain_sorry": true,
+    "selected": 1730,
+    "semantic_equivalence_checked": false,
+    "statements_checked": 1730,
+    "translated": 1730
+  }
+}
