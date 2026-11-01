@@ -1,4 +1,5 @@
 /sources/
 /generated/
-/results/
+/results/*
+!/results/native-30s-20261101/
 /__pycache__/

@@ -1,0 +1,86 @@
+{
+  "complete": true,
+  "configuration": {
+    "backends": [
+      "spacer",
+      "eldarica"
+    ],
+    "binaries": {
+      "eldarica": {
+        "available": true,
+        "requested": "eld",
+        "sha256": "2385039a383eedc0b760a857869401bb0e612d1ce39dd11b9e5ee1092292dde7",
+        "version": "Eldarica v2.3\n(C) Copyright 2012-2026 Hossein Hojjat and Philipp Ruemmer\n\nUsage: eld [options] file\n\nGeneral options:\n -h                Show this information\n -in               Read from standard input (defaults to Horn SMT format)\n -assert           Enable debugging assertions. This implies -verifySolutions\n -verifySolutions  Generate and verify (but do not output) models and proofs\n -log:n            Display progress based on verbosity level n (0 <= n <= 3)\n                     1: Statistics only\n                     2: Invariants included\n                     3: Includes counterexamples\n -statistics       Equivalent to -log:1; displays statistics only\n -log              Equivalent to -log:2; displays progress and invariants\n -t:time           Set timeout (in seconds)\n -cex              Show textual counterexamples\n -scex             Show textual counterexamples in SMT-LIB format\n -dotCEX           Output counterexample in dot format\n -eogCEX           Display counterexample using eog\n -m:func           Use function func as entry point (default: main)\n\nHorn engine:\n -horn             Enable this engine\n -p                Pretty Print Horn clauses\n -sp               Pretty print the Horn clauses in SMT-LIB format\n -sol              Show solution in Prolog format\n -ssol             Show solution in SMT-LIB format\n -logSimplified    Show clauses after preprocessing in Prolog format\n -logSimplifiedSMT Show clauses after preprocessing in SMT-LIB format\n -disj             Use disjunctive interpolation\n -stac             Static acceleration of loops\n -lbe              Disable preprocessor (e.g., clause inlining)\n -arrayQuans:n     Introduce n quantifiers for each array argument\n                     (default: off)\n -cloneArrays      Use separate array theories for independent arrays\n -noSlicing        Disable slicing of clauses\n -noIntervals      Disable interval analysis\n -hints:f          Read hints (initial predicates and abstraction templates)\n                     from a file\n -postHints:f      Read hints for processed clauses from a file\n -pHints           Print initial predicates and abstraction templates\n -pPredicates:f    Output predicates computed by CEGAR to a file\n -logPreds:<preds> Log only predicates containing the specified substrings,\n                     separated by commas. E.g., -logPreds=p1,p2 logs any\n                     predicate with 'p1' or 'p2' in its name\n -sym              Use symbolic execution with the default engine (bfs)\n -sym:x            Use symbolic execution where x : {dfs, bfs}\n                     {dfs: depth-first forward, bfs: breadth-first forward}\n -symDepth:n       Set a max depth for symbolic execution (underapproximate)\n -abstract:t       Interp. abstraction: off, manual, term, oct,\n                     relEqs, relIneqs, relEqs2 (default), relIneqs2\n -abstractTO:t     Timeout (s) for abstraction search (default: 0.5s)\n -abstractPO       Run with and w/o interpolation abstraction in parallel\n -portfolio        Run different standard configurations in parallel\n -splitClauses:n   Aggressiveness when splitting disjunctions in clauses\n                     (0 <= n <= 2, default: 1)\n\n -hin              Expect input in Prolog Horn format\n -hsmt             Expect input in Horn SMT-LIB format\n -ints             Expect input in integer NTS format"
+      },
+      "spacer": {
+        "available": true,
+        "requested": "z3",
+        "sha256": "ae6c8df33db9c9ae9a80b6044e77cd66529a141d8b25f0620f1e89b409594f48",
+        "version": "Z3 version 4.15.4 - 64 bit"
+      }
+    },
+    "corpus": "../../generated",
+    "seed": 20261101,
+    "solver_args": {
+      "eldarica": [
+        "-in",
+        "-hsmt",
+        "-ssol"
+      ],
+      "spacer": [
+        "-in",
+        "-smt2",
+        "-model",
+        "fp.engine=spacer",
+        "fp.xform.inline_eager=false",
+        "fp.xform.inline_linear=false"
+      ]
+    },
+    "timeout_seconds": 30.0,
+    "workers": 6
+  },
+  "dataset": {
+    "distinct_smt_contents": 1559,
+    "selection": "../../selection.json",
+    "sha256": "659bdb9f03872eac05cce73a95203b3cc0f486e2ec2c7e6d64cab4987ae05805",
+    "tasks": 1730
+  },
+  "driver_sha256": "292608edaa90c8b3ab9ca651914be177ab65e6ea1c9c5ed17d251e94fc157cfe",
+  "finished_at": "2026-11-01T11:56:13.430914+00:00",
+  "git_head": "437efcdb0ccc43718a7cc75a0fb1c48ecc0596c8",
+  "host_reported_at_publication": {
+    "logical_cpus": 10,
+    "memory_bytes": 25769803776,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "method": "Original SMT bytes unchanged; solver requests include model production. Identical source contents run once per backend, with explicit per-task mapping. No Lean startup or proof checking.",
+  "original_metadata_sha256": "5fdc1182c88be369c86f3d29f5072fcae632320a6a7560ca9c31410958298fa9",
+  "parallel_execution": {
+    "concurrent_lean_workers": 4,
+    "native_workers": 6,
+    "overlap_started_at": "2026-11-01T10:13:40.657582+00:00",
+    "timing_note": "Wall times include fresh solver startup and overlap with the Lean portfolio; these are not isolated solver-speed measurements."
+  },
+  "publication": {
+    "paths": "Local filesystem paths relativized; suite labels use the selected source-directory suites; original family labels retained separately.",
+    "raw_solver_outputs": "stdout/stderr bytes unchanged",
+    "transcript_files": 12472,
+    "transcripts_archive_sha256": "86999f53271b1b6afedd28beaaaa448e048def2006820347eeb5e2669202d79d"
+  },
+  "source_files": {
+    "chc_native.py": {
+      "path": "scripts/chc_native.py",
+      "repository": "https://github.com/LeanHorn/Flex",
+      "revision": "6cc162eec8de8b2a50a1d1ddffc95e014f1dcdc0",
+      "sha256": "292608edaa90c8b3ab9ca651914be177ab65e6ea1c9c5ed17d251e94fc157cfe"
+    },
+    "chc_parity.py": {
+      "path": "scripts/chc_parity.py",
+      "repository": "https://github.com/LeanHorn/Flex",
+      "revision": "6cc162eec8de8b2a50a1d1ddffc95e014f1dcdc0",
+      "sha256": "5b312650eab7a22d3139d78f9c2037b3325bf2b0857f9b588d68b207a28396eb"
+    }
+  },
+  "started_at": "2026-11-01T10:09:07.926956+00:00"
+}

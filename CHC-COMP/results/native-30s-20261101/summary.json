@@ -1,0 +1,411 @@
+{
+  "backends": {
+    "eldarica": {
+      "completed_tasks": 1730,
+      "distinct_statuses": {
+        "error": 1,
+        "sat": 845,
+        "timeout": 713
+      },
+      "task_models": 923,
+      "task_statuses": {
+        "error": 1,
+        "sat": 923,
+        "timeout": 806
+      }
+    },
+    "spacer": {
+      "completed_tasks": 1730,
+      "distinct_statuses": {
+        "error": 2,
+        "sat": 1127,
+        "timeout": 430
+      },
+      "task_models": 1253,
+      "task_statuses": {
+        "error": 2,
+        "sat": 1253,
+        "timeout": 475
+      }
+    }
+  },
+  "completed_native_runs": 3118,
+  "completed_task_results": 3460,
+  "distinct_sources": 1559,
+  "either_backend": {
+    "both_distinct_sat_contents": 664,
+    "both_sat_tasks": 722,
+    "distinct_sat_contents": 1308,
+    "eldarica_only_sat_tasks": 201,
+    "neither_sat_tasks": 276,
+    "sat_tasks": 1454,
+    "spacer_only_sat_tasks": 531
+  },
+  "expected_native_runs": 3118,
+  "families": {
+    "aeval-benchmarks": {
+      "eldarica": {
+        "sat": 26,
+        "timeout": 28
+      },
+      "spacer": {
+        "error": 1,
+        "sat": 5,
+        "timeout": 48
+      }
+    },
+    "aeval-unsafe": {
+      "eldarica": {
+        "timeout": 1
+      },
+      "spacer": {
+        "timeout": 1
+      }
+    },
+    "eldarica-misc": {
+      "eldarica": {
+        "sat": 119,
+        "timeout": 28
+      },
+      "spacer": {
+        "sat": 97,
+        "timeout": 50
+      }
+    },
+    "extra-small-lia": {
+      "eldarica": {
+        "sat": 35,
+        "timeout": 20
+      },
+      "spacer": {
+        "sat": 13,
+        "timeout": 42
+      }
+    },
+    "hcai-bench": {
+      "eldarica": {
+        "error": 1,
+        "sat": 88,
+        "timeout": 18
+      },
+      "spacer": {
+        "error": 1,
+        "sat": 95,
+        "timeout": 11
+      }
+    },
+    "hopv": {
+      "eldarica": {
+        "sat": 109,
+        "timeout": 1
+      },
+      "spacer": {
+        "sat": 101,
+        "timeout": 9
+      }
+    },
+    "kind2-chc-benchmarks": {
+      "eldarica": {
+        "sat": 202,
+        "timeout": 267
+      },
+      "spacer": {
+        "sat": 288,
+        "timeout": 181
+      }
+    },
+    "llreve-bench": {
+      "eldarica": {
+        "sat": 95,
+        "timeout": 11
+      },
+      "spacer": {
+        "sat": 86,
+        "timeout": 20
+      }
+    },
+    "rust-horn": {
+      "eldarica": {
+        "sat": 10
+      },
+      "spacer": {
+        "sat": 8,
+        "timeout": 2
+      }
+    },
+    "synthesis": {
+      "eldarica": {
+        "sat": 68,
+        "timeout": 46
+      },
+      "spacer": {
+        "sat": 83,
+        "timeout": 31
+      }
+    },
+    "ultimate": {
+      "eldarica": {
+        "sat": 2,
+        "timeout": 5
+      },
+      "spacer": {
+        "sat": 2,
+        "timeout": 5
+      }
+    },
+    "vmt-chc-benchmarks": {
+      "eldarica": {
+        "sat": 169,
+        "timeout": 381
+      },
+      "spacer": {
+        "sat": 475,
+        "timeout": 75
+      }
+    }
+  },
+  "suites": {
+    "aeval-benchmarks/multi-phase": {
+      "eldarica": {
+        "sat": 26,
+        "timeout": 28
+      },
+      "spacer": {
+        "error": 1,
+        "sat": 5,
+        "timeout": 48
+      }
+    },
+    "aeval-unsafe": {
+      "eldarica": {
+        "timeout": 1
+      },
+      "spacer": {
+        "timeout": 1
+      }
+    },
+    "eldarica-misc/BV/qarmc": {
+      "eldarica": {
+        "sat": 2
+      },
+      "spacer": {
+        "timeout": 2
+      }
+    },
+    "eldarica-misc/LIA/Consistency": {
+      "eldarica": {
+        "sat": 11,
+        "timeout": 17
+      },
+      "spacer": {
+        "sat": 9,
+        "timeout": 19
+      }
+    },
+    "eldarica-misc/LIA/HOLA": {
+      "eldarica": {
+        "sat": 44,
+        "timeout": 2
+      },
+      "spacer": {
+        "sat": 36,
+        "timeout": 10
+      }
+    },
+    "eldarica-misc/LIA/llreve": {
+      "eldarica": {
+        "sat": 18,
+        "timeout": 3
+      },
+      "spacer": {
+        "sat": 14,
+        "timeout": 7
+      }
+    },
+    "eldarica-misc/LIA/reve": {
+      "eldarica": {
+        "sat": 44,
+        "timeout": 6
+      },
+      "spacer": {
+        "sat": 38,
+        "timeout": 12
+      }
+    },
+    "extra-small-lia": {
+      "eldarica": {
+        "sat": 35,
+        "timeout": 20
+      },
+      "spacer": {
+        "sat": 13,
+        "timeout": 42
+      }
+    },
+    "hcai-bench/arrays_orig": {
+      "eldarica": {
+        "error": 1,
+        "sat": 1,
+        "timeout": 3
+      },
+      "spacer": {
+        "sat": 4,
+        "timeout": 1
+      }
+    },
+    "hcai-bench/svcomp/O0": {
+      "eldarica": {
+        "sat": 45,
+        "timeout": 5
+      },
+      "spacer": {
+        "sat": 46,
+        "timeout": 4
+      }
+    },
+    "hcai-bench/svcomp/O3": {
+      "eldarica": {
+        "sat": 42,
+        "timeout": 10
+      },
+      "spacer": {
+        "error": 1,
+        "sat": 45,
+        "timeout": 6
+      }
+    },
+    "hopv/lia/fpice": {
+      "eldarica": {
+        "sat": 10
+      },
+      "spacer": {
+        "sat": 10
+      }
+    },
+    "hopv/lia/mochi": {
+      "eldarica": {
+        "sat": 61,
+        "timeout": 1
+      },
+      "spacer": {
+        "sat": 53,
+        "timeout": 9
+      }
+    },
+    "hopv/lia/termination": {
+      "eldarica": {
+        "sat": 38
+      },
+      "spacer": {
+        "sat": 38
+      }
+    },
+    "kind2-chc-benchmarks/data": {
+      "eldarica": {
+        "sat": 202,
+        "timeout": 267
+      },
+      "spacer": {
+        "sat": 288,
+        "timeout": 181
+      }
+    },
+    "llreve-bench/muz": {
+      "eldarica": {
+        "sat": 30
+      },
+      "spacer": {
+        "sat": 26,
+        "timeout": 4
+      }
+    },
+    "llreve-bench/smt2": {
+      "eldarica": {
+        "sat": 19
+      },
+      "spacer": {
+        "sat": 18,
+        "timeout": 1
+      }
+    },
+    "llreve-bench/smt2/clausified": {
+      "eldarica": {
+        "sat": 30
+      },
+      "spacer": {
+        "sat": 25,
+        "timeout": 5
+      }
+    },
+    "llreve-bench/smt2/quant/clausified-no-arrays": {
+      "eldarica": {
+        "sat": 16,
+        "timeout": 11
+      },
+      "spacer": {
+        "sat": 17,
+        "timeout": 10
+      }
+    },
+    "rust-horn": {
+      "eldarica": {
+        "sat": 10
+      },
+      "spacer": {
+        "sat": 8,
+        "timeout": 2
+      }
+    },
+    "synthesis/nay-horn": {
+      "eldarica": {
+        "sat": 68,
+        "timeout": 46
+      },
+      "spacer": {
+        "sat": 83,
+        "timeout": 31
+      }
+    },
+    "ultimate/LIA-NonLin": {
+      "eldarica": {
+        "sat": 2,
+        "timeout": 5
+      },
+      "spacer": {
+        "sat": 2,
+        "timeout": 5
+      }
+    },
+    "vmt-chc-benchmarks/conc": {
+      "eldarica": {
+        "sat": 2,
+        "timeout": 3
+      },
+      "spacer": {
+        "sat": 2,
+        "timeout": 3
+      }
+    },
+    "vmt-chc-benchmarks/ctigar": {
+      "eldarica": {
+        "sat": 69,
+        "timeout": 41
+      },
+      "spacer": {
+        "sat": 52,
+        "timeout": 58
+      }
+    },
+    "vmt-chc-benchmarks/lustre": {
+      "eldarica": {
+        "sat": 98,
+        "timeout": 337
+      },
+      "spacer": {
+        "sat": 421,
+        "timeout": 14
+      }
+    }
+  },
+  "tasks": 1730
+}
