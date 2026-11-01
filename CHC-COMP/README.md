@@ -38,4 +38,8 @@ Use `python3 CHC-COMP/unpack.py --verify-only` to check an existing unpacked cor
 
 The translator used Lean 4.33.1 with `--mode chc --layout inline --max-rec-depth 4096`. All 1,730 statement sections were subsequently checked using Lean 4.34.0. **Generated proof templates contain `sorry`: these are benchmark goals, not completed proofs.** Statement checking establishes well-typedness; source/Lean semantic equivalence was not mechanically checked.
 
+## Native baseline
+
+[Completed 30-second Spacer/Eldarica results](results/native-30s-20261101/README.md) include per-query outcomes, timings, solver settings, and raw model transcripts. Either solver returned a model for 1,454/1,730 tasks.
+
 RQ2–RQ4 execution instructions and configurations will be added separately.
