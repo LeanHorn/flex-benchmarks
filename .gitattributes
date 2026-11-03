@@ -1,0 +1,3 @@
+# Preserve captured inputs exactly, including their original trailing blank lines.
+liquid-haskell/fixpoint-queries/** -text whitespace=-blank-at-eof linguist-generated=true
+liquid-haskell/lean-chc-queries/** linguist-generated=true

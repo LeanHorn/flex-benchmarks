@@ -1,0 +1,1163 @@
+// Config {srcFile = "basic/pos/OpaqueRefl02.hs", cores = Just 1, minPartSize = 500, maxPartSize = 700, solver = z3, linear = False, defunction = False, allowHO = True, allowHOqs = False, eliminate = some, scrape = no, elimBound = Nothing, smtTimeout = Nothing, elimStats = False, solverStats = False, metadata = False, stats = False, parts = False, save = True, minimize = False, minimizeQs = False, minimizeKs = False, minimalSol = False, etaElim = False, autoKuts = False, nonLinCuts = False, noslice = False, rewriteAxioms = False, pleUndecGuards = False, etabeta = False, localRewrites = False, saveBfqOnError = False, interpreter = False, noEnvReduction = True, inlineANFBinds = False, checkCstr = [], extensionality = False, rwTermination = False, stdin = False, json = False, fuel = Nothing, restOrdering = "rpo", noStringTheory = True, explicitKvars = False, sortedSolution = False, saveDir = Nothing}
+
+
+data GHC.Internal.Maybe.Maybe 1 = [
+       | GHC.Internal.Maybe.Nothing {}
+       | GHC.Internal.Maybe.Just {lqdc##$select##GHC.Internal.Maybe.Just##1 : @(0)}
+     ]
+
+
+define GHC.Base_LHAssumptions.comp (lq1 : func(0 , [@(-1);
+                                                    @(-2)]),  lq2 : func(0 , [@(-3);
+                                                                              @(-1)]),  lq3 : @(-3)) : @(-2) = {((lq1 (lq2 lq3)))}
+define GHC.Internal.Base.. () : func(0 , [func(0 , [b##xo; c##xo]);
+                                          func(0 , [a##xo; b##xo]);
+                                          a##xo;
+                                          c##xo]) = {(GHC.Base_LHAssumptions.comp)}
+define OpaqueRefl02.keepEvens (lq1 : [int]) : [int] = {((GHC.Internal.List.filter GHC.Internal.Real.even lq1))}
+match Data.Tuple_LHAssumptions.fst GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##413}
+match Data.Tuple_LHAssumptions.snd GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##414}
+match GHC.Types_LHAssumptions.len GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {(1 +
+                                                                                          (GHC.Types_LHAssumptions.len lq_tmp$x##419))}
+match GHC.Types_LHAssumptions.len GHC.Internal.Types.$91$$93$ {0}
+match charX GHC.Internal.Types.C# lq_tmp$x##422 {lq_tmp$x##422}
+match head GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {lq_tmp$x##418}
+match is$GHC.Internal.Maybe.Just GHC.Internal.Maybe.Just lq_tmp$x##416 {true}
+match is$GHC.Internal.Maybe.Just GHC.Internal.Maybe.Nothing {false}
+match is$GHC.Internal.Maybe.Nothing GHC.Internal.Maybe.Just lq_tmp$x##416 {false}
+match is$GHC.Internal.Maybe.Nothing GHC.Internal.Maybe.Nothing {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$41$ GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$44$$41$ GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$41$ GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {true}
+match is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {true}
+match is$36$GHC.Internal.Types.$58$ GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {true}
+match is$36$GHC.Internal.Types.$58$ GHC.Internal.Types.$91$$93$ {false}
+match is$GHC.Internal.Types.C# GHC.Internal.Types.C# lq_tmp$x##422 {true}
+match is$36$GHC.Internal.Types.$91$$93$ GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {false}
+match is$36$GHC.Internal.Types.$91$$93$ GHC.Internal.Types.$91$$93$ {true}
+match lqdc##$select##GHC.Internal.Maybe.Just##1 GHC.Internal.Maybe.Just lq_tmp$x##416 {lq_tmp$x##416}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##413}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##414}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##423}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##424}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$3 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##425}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##339}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##340}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$3 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##341}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$4 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##342}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##349}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##350}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$3 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##351}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$4 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##352}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$5 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##353}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##392}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##393}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$3 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##394}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$4 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##395}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$5 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##396}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$6 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##397}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$1 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##364}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$2 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##365}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$3 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##366}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$4 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##367}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$5 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##368}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$6 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##369}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$7 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##370}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Types.$58$$35$$35$1 GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {lq_tmp$x##418}
+match lqdc$35$$35$$36$select$35$$35$GHC.Internal.Types.$58$$35$$35$2 GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {lq_tmp$x##419}
+match lqdc##$select##GHC.Internal.Types.C###1 GHC.Internal.Types.C# lq_tmp$x##422 {lq_tmp$x##422}
+match tail GHC.Internal.Types.$58$ lq_tmp$x##418 lq_tmp$x##419 {lq_tmp$x##419}
+match x_Tuple21 GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##413}
+match x_Tuple22 GHC.Internal.Tuple.$40$$44$$41$ lq_tmp$x##413 lq_tmp$x##414 {lq_tmp$x##414}
+match x_Tuple31 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##423}
+match x_Tuple32 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##424}
+match x_Tuple33 GHC.Internal.Tuple.$40$$44$$44$$41$ lq_tmp$x##423 lq_tmp$x##424 lq_tmp$x##425 {lq_tmp$x##425}
+match x_Tuple41 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##339}
+match x_Tuple42 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##340}
+match x_Tuple43 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##341}
+match x_Tuple44 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ lq_tmp$x##339 lq_tmp$x##340 lq_tmp$x##341 lq_tmp$x##342 {lq_tmp$x##342}
+match x_Tuple51 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##349}
+match x_Tuple52 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##350}
+match x_Tuple53 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##351}
+match x_Tuple54 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##352}
+match x_Tuple55 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ lq_tmp$x##349 lq_tmp$x##350 lq_tmp$x##351 lq_tmp$x##352 lq_tmp$x##353 {lq_tmp$x##353}
+match x_Tuple61 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##392}
+match x_Tuple62 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##393}
+match x_Tuple63 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##394}
+match x_Tuple64 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##395}
+match x_Tuple65 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##396}
+match x_Tuple66 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ lq_tmp$x##392 lq_tmp$x##393 lq_tmp$x##394 lq_tmp$x##395 lq_tmp$x##396 lq_tmp$x##397 {lq_tmp$x##397}
+match x_Tuple71 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##364}
+match x_Tuple72 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##365}
+match x_Tuple73 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##366}
+match x_Tuple74 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##367}
+match x_Tuple75 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##368}
+match x_Tuple76 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##369}
+match x_Tuple77 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ lq_tmp$x##364 lq_tmp$x##365 lq_tmp$x##366 lq_tmp$x##367 lq_tmp$x##368 lq_tmp$x##369 lq_tmp$x##370 {lq_tmp$x##370}
+expand [1 : False]
+
+
+
+
+
+
+
+
+constant Bag_count : (func(1 , [@(0); (Bag_t @(0)); int]))
+constant Bag_empty : (func(1 , [int; (Bag_t @(0))]))
+constant Bag_inter_min : (func(1 , [(Bag_t @(0));
+                                    (Bag_t @(0));
+                                    (Bag_t @(0))]))
+constant Bag_sng : (func(1 , [@(0); int; (Bag_t @(0))]))
+constant Bag_sub : (func(1 , [(Bag_t @(0)); (Bag_t @(0)); bool]))
+constant Bag_union : (func(1 , [(Bag_t @(0));
+                                (Bag_t @(0));
+                                (Bag_t @(0))]))
+constant Bag_union_max : (func(1 , [(Bag_t @(0));
+                                    (Bag_t @(0));
+                                    (Bag_t @(0))]))
+constant Data.Tuple_LHAssumptions.fst : (func(2 , [(Tuple2 @(0) @(1));
+                                                   @(0)]))
+constant Data.Tuple_LHAssumptions.snd : (func(2 , [(Tuple2 @(0) @(1));
+                                                   @(1)]))
+constant FF_add : (func(1 , [(FFld_t @(0));
+                             (FFld_t @(0));
+                             (FFld_t @(0))]))
+constant FF_mul : (func(1 , [(FFld_t @(0));
+                             (FFld_t @(0));
+                             (FFld_t @(0))]))
+constant FF_val : (func(1 , [int; (FFld_t @(0))]))
+constant GHC.Base_LHAssumptions.autolen : (func(1 , [@(0); int]))
+constant GHC.Base_LHAssumptions.comp : (func(0 , [func(0 , [@(-1);
+                                                            @(-2)]);
+                                                  func(0 , [@(-3); @(-1)]);
+                                                  @(-3);
+                                                  @(-2)]))
+constant GHC.Internal.Base.$ : (func(4 , [func(0 , [@(2); @(3)]);
+                                          @(2);
+                                          @(3)]))
+constant GHC.Internal.Base.$43$$43$ : (func(1 , [[@(0)];
+                                                 [@(0)];
+                                                 [@(0)]]))
+constant GHC.Internal.Base.. : (func(3 , [func(0 , [@(0); @(1)]);
+                                          func(0 , [@(2); @(0)]);
+                                          @(2);
+                                          @(1)]))
+constant GHC.Internal.Base.id : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Base.map : (func(2 , [func(0 , [@(0); @(1)]);
+                                            [@(0)];
+                                            [@(1)]]))
+constant GHC.Internal.Classes.$38$$38$ : (func(0 , [bool;
+                                                    bool;
+                                                    bool]))
+constant GHC.Internal.Classes.$47$$61$ : (func(1 , [@(0);
+                                                    @(0);
+                                                    bool]))
+constant GHC.Internal.Classes.$60$ : (func(1 , [@(0); @(0); bool]))
+constant GHC.Internal.Classes.$60$$61$ : (func(1 , [@(0);
+                                                    @(0);
+                                                    bool]))
+constant GHC.Internal.Classes.$61$$61$ : (func(1 , [@(0);
+                                                    @(0);
+                                                    bool]))
+constant GHC.Internal.Classes.$62$ : (func(1 , [@(0); @(0); bool]))
+constant GHC.Internal.Classes.$62$$61$ : (func(1 , [@(0);
+                                                    @(0);
+                                                    bool]))
+constant GHC.Internal.Classes.compare : (func(1 , [@(0);
+                                                   @(0);
+                                                   GHC.Internal.Types.Ordering]))
+constant GHC.Internal.Classes.max : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Classes.min : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Classes.not : (func(0 , [bool; bool]))
+constant GHC.Internal.Classes.$124$$124$ : (func(0 , [bool;
+                                                      bool;
+                                                      bool]))
+constant GHC.Internal.Data.Foldable.length : (func(2 , [(@(0) @(1));
+                                                        int]))
+constant GHC.Internal.Data.Foldable.null : (func(2 , [(@(0) @(1));
+                                                      bool]))
+constant GHC.Internal.Data.Tuple.fst : (func(2 , [(Tuple2 @(0) @(1));
+                                                  @(0)]))
+constant GHC.Internal.Data.Tuple.snd : (func(2 , [(Tuple2 @(0) @(1));
+                                                  @(1)]))
+constant GHC.Internal.Err.error : (func(2 , [[Char]; @(1)]))
+constant GHC.Internal.Float.$42$$42$ : (func(1 , [@(0);
+                                                  @(0);
+                                                  @(0)]))
+constant GHC.Internal.Float.acos : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.acosh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.asin : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.asinh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.atan : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.atanh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.cos : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.cosh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.exp : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.log : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.logBase : (func(1 , [@(0);
+                                                 @(0);
+                                                 @(0)]))
+constant GHC.Internal.Float.pi : (func(1 , [@(0)]))
+constant GHC.Internal.Float.sin : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.sinh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.sqrt : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.tan : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Float.tanh : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.List.$33$$33$ : (func(1 , [[@(0)];
+                                                 int;
+                                                 @(0)]))
+constant GHC.Internal.List.break : (func(1 , [func(0 , [@(0);
+                                                        bool]);
+                                              [@(0)];
+                                              (Tuple2 [@(0)] [@(0)])]))
+constant GHC.Internal.List.cycle : (func(1 , [[@(0)]; [@(0)]]))
+constant GHC.Internal.List.drop : (func(1 , [int; [@(0)]; [@(0)]]))
+constant GHC.Internal.List.dropWhile : (func(1 , [func(0 , [@(0);
+                                                            bool]);
+                                                  [@(0)];
+                                                  [@(0)]]))
+constant GHC.Internal.List.filter : (func(1 , [func(0 , [@(0);
+                                                         bool]);
+                                               [@(0)];
+                                               [@(0)]]))
+constant GHC.Internal.List.head : (func(1 , [[@(0)]; @(0)]))
+constant GHC.Internal.List.init : (func(1 , [[@(0)]; [@(0)]]))
+constant GHC.Internal.List.iterate : (func(1 , [func(0 , [@(0);
+                                                          @(0)]);
+                                                @(0);
+                                                [@(0)]]))
+constant GHC.Internal.List.last : (func(1 , [[@(0)]; @(0)]))
+constant GHC.Internal.List.repeat : (func(1 , [@(0); [@(0)]]))
+constant GHC.Internal.List.replicate : (func(1 , [int;
+                                                  @(0);
+                                                  [@(0)]]))
+constant GHC.Internal.List.reverse : (func(1 , [[@(0)]; [@(0)]]))
+constant GHC.Internal.List.scanl : (func(2 , [func(0 , [@(0);
+                                                        @(1);
+                                                        @(0)]);
+                                              @(0);
+                                              [@(1)];
+                                              [@(0)]]))
+constant GHC.Internal.List.scanl1 : (func(1 , [func(0 , [@(0);
+                                                         @(0);
+                                                         @(0)]);
+                                               [@(0)];
+                                               [@(0)]]))
+constant GHC.Internal.List.scanr : (func(2 , [func(0 , [@(0);
+                                                        @(1);
+                                                        @(1)]);
+                                              @(1);
+                                              [@(0)];
+                                              [@(1)]]))
+constant GHC.Internal.List.scanr1 : (func(1 , [func(0 , [@(0);
+                                                         @(0);
+                                                         @(0)]);
+                                               [@(0)];
+                                               [@(0)]]))
+constant GHC.Internal.List.span : (func(1 , [func(0 , [@(0);
+                                                       bool]);
+                                             [@(0)];
+                                             (Tuple2 [@(0)] [@(0)])]))
+constant GHC.Internal.List.splitAt : (func(1 , [int;
+                                                [@(0)];
+                                                (Tuple2 [@(0)] [@(0)])]))
+constant GHC.Internal.List.tail : (func(1 , [[@(0)]; [@(0)]]))
+constant GHC.Internal.List.take : (func(1 , [int; [@(0)]; [@(0)]]))
+constant GHC.Internal.List.takeWhile : (func(1 , [func(0 , [@(0);
+                                                            bool]);
+                                                  [@(0)];
+                                                  [@(0)]]))
+constant GHC.Internal.List.zip : (func(2 , [[@(0)];
+                                            [@(1)];
+                                            [(Tuple2 @(0) @(1))]]))
+constant GHC.Internal.List.zipWith : (func(3 , [func(0 , [@(0);
+                                                          @(1);
+                                                          @(2)]);
+                                                [@(0)];
+                                                [@(1)];
+                                                [@(2)]]))
+constant GHC.Internal.Maybe.Just : (func(1 , [@(0);
+                                              (GHC.Internal.Maybe.Maybe @(0))]))
+constant GHC.Internal.Maybe.Nothing : (func(1 , [(GHC.Internal.Maybe.Maybe @(0))]))
+constant GHC.Internal.Num.$42$ : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Num.$43$ : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Num.$45$ : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Num.abs : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Num.fromInteger : (func(1 , [int; @(0)]))
+constant GHC.Internal.Num.negate : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Real.$fIntegralInt : ((GHC.Internal.Real.Integral int))
+constant GHC.Internal.Real.$47$ : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Real.$94$ : (func(2 , [@(0); @(1); @(0)]))
+constant GHC.Internal.Real.div : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Real.divMod : (func(1 , [@(0);
+                                               @(0);
+                                               (Tuple2 @(0) @(0))]))
+constant GHC.Internal.Real.even : (func(1 , [@(0); bool]))
+constant GHC.Internal.Real.fromIntegral : (func(2 , [@(0); @(1)]))
+constant GHC.Internal.Real.fromRational : (func(1 , [(GHC.Internal.Real.Ratio int);
+                                                     @(0)]))
+constant GHC.Internal.Real.mod : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Real.quot : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Real.quotRem : (func(1 , [@(0);
+                                                @(0);
+                                                (Tuple2 @(0) @(0))]))
+constant GHC.Internal.Real.recip : (func(1 , [@(0); @(0)]))
+constant GHC.Internal.Real.rem : (func(1 , [@(0); @(0); @(0)]))
+constant GHC.Internal.Real.toInteger : (func(1 , [@(0); int]))
+constant GHC.Internal.Tuple.$40$$44$$41$ : (func(2 , [@(0);
+                                                      @(1);
+                                                      (Tuple2 @(0) @(1))]))
+constant GHC.Internal.Tuple.$40$$44$$44$$41$ : (func(3 , [@(0);
+                                                          @(1);
+                                                          @(2);
+                                                          (Tuple3 @(0) @(1) @(2))]))
+constant GHC.Internal.Tuple.$40$$44$$44$$44$$41$ : (func(4 , [@(0);
+                                                              @(1);
+                                                              @(2);
+                                                              @(3);
+                                                              (Tuple4 @(0) @(1) @(2) @(3))]))
+constant GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ : (func(5 , [@(0);
+                                                                  @(1);
+                                                                  @(2);
+                                                                  @(3);
+                                                                  @(4);
+                                                                  (Tuple5 @(0) @(1) @(2) @(3) @(4))]))
+constant GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ : (func(6 , [@(0);
+                                                                      @(1);
+                                                                      @(2);
+                                                                      @(3);
+                                                                      @(4);
+                                                                      @(5);
+                                                                      (Tuple6 @(0) @(1) @(2) @(3) @(4) @(5))]))
+constant GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ : (func(7 , [@(0);
+                                                                          @(1);
+                                                                          @(2);
+                                                                          @(3);
+                                                                          @(4);
+                                                                          @(5);
+                                                                          @(6);
+                                                                          (Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6))]))
+constant GHC.Internal.Types.$58$ : (func(1 , [@(0);
+                                              [@(0)];
+                                              [@(0)]]))
+constant GHC.Internal.Types.C# : (func(0 , [Char; Char]))
+constant GHC.Internal.Types.D# : (func(0 , [real; real]))
+constant GHC.Internal.Types.EQ : (GHC.Internal.Types.Ordering)
+constant GHC.Internal.Types.F# : (func(0 , [real; real]))
+constant GHC.Internal.Types.False : (bool)
+constant GHC.Internal.Types.GT : (GHC.Internal.Types.Ordering)
+constant GHC.Internal.Types.LT : (GHC.Internal.Types.Ordering)
+constant GHC.Internal.Types.Module : (func(0 , [GHC.Internal.Types.TrName;
+                                                GHC.Internal.Types.TrName;
+                                                GHC.Internal.Types.Module]))
+constant GHC.Internal.Types.TrNameS : (func(0 , [Str;
+                                                 GHC.Internal.Types.TrName]))
+constant GHC.Internal.Types.True : (bool)
+constant GHC.Internal.Types.W# : (func(0 , [int; int]))
+constant GHC.Internal.Types.$91$$93$ : (func(1 , [[@(0)]]))
+constant GHC.Types_LHAssumptions.addrLen : (func(0 , [Str; int]))
+constant GHC.Types_LHAssumptions.len : (func(2 , [(@(0) @(1));
+                                                  int]))
+constant Liquid.Prelude.Totality_LHAssumptions.totalityError : (func(1 , [@(0);
+                                                                          bool]))
+constant Map_default : (func(2 , [@(1); (Map_t @(0) @(1))]))
+constant Map_select : (func(2 , [(Map_t @(0) @(1)); @(0); @(1)]))
+constant Map_store : (func(2 , [(Map_t @(0) @(1));
+                                @(0);
+                                @(1);
+                                (Map_t @(0) @(1))]))
+constant OpaqueRefl02.even : (func(1 , [@(0); bool]))
+constant OpaqueRefl02.filter : (func(1 , [func(0 , [@(0); bool]);
+                                          [@(0)];
+                                          [@(0)]]))
+constant OpaqueRefl02.keepEvens : (func(0 , [[int]; [int]]))
+constant Set_add : (func(1 , [@(0);
+                              (Set_Set @(0));
+                              (Set_Set @(0))]))
+constant Set_cap : (func(1 , [(Set_Set @(0));
+                              (Set_Set @(0));
+                              (Set_Set @(0))]))
+constant Set_card : (func(1 , [(Set_Set @(0)); int]))
+constant Set_com : (func(1 , [(Set_Set @(0)); (Set_Set @(0))]))
+constant Set_cup : (func(1 , [(Set_Set @(0));
+                              (Set_Set @(0));
+                              (Set_Set @(0))]))
+constant Set_dif : (func(1 , [(Set_Set @(0));
+                              (Set_Set @(0));
+                              (Set_Set @(0))]))
+constant Set_emp : (func(1 , [(Set_Set @(0)); bool]))
+constant Set_empty : (func(1 , [int; (Set_Set @(0))]))
+constant Set_mem : (func(1 , [@(0); (Set_Set @(0)); bool]))
+constant Set_sng : (func(1 , [@(0); (Set_Set @(0))]))
+constant Set_sub : (func(1 , [(Set_Set @(0));
+                              (Set_Set @(0));
+                              bool]))
+constant charX : (func(0 , [Char; Char]))
+constant head : (func(1 , [[@(0)]; @(0)]))
+constant is$GHC.Internal.Maybe.Just : (func(1 , [(GHC.Internal.Maybe.Maybe @(0));
+                                                 bool]))
+constant is$GHC.Internal.Maybe.Nothing : (func(1 , [(GHC.Internal.Maybe.Maybe @(0));
+                                                    bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$41$ : (func(2 , [(Tuple2 @(0) @(1));
+                                                            bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$44$$41$ : (func(3 , [(Tuple3 @(0) @(1) @(2));
+                                                                bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$41$ : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                                                    bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                        bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                            bool]))
+constant is$36$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                bool]))
+constant is$36$GHC.Internal.Types.$58$ : (func(1 , [[@(0)]; bool]))
+constant is$GHC.Internal.Types.C# : (func(0 , [Char; bool]))
+constant is$36$GHC.Internal.Types.$91$$93$ : (func(1 , [[@(0)];
+                                                        bool]))
+constant liquid_internal_this : (func(1 , [@(0)]))
+constant lit$OpaqueRefl02 : (Str)
+constant lit$36$tests$45$0.1.0.0$45$inplace$45$basic$45$pos : (Str)
+constant lqdc##$select##GHC.Internal.Maybe.Just##1 : (func(1 , [(GHC.Internal.Maybe.Maybe @(0));
+                                                                @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$41$$35$$35$1 : (func(2 , [(Tuple2 @(0) @(1));
+                                                                                             @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$41$$35$$35$2 : (func(2 , [(Tuple2 @(0) @(1));
+                                                                                             @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$1 : (func(3 , [(Tuple3 @(0) @(1) @(2));
+                                                                                                 @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$2 : (func(3 , [(Tuple3 @(0) @(1) @(2));
+                                                                                                 @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$41$$35$$35$3 : (func(3 , [(Tuple3 @(0) @(1) @(2));
+                                                                                                 @(2)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$1 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                                                                                     @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$2 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                                                                                     @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$3 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                                                                                     @(2)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$41$$35$$35$4 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                                                                                     @(3)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$1 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                                                         @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$2 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                                                         @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$3 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                                                         @(2)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$4 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                                                         @(3)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$$35$$35$5 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                                                                                         @(4)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$1 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$2 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$3 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(2)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$4 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(3)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$5 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(4)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$$35$$35$6 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                                                                                             @(5)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$1 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$2 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(1)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$3 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(2)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$4 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(3)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$5 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(4)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$6 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(5)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$$35$$35$7 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                                                                                                 @(6)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Types.$58$$35$$35$1 : (func(1 , [[@(0)];
+                                                                                     @(0)]))
+constant lqdc$35$$35$$36$select$35$$35$GHC.Internal.Types.$58$$35$$35$2 : (func(1 , [[@(0)];
+                                                                                     [@(0)]]))
+constant lqdc##$select##GHC.Internal.Types.C###1 : (func(0 , [Char;
+                                                              Char]))
+constant papp1 : (func(2 , [(Pred @(0)); @(1); bool]))
+constant papp2 : (func(4 , [(Pred @(0) @(1)); @(2); @(3); bool]))
+constant papp3 : (func(6 , [(Pred @(0) @(1) @(2));
+                            @(3);
+                            @(4);
+                            @(5);
+                            bool]))
+constant papp4 : (func(8 , [(Pred @(0) @(1) @(2) @(3));
+                            @(4);
+                            @(5);
+                            @(6);
+                            @(7);
+                            bool]))
+constant papp5 : (func(10 , [(Pred @(0) @(1) @(2) @(3) @(4));
+                             @(5);
+                             @(6);
+                             @(7);
+                             @(8);
+                             @(9);
+                             bool]))
+constant papp6 : (func(12 , [(Pred @(0) @(1) @(2) @(3) @(4) @(5));
+                             @(6);
+                             @(7);
+                             @(8);
+                             @(9);
+                             @(10);
+                             @(11);
+                             bool]))
+constant papp7 : (func(14 , [(Pred @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                             @(7);
+                             @(8);
+                             @(9);
+                             @(10);
+                             @(11);
+                             @(12);
+                             @(13);
+                             bool]))
+constant strConcat : (func(0 , [Str; Str; Str]))
+constant strContains : (func(0 , [Str; Str; bool]))
+constant strLen : (func(0 , [Str; int]))
+constant strPrefixOf : (func(0 , [Str; Str; bool]))
+constant strSuffixOf : (func(0 , [Str; Str; bool]))
+constant subString : (func(0 , [Str; int; int; Str]))
+constant tail : (func(1 , [[@(0)]; [@(0)]]))
+constant x_Tuple21 : (func(2 , [(Tuple2 @(0) @(1)); @(0)]))
+constant x_Tuple22 : (func(2 , [(Tuple2 @(0) @(1)); @(1)]))
+constant x_Tuple31 : (func(3 , [(Tuple3 @(0) @(1) @(2)); @(0)]))
+constant x_Tuple32 : (func(3 , [(Tuple3 @(0) @(1) @(2)); @(1)]))
+constant x_Tuple33 : (func(3 , [(Tuple3 @(0) @(1) @(2)); @(2)]))
+constant x_Tuple41 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                @(0)]))
+constant x_Tuple42 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                @(1)]))
+constant x_Tuple43 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                @(2)]))
+constant x_Tuple44 : (func(4 , [(Tuple4 @(0) @(1) @(2) @(3));
+                                @(3)]))
+constant x_Tuple51 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                @(0)]))
+constant x_Tuple52 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                @(1)]))
+constant x_Tuple53 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                @(2)]))
+constant x_Tuple54 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                @(3)]))
+constant x_Tuple55 : (func(5 , [(Tuple5 @(0) @(1) @(2) @(3) @(4));
+                                @(4)]))
+constant x_Tuple61 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(0)]))
+constant x_Tuple62 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(1)]))
+constant x_Tuple63 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(2)]))
+constant x_Tuple64 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(3)]))
+constant x_Tuple65 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(4)]))
+constant x_Tuple66 : (func(6 , [(Tuple6 @(0) @(1) @(2) @(3) @(4) @(5));
+                                @(5)]))
+constant x_Tuple71 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(0)]))
+constant x_Tuple72 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(1)]))
+constant x_Tuple73 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(2)]))
+constant x_Tuple74 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(3)]))
+constant x_Tuple75 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(4)]))
+constant x_Tuple76 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(5)]))
+constant x_Tuple77 : (func(7 , [(Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6));
+                                @(6)]))
+
+
+distinct GHC.Internal.Tuple.$40$$44$$44$$41$ : (func(3 , [@(0);
+                                                          @(1);
+                                                          @(2);
+                                                          (Tuple3 @(0) @(1) @(2))]))
+distinct GHC.Internal.Types.D# : (func(0 , [real; real]))
+distinct GHC.Internal.Types.EQ : (GHC.Internal.Types.Ordering)
+distinct GHC.Internal.Types.F# : (func(0 , [real; real]))
+distinct GHC.Internal.Types.GT : (GHC.Internal.Types.Ordering)
+distinct GHC.Internal.Types.LT : (GHC.Internal.Types.Ordering)
+distinct GHC.Internal.Types.Module : (func(0 , [GHC.Internal.Types.TrName;
+                                                GHC.Internal.Types.TrName;
+                                                GHC.Internal.Types.Module]))
+distinct GHC.Internal.Types.TrNameS : (func(0 , [Str;
+                                                 GHC.Internal.Types.TrName]))
+distinct GHC.Internal.Types.W# : (func(0 , [int; int]))
+distinct lit$OpaqueRefl02 : (Str)
+distinct lit$36$tests$45$0.1.0.0$45$inplace$45$basic$45$pos : (Str)
+
+
+bind 0 OpaqueRefl02.keepEvens : {VV : func(0 , [[int];
+                                                [int]]) | []}
+bind 1 GHC.Internal.List.filter : {VV : func(1 , [func(0 , [@(0);
+                                                            bool]);
+                                                  [@(0)];
+                                                  [@(0)]]) | []}
+bind 2 GHC.Internal.Types.Module : {VV : func(0 , [GHC.Internal.Types.TrName;
+                                                   GHC.Internal.Types.TrName;
+                                                   GHC.Internal.Types.Module]) | []}
+bind 3 GHC.Internal.Types.TrNameS : {VV : func(0 , [Str;
+                                                    GHC.Internal.Types.TrName]) | []}
+bind 4 GHC.Internal.Real.even : {VV : func(1 , [@(0); bool]) | []}
+bind 5 GHC.Internal.Real.$fIntegralInt : {VV##436 : (GHC.Internal.Real.Integral int) | []}
+bind 6 GHC.Internal.Types.Module : {VV : func(0 , [GHC.Internal.Types.TrName;
+                                                   GHC.Internal.Types.TrName;
+                                                   GHC.Internal.Types.Module]) | []}
+bind 7 GHC.Internal.Types.TrNameS : {VV : func(0 , [Str;
+                                                    GHC.Internal.Types.TrName]) | []}
+bind 8 GHC.Internal.Types.F# : {VV : func(0 , [real; real]) | []}
+bind 9 GHC.Internal.Types.EQ : {VV##440 : GHC.Internal.Types.Ordering | [(VV##440 =
+                                                                            GHC.Internal.Types.EQ)]}
+bind 10 GHC.Internal.Types.LT : {VV##441 : GHC.Internal.Types.Ordering | [(VV##441 =
+                                                                             GHC.Internal.Types.LT)]}
+bind 11 GHC.Internal.Types.W# : {VV : func(0 , [int; int]) | []}
+bind 12 GHC.Internal.Tuple.$40$$44$$44$$41$ : {VV : func(3 , [@(0);
+                                                              @(1);
+                                                              @(2);
+                                                              (Tuple3 @(0) @(1) @(2))]) | []}
+bind 13 GHC.Internal.Types.D# : {VV : func(0 , [real; real]) | []}
+bind 14 GHC.Internal.Types.GT : {VV##445 : GHC.Internal.Types.Ordering | [(VV##445 =
+                                                                             GHC.Internal.Types.GT)]}
+bind 15 GHC.Internal.List.takeWhile : {VV : func(1 , [func(0 , [@(0);
+                                                                bool]);
+                                                      [@(0)];
+                                                      [@(0)]]) | []}
+bind 16 GHC.Internal.List.head : {VV : func(1 , [[@(0)];
+                                                 @(0)]) | []}
+bind 17 GHC.Internal.Real.div : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 18 GHC.Internal.List.repeat : {VV : func(1 , [@(0);
+                                                   [@(0)]]) | []}
+bind 19 GHC.Internal.Real.mod : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 20 GHC.Internal.List.dropWhile : {VV : func(1 , [func(0 , [@(0);
+                                                                bool]);
+                                                      [@(0)];
+                                                      [@(0)]]) | []}
+bind 21 GHC.Internal.Float.logBase : {VV : func(1 , [@(0);
+                                                     @(0);
+                                                     @(0)]) | []}
+bind 22 GHC.Internal.List.scanr : {VV : func(2 , [func(0 , [@(0);
+                                                            @(1);
+                                                            @(1)]);
+                                                  @(1);
+                                                  [@(0)];
+                                                  [@(1)]]) | []}
+bind 23 GHC.Internal.Num.$43$ : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 24 GHC.Internal.List.filter : {VV : func(1 , [func(0 , [@(0);
+                                                             bool]);
+                                                   [@(0)];
+                                                   [@(0)]]) | []}
+bind 25 GHC.Internal.Base.$ : {VV : func(4 , [func(0 , [@(2);
+                                                        @(3)]);
+                                              @(2);
+                                              @(3)]) | []}
+bind 26 GHC.Internal.List.iterate : {VV : func(1 , [func(0 , [@(0);
+                                                              @(0)]);
+                                                    @(0);
+                                                    [@(0)]]) | []}
+bind 27 GHC.Internal.Real.quot : {VV : func(1 , [@(0);
+                                                 @(0);
+                                                 @(0)]) | []}
+bind 28 GHC.Internal.Base.. : {VV : func(3 , [func(0 , [@(0);
+                                                        @(1)]);
+                                              func(0 , [@(2); @(0)]);
+                                              @(2);
+                                              @(1)]) | []}
+bind 29 GHC.Internal.List.zipWith : {VV : func(3 , [func(0 , [@(0);
+                                                              @(1);
+                                                              @(2)]);
+                                                    [@(0)];
+                                                    [@(1)];
+                                                    [@(2)]]) | []}
+bind 30 GHC.Internal.Float.cos : {VV : func(1 , [@(0); @(0)]) | []}
+bind 31 GHC.Internal.List.cycle : {VV : func(1 , [[@(0)];
+                                                  [@(0)]]) | []}
+bind 32 GHC.Internal.List.tail : {VV : func(1 , [[@(0)];
+                                                 [@(0)]]) | []}
+bind 33 GHC.Internal.Num.$45$ : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 34 GHC.Internal.List.zip : {VV : func(2 , [[@(0)];
+                                                [@(1)];
+                                                [(Tuple2 @(0) @(1))]]) | []}
+bind 35 GHC.Internal.Float.exp : {VV : func(1 , [@(0); @(0)]) | []}
+bind 36 GHC.Internal.Num.$42$ : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 37 GHC.Internal.Real.fromIntegral : {VV : func(2 , [@(0);
+                                                         @(1)]) | []}
+bind 38 GHC.Internal.Data.Tuple.fst : {VV : func(2 , [(Tuple2 @(0) @(1));
+                                                      @(0)]) | []}
+bind 39 GHC.Internal.Real.divMod : {VV : func(1 , [@(0);
+                                                   @(0);
+                                                   (Tuple2 @(0) @(0))]) | []}
+bind 40 GHC.Internal.Num.abs : {VV : func(1 , [@(0); @(0)]) | []}
+bind 41 GHC.Internal.Float.acos : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 42 GHC.Internal.Float.sin : {VV : func(1 , [@(0); @(0)]) | []}
+bind 43 GHC.Internal.Data.Foldable.null : {VV : func(2 , [(@(0) @(1));
+                                                          bool]) | []}
+bind 44 GHC.Internal.Float.tan : {VV : func(1 , [@(0); @(0)]) | []}
+bind 45 GHC.Internal.Float.asinh : {VV : func(1 , [@(0);
+                                                   @(0)]) | []}
+bind 46 GHC.Internal.Err.error : {VV : func(2 , [[Char];
+                                                 @(1)]) | []}
+bind 47 GHC.Internal.Classes.$62$ : {VV : func(1 , [@(0);
+                                                    @(0);
+                                                    bool]) | []}
+bind 48 GHC.Internal.List.$33$$33$ : {VV : func(1 , [[@(0)];
+                                                     int;
+                                                     @(0)]) | []}
+bind 49 GHC.Internal.Classes.not : {VV : func(0 , [bool;
+                                                   bool]) | []}
+bind 50 GHC.Internal.Real.fromRational : {VV : func(1 , [(GHC.Internal.Real.Ratio int);
+                                                         @(0)]) | []}
+bind 51 GHC.Internal.List.init : {VV : func(1 , [[@(0)];
+                                                 [@(0)]]) | []}
+bind 52 GHC.Internal.Real.even : {VV : func(1 , [@(0); bool]) | []}
+bind 53 GHC.Internal.Classes.$61$$61$ : {VV : func(1 , [@(0);
+                                                        @(0);
+                                                        bool]) | []}
+bind 54 GHC.Internal.List.scanl : {VV : func(2 , [func(0 , [@(0);
+                                                            @(1);
+                                                            @(0)]);
+                                                  @(0);
+                                                  [@(1)];
+                                                  [@(0)]]) | []}
+bind 55 GHC.Internal.Float.atan : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 56 GHC.Internal.Base.id : {VV : func(1 , [@(0); @(0)]) | []}
+bind 57 GHC.Internal.List.break : {VV : func(1 , [func(0 , [@(0);
+                                                            bool]);
+                                                  [@(0)];
+                                                  (Tuple2 [@(0)] [@(0)])]) | []}
+bind 58 GHC.Internal.Classes.$62$$61$ : {VV : func(1 , [@(0);
+                                                        @(0);
+                                                        bool]) | []}
+bind 59 GHC.Internal.Types.False : {v : bool | [(~ (v))]}
+bind 60 GHC.Internal.Classes.compare : {VV : func(1 , [@(0);
+                                                       @(0);
+                                                       GHC.Internal.Types.Ordering]) | []}
+bind 61 GHC.Internal.Num.fromInteger : {VV : func(1 , [int;
+                                                       @(0)]) | []}
+bind 62 GHC.Internal.Real.$94$ : {VV : func(2 , [@(0);
+                                                 @(1);
+                                                 @(0)]) | []}
+bind 63 GHC.Internal.Real.$47$ : {VV : func(1 , [@(0);
+                                                 @(0);
+                                                 @(0)]) | []}
+bind 64 GHC.Internal.Num.negate : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 65 GHC.Internal.Float.asin : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 66 GHC.Internal.Classes.$47$$61$ : {VV : func(1 , [@(0);
+                                                        @(0);
+                                                        bool]) | []}
+bind 67 GHC.Internal.Base.$43$$43$ : {VV : func(1 , [[@(0)];
+                                                     [@(0)];
+                                                     [@(0)]]) | []}
+bind 68 GHC.Internal.List.take : {VV : func(1 , [int;
+                                                 [@(0)];
+                                                 [@(0)]]) | []}
+bind 69 GHC.Internal.Float.pi : {VV : func(1 , [@(0)]) | []}
+bind 70 GHC.Internal.Float.tanh : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 71 GHC.Internal.List.reverse : {VV : func(1 , [[@(0)];
+                                                    [@(0)]]) | []}
+bind 72 GHC.Internal.Base.map : {VV : func(2 , [func(0 , [@(0);
+                                                          @(1)]);
+                                                [@(0)];
+                                                [@(1)]]) | []}
+bind 73 GHC.Internal.List.splitAt : {VV : func(1 , [int;
+                                                    [@(0)];
+                                                    (Tuple2 [@(0)] [@(0)])]) | []}
+bind 74 GHC.Internal.List.scanl1 : {VV : func(1 , [func(0 , [@(0);
+                                                             @(0);
+                                                             @(0)]);
+                                                   [@(0)];
+                                                   [@(0)]]) | []}
+bind 75 GHC.Internal.Classes.$38$$38$ : {VV : func(0 , [bool;
+                                                        bool;
+                                                        bool]) | []}
+bind 76 GHC.Internal.Float.$42$$42$ : {VV : func(1 , [@(0);
+                                                      @(0);
+                                                      @(0)]) | []}
+bind 77 GHC.Internal.Types.True : {v : bool | [v]}
+bind 78 GHC.Internal.Data.Tuple.snd : {VV : func(2 , [(Tuple2 @(0) @(1));
+                                                      @(1)]) | []}
+bind 79 GHC.Internal.Classes.$124$$124$ : {VV : func(0 , [bool;
+                                                          bool;
+                                                          bool]) | []}
+bind 80 GHC.Internal.List.replicate : {VV : func(1 , [int;
+                                                      @(0);
+                                                      [@(0)]]) | []}
+bind 81 GHC.Internal.List.last : {VV : func(1 , [[@(0)];
+                                                 @(0)]) | []}
+bind 82 GHC.Internal.Data.Foldable.length : {VV : func(2 , [(@(0) @(1));
+                                                            int]) | []}
+bind 83 GHC.Internal.List.drop : {VV : func(1 , [int;
+                                                 [@(0)];
+                                                 [@(0)]]) | []}
+bind 84 GHC.Internal.Float.sqrt : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 85 GHC.Internal.Float.cosh : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 86 GHC.Internal.Classes.max : {VV : func(1 , [@(0);
+                                                   @(0);
+                                                   @(0)]) | []}
+bind 87 GHC.Internal.Float.acosh : {VV : func(1 , [@(0);
+                                                   @(0)]) | []}
+bind 88 GHC.Internal.Float.sinh : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 89 GHC.Internal.List.span : {VV : func(1 , [func(0 , [@(0);
+                                                           bool]);
+                                                 [@(0)];
+                                                 (Tuple2 [@(0)] [@(0)])]) | []}
+bind 90 GHC.Internal.Real.recip : {VV : func(1 , [@(0);
+                                                  @(0)]) | []}
+bind 91 GHC.Internal.Classes.$60$ : {VV : func(1 , [@(0);
+                                                    @(0);
+                                                    bool]) | []}
+bind 92 GHC.Internal.Float.log : {VV : func(1 , [@(0); @(0)]) | []}
+bind 93 GHC.Internal.Float.atanh : {VV : func(1 , [@(0);
+                                                   @(0)]) | []}
+bind 94 GHC.Internal.Real.quotRem : {VV : func(1 , [@(0);
+                                                    @(0);
+                                                    (Tuple2 @(0) @(0))]) | []}
+bind 95 GHC.Internal.Classes.min : {VV : func(1 , [@(0);
+                                                   @(0);
+                                                   @(0)]) | []}
+bind 96 GHC.Internal.List.scanr1 : {VV : func(1 , [func(0 , [@(0);
+                                                             @(0);
+                                                             @(0)]);
+                                                   [@(0)];
+                                                   [@(0)]]) | []}
+bind 97 GHC.Internal.Real.rem : {VV : func(1 , [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 98 GHC.Internal.Classes.$60$$61$ : {VV : func(1 , [@(0);
+                                                        @(0);
+                                                        bool]) | []}
+bind 99 GHC.Internal.Real.toInteger : {VV : func(1 , [@(0);
+                                                      int]) | []}
+bind 100 GHC.Internal.Types.C# : {VV : func(0 , [Char; Char]) | []}
+bind 101 GHC.Internal.Types.$58$ : {VV : func(1 , [@(0);
+                                                   [@(0)];
+                                                   [@(0)]]) | []}
+bind 102 GHC.Internal.Types.False : {v : bool | [(~ (v))]}
+bind 103 GHC.Internal.Maybe.Nothing : {VV : func(1 , [(GHC.Internal.Maybe.Maybe @(0))]) | []}
+bind 104 GHC.Internal.Maybe.Just : {VV : func(1 , [@(0);
+                                                   (GHC.Internal.Maybe.Maybe @(0))]) | []}
+bind 105 GHC.Internal.Types.$91$$93$ : {VV : func(1 , [[@(0)]]) | []}
+bind 106 GHC.Internal.Types.True : {v : bool | [v]}
+bind 107 GHC.Internal.Tuple.$40$$44$$41$ : {VV : func(2 , [@(0);
+                                                           @(1);
+                                                           (Tuple2 @(0) @(1))]) | []}
+bind 108 GHC.Internal.Tuple.$40$$44$$44$$41$ : {VV : func(3 , [@(0);
+                                                               @(1);
+                                                               @(2);
+                                                               (Tuple3 @(0) @(1) @(2))]) | []}
+bind 109 GHC.Internal.Tuple.$40$$44$$44$$44$$41$ : {VV : func(4 , [@(0);
+                                                                   @(1);
+                                                                   @(2);
+                                                                   @(3);
+                                                                   (Tuple4 @(0) @(1) @(2) @(3))]) | []}
+bind 110 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$41$ : {VV : func(5 , [@(0);
+                                                                       @(1);
+                                                                       @(2);
+                                                                       @(3);
+                                                                       @(4);
+                                                                       (Tuple5 @(0) @(1) @(2) @(3) @(4))]) | []}
+bind 111 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$41$ : {VV : func(6 , [@(0);
+                                                                           @(1);
+                                                                           @(2);
+                                                                           @(3);
+                                                                           @(4);
+                                                                           @(5);
+                                                                           (Tuple6 @(0) @(1) @(2) @(3) @(4) @(5))]) | []}
+bind 112 GHC.Internal.Tuple.$40$$44$$44$$44$$44$$44$$44$$41$ : {VV : func(7 , [@(0);
+                                                                               @(1);
+                                                                               @(2);
+                                                                               @(3);
+                                                                               @(4);
+                                                                               @(5);
+                                                                               @(6);
+                                                                               (Tuple7 @(0) @(1) @(2) @(3) @(4) @(5) @(6))]) | []}
+bind 113 OpaqueRefl02.$trModule : {VV##544 : GHC.Internal.Types.Module | []}
+bind 114 lq_anf$##7205759403792802764##d2nO : {lq_tmp$x##554 : func(0 , [int;
+                                                                         bool]) | [(lq_tmp$x##554 =
+                                                                                      GHC.Internal.Real.even)]}
+bind 115 OpaqueRefl02.keepEvens : {VV : func(0 , [[int];
+                                                  [int]]) | []}
+bind 116 lq_tmp$x##579 : {VV##596 : int | []}
+bind 117 lq_tmp$x##549 : {VV##599 : [int] | [((GHC.Types_LHAssumptions.len VV##599) >=
+                                                0)]}
+bind 118 lq_tmp$x##548 : {VV##616 : int | []}
+bind 119 lq_tmp$x##575 : {lq_tmp$x##583 : int | [$k_##582[@a##xo:=int][VV##581:=lq_tmp$x##583]]}
+
+
+
+
+constraint:
+  env [0;
+       1;
+       2;
+       3;
+       4;
+       5;
+       6;
+       7;
+       8;
+       9;
+       10;
+       11;
+       12;
+       13;
+       14;
+       15;
+       16;
+       17;
+       18;
+       19;
+       20;
+       21;
+       22;
+       23;
+       24;
+       25;
+       26;
+       27;
+       28;
+       29;
+       30;
+       31;
+       32;
+       33;
+       34;
+       35;
+       36;
+       37;
+       38;
+       39;
+       40;
+       41;
+       42;
+       43;
+       44;
+       45;
+       46;
+       47;
+       48;
+       49;
+       50;
+       51;
+       52;
+       53;
+       54;
+       55;
+       56;
+       57;
+       58;
+       59;
+       60;
+       61;
+       62;
+       63;
+       64;
+       65;
+       66;
+       67;
+       68;
+       69;
+       70;
+       71;
+       72;
+       73;
+       74;
+       75;
+       76;
+       77;
+       78;
+       79;
+       80;
+       81;
+       82;
+       83;
+       84;
+       85;
+       86;
+       87;
+       88;
+       89;
+       90;
+       91;
+       92;
+       93;
+       94;
+       95;
+       96;
+       97;
+       98;
+       99;
+       100;
+       101;
+       102;
+       103;
+       104;
+       105;
+       106;
+       107;
+       108;
+       109;
+       110;
+       111;
+       112;
+       113;
+       114]
+  lhs {VV##F##1 : int | []}
+  rhs {VV##F##1 : int | [$k_##582[@a##xo:=int][VV##581:=VV##F##1][VV##594:=VV##F##1][VV##F:=VV##F##1][lq_tmp$x##568:=VV##589][lq_tmp$x##577:=lq_anf$##7205759403792802764##d2nO][lq_tmp$x##583:=VV##F##1]]}
+  id 1 tag [2]
+  // META constraint id 1 : basic/pos/OpaqueRefl02.hs:14:1-23
+
+
+
+
+wf:
+  env [0;
+       1;
+       2;
+       3;
+       4;
+       5;
+       6;
+       7;
+       8;
+       9;
+       10;
+       11;
+       12;
+       13;
+       14;
+       15;
+       16;
+       17;
+       18;
+       19;
+       20;
+       21;
+       22;
+       23;
+       24;
+       25;
+       26;
+       27;
+       28;
+       29;
+       30;
+       31;
+       32;
+       33;
+       34;
+       35;
+       36;
+       37;
+       38;
+       39;
+       40;
+       41;
+       42;
+       43;
+       44;
+       45;
+       46;
+       47;
+       48;
+       49;
+       50;
+       51;
+       52;
+       53;
+       54;
+       55;
+       56;
+       57;
+       58;
+       59;
+       60;
+       61;
+       62;
+       63;
+       64;
+       65;
+       66;
+       67;
+       68;
+       69;
+       70;
+       71;
+       72;
+       73;
+       74;
+       75;
+       76;
+       77;
+       78;
+       79;
+       80;
+       81;
+       82;
+       83;
+       84;
+       85;
+       86;
+       87;
+       88;
+       89;
+       90;
+       91;
+       92;
+       93;
+       94;
+       95;
+       96;
+       97;
+       98;
+       99;
+       100;
+       101;
+       102;
+       103;
+       104;
+       105;
+       106;
+       107;
+       108;
+       109;
+       110;
+       111;
+       112;
+       113;
+       114]
+  reft {VV##581 : int | [$k_##582]}
+  // META wf : basic/pos/OpaqueRefl02.hs:14:1-23
+
+
+
+
+
+
+

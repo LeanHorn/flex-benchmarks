@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-03T11:44:06.742303+00:00",
+  "manifest_sha256": "c0fbe9136fa99dd78b8b37852be2ddc4430e1f56eec3abe4ac0e8099117ffac0",
+  "lean_statements": {
+    "checked": 320,
+    "failed": 0,
+    "sorry_allowed": false
+  },
+  "helper_compatibility": {
+    "historical_goals_checked": 85,
+    "definitionally_equal": 85,
+    "proof": "rfl",
+    "other_235": "Import helper source unchanged"
+  },
+  "python_translation_tests": {
+    "passed": 40
+  },
+  "exporters_built": [
+    "ExportFixpoint.hs",
+    "InspectFixpoint.hs"
+  ],
+  "fresh_conversion": {
+    "case": "tests/absref/pos/AbsRef00.fq",
+    "stages": [
+      "normalized typed export",
+      "SMT-LIB bridge",
+      "SMTLib-to-Lean",
+      "validity import",
+      "Lean statement check"
+    ],
+    "status": "checked"
+  },
+  "note": "These checks validate packaging, well-formedness and helper compatibility. They do not prove semantic correctness of the source translation or the CHCs."
+}
