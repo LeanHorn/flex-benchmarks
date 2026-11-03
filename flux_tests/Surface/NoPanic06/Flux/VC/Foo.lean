@@ -1,0 +1,13 @@
+import Surface.NoPanic06.Flux.Prelude
+open Classical
+set_option linter.unusedVariables false
+
+
+namespace F
+
+
+
+def Foo := ∀ (c0 : Prop), 
+ ∀ (f₀ : Int),
+  ((c0) -> ((c0) ∨ False))
+end F

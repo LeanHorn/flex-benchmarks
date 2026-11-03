@@ -1,0 +1,5 @@
+import Surface.Resolver10.Flux.VC.IndependentSiblingsTestSiblingTriple
+import Surface.Resolver10.User.Proof.IndependentSiblingsTestSiblingTripleProof
+
+#check (F.IndependentSiblingsTestSiblingTriple_proof : F.IndependentSiblingsTestSiblingTriple)
+#print axioms F.IndependentSiblingsTestSiblingTriple_proof

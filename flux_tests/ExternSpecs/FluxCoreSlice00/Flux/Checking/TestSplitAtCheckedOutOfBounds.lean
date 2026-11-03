@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreSlice00.Flux.VC.TestSplitAtCheckedOutOfBounds
+import ExternSpecs.FluxCoreSlice00.User.Proof.TestSplitAtCheckedOutOfBoundsProof
+
+#check (F.TestSplitAtCheckedOutOfBounds_proof : F.TestSplitAtCheckedOutOfBounds)
+#print axioms F.TestSplitAtCheckedOutOfBounds_proof

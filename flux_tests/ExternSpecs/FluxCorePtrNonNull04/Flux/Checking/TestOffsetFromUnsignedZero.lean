@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtrNonNull04.Flux.VC.TestOffsetFromUnsignedZero
+import ExternSpecs.FluxCorePtrNonNull04.User.Proof.TestOffsetFromUnsignedZeroProof
+
+#check (F.TestOffsetFromUnsignedZero_proof : F.TestOffsetFromUnsignedZero)
+#print axioms F.TestOffsetFromUnsignedZero_proof

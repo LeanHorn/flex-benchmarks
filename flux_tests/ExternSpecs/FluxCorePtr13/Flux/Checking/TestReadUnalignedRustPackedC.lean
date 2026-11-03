@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr13.Flux.VC.TestReadUnalignedRustPackedC
+import ExternSpecs.FluxCorePtr13.User.Proof.TestReadUnalignedRustPackedCProof
+
+#check (F.TestReadUnalignedRustPackedC_proof : F.TestReadUnalignedRustPackedC)
+#print axioms F.TestReadUnalignedRustPackedC_proof

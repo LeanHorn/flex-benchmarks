@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreIter01.Flux.VC.TestExhaustedSkipPreservesSize
+import ExternSpecs.FluxCoreIter01.User.Proof.TestExhaustedSkipPreservesSizeProof
+
+#check (F.TestExhaustedSkipPreservesSize_proof : F.TestExhaustedSkipPreservesSize)
+#print axioms F.TestExhaustedSkipPreservesSize_proof

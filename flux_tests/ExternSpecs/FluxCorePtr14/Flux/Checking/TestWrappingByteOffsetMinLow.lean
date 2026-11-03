@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr14.Flux.VC.TestWrappingByteOffsetMinLow
+import ExternSpecs.FluxCorePtr14.User.Proof.TestWrappingByteOffsetMinLowProof
+
+#check (F.TestWrappingByteOffsetMinLow_proof : F.TestWrappingByteOffsetMinLow)
+#print axioms F.TestWrappingByteOffsetMinLow_proof

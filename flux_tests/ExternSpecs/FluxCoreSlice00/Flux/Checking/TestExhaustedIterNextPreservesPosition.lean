@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreSlice00.Flux.VC.TestExhaustedIterNextPreservesPosition
+import ExternSpecs.FluxCoreSlice00.User.Proof.TestExhaustedIterNextPreservesPositionProof
+
+#check (F.TestExhaustedIterNextPreservesPosition_proof : F.TestExhaustedIterNextPreservesPosition)
+#print axioms F.TestExhaustedIterNextPreservesPosition_proof

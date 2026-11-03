@@ -1,0 +1,43 @@
+import ExternSpecs.FluxCoreNum00.Flux.Prelude
+import ExternSpecs.FluxCoreNum00.Flux.Fun.NumU32BITS
+open Classical
+set_option linter.unusedVariables false
+
+
+namespace F
+
+
+
+def TestCountU32 := 
+ ∀ (x₀ : Int),
+  ((x₀ ≥ 0)) ->
+   ∀ (v₀ : Int),
+    ((v₀ ≤ num_u32_BITS)) ->
+     ((v₀ ≥ 0)) ->
+      (((v₀ ≤ 32) = True)) ∧
+      (∀ (v₁ : Int),
+       ((v₁ ≤ num_u32_BITS)) ->
+        ((v₁ ≥ 0)) ->
+         (((v₁ ≤ 32) = True)) ∧
+         (∀ (v₂ : Int),
+          ((v₂ ≤ num_u32_BITS)) ->
+           ((v₂ ≥ 0)) ->
+            (((v₂ ≤ 32) = True)) ∧
+            (∀ (v₃ : Int),
+             ((v₃ ≤ num_u32_BITS)) ->
+              ((v₃ ≥ 0)) ->
+               (((v₃ ≤ 32) = True)) ∧
+               (∀ (v₄ : Int),
+                ((v₄ ≤ num_u32_BITS)) ->
+                 ((v₄ ≥ 0)) ->
+                  (((v₄ ≤ 32) = True)) ∧
+                  (∀ (v₅ : Int),
+                   ((v₅ ≤ num_u32_BITS)) ->
+                    ((v₅ ≥ 0)) ->
+                     ((v₅ ≤ 32) = True))
+                  )
+               )
+            )
+         )
+      
+end F

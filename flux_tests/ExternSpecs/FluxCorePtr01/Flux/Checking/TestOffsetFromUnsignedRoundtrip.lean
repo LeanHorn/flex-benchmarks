@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr01.Flux.VC.TestOffsetFromUnsignedRoundtrip
+import ExternSpecs.FluxCorePtr01.User.Proof.TestOffsetFromUnsignedRoundtripProof
+
+#check (F.TestOffsetFromUnsignedRoundtrip_proof : F.TestOffsetFromUnsignedRoundtrip)
+#print axioms F.TestOffsetFromUnsignedRoundtrip_proof

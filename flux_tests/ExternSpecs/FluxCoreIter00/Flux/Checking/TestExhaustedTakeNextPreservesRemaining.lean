@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreIter00.Flux.VC.TestExhaustedTakeNextPreservesRemaining
+import ExternSpecs.FluxCoreIter00.User.Proof.TestExhaustedTakeNextPreservesRemainingProof
+
+#check (F.TestExhaustedTakeNextPreservesRemaining_proof : F.TestExhaustedTakeNextPreservesRemaining)
+#print axioms F.TestExhaustedTakeNextPreservesRemaining_proof

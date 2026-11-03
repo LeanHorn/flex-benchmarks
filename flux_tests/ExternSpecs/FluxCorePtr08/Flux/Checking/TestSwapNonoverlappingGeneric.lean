@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr08.Flux.VC.TestSwapNonoverlappingGeneric
+import ExternSpecs.FluxCorePtr08.User.Proof.TestSwapNonoverlappingGenericProof
+
+#check (F.TestSwapNonoverlappingGeneric_proof : F.TestSwapNonoverlappingGeneric)
+#print axioms F.TestSwapNonoverlappingGeneric_proof

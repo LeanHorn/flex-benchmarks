@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreSlice04.Flux.VC.TestExhaustedWindowsNextPreservesRemaining
+import ExternSpecs.FluxCoreSlice04.User.Proof.TestExhaustedWindowsNextPreservesRemainingProof
+
+#check (F.TestExhaustedWindowsNextPreservesRemaining_proof : F.TestExhaustedWindowsNextPreservesRemaining)
+#print axioms F.TestExhaustedWindowsNextPreservesRemaining_proof

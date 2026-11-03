@@ -1,0 +1,5 @@
+import Surface.Resolver09.Flux.VC.UseMultiSegmentTestMultiSegmentPrefix
+import Surface.Resolver09.User.Proof.UseMultiSegmentTestMultiSegmentPrefixProof
+
+#check (F.UseMultiSegmentTestMultiSegmentPrefix_proof : F.UseMultiSegmentTestMultiSegmentPrefix)
+#print axioms F.UseMultiSegmentTestMultiSegmentPrefix_proof

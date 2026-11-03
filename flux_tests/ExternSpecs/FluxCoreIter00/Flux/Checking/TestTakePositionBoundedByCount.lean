@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreIter00.Flux.VC.TestTakePositionBoundedByCount
+import ExternSpecs.FluxCoreIter00.User.Proof.TestTakePositionBoundedByCountProof
+
+#check (F.TestTakePositionBoundedByCount_proof : F.TestTakePositionBoundedByCount)
+#print axioms F.TestTakePositionBoundedByCount_proof

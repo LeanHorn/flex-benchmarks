@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr13.Flux.VC.TestWriteUnalignedEnumPacked
+import ExternSpecs.FluxCorePtr13.User.Proof.TestWriteUnalignedEnumPackedProof
+
+#check (F.TestWriteUnalignedEnumPacked_proof : F.TestWriteUnalignedEnumPacked)
+#print axioms F.TestWriteUnalignedEnumPacked_proof

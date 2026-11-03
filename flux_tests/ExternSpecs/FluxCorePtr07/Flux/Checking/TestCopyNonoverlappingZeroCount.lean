@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr07.Flux.VC.TestCopyNonoverlappingZeroCount
+import ExternSpecs.FluxCorePtr07.User.Proof.TestCopyNonoverlappingZeroCountProof
+
+#check (F.TestCopyNonoverlappingZeroCount_proof : F.TestCopyNonoverlappingZeroCount)
+#print axioms F.TestCopyNonoverlappingZeroCount_proof

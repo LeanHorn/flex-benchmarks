@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr08.Flux.VC.TestSwapNonoverlappingZeroCount
+import ExternSpecs.FluxCorePtr08.User.Proof.TestSwapNonoverlappingZeroCountProof
+
+#check (F.TestSwapNonoverlappingZeroCount_proof : F.TestSwapNonoverlappingZeroCount)
+#print axioms F.TestSwapNonoverlappingZeroCount_proof

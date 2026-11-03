@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr07.Flux.VC.TestCopyNonoverlappingBefore
+import ExternSpecs.FluxCorePtr07.User.Proof.TestCopyNonoverlappingBeforeProof
+
+#check (F.TestCopyNonoverlappingBefore_proof : F.TestCopyNonoverlappingBefore)
+#print axioms F.TestCopyNonoverlappingBefore_proof

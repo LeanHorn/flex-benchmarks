@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreOption00.Flux.VC.TestReplaceReturnMatchesOriginal
+import ExternSpecs.FluxCoreOption00.User.Proof.TestReplaceReturnMatchesOriginalProof
+
+#check (F.TestReplaceReturnMatchesOriginal_proof : F.TestReplaceReturnMatchesOriginal)
+#print axioms F.TestReplaceReturnMatchesOriginal_proof

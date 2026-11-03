@@ -1,0 +1,5 @@
+import Surface.Resolver10.Flux.VC.TrailingCommaTestTrailingCommaShift
+import Surface.Resolver10.User.Proof.TrailingCommaTestTrailingCommaShiftProof
+
+#check (F.TrailingCommaTestTrailingCommaShift_proof : F.TrailingCommaTestTrailingCommaShift)
+#print axioms F.TrailingCommaTestTrailingCommaShift_proof

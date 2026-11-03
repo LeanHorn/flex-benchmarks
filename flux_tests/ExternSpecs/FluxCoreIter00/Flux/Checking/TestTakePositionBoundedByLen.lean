@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreIter00.Flux.VC.TestTakePositionBoundedByLen
+import ExternSpecs.FluxCoreIter00.User.Proof.TestTakePositionBoundedByLenProof
+
+#check (F.TestTakePositionBoundedByLen_proof : F.TestTakePositionBoundedByLen)
+#print axioms F.TestTakePositionBoundedByLen_proof

@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr13.Flux.VC.TestReadUnalignedConstNested
+import ExternSpecs.FluxCorePtr13.User.Proof.TestReadUnalignedConstNestedProof
+
+#check (F.TestReadUnalignedConstNested_proof : F.TestReadUnalignedConstNested)
+#print axioms F.TestReadUnalignedConstNested_proof

@@ -1,0 +1,5 @@
+import Surface.Resolver10.Flux.VC.TrailingCommaTestTrailingCommaDbl
+import Surface.Resolver10.User.Proof.TrailingCommaTestTrailingCommaDblProof
+
+#check (F.TrailingCommaTestTrailingCommaDbl_proof : F.TrailingCommaTestTrailingCommaDbl)
+#print axioms F.TrailingCommaTestTrailingCommaDbl_proof

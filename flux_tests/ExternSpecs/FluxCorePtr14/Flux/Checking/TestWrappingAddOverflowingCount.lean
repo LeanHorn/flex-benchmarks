@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr14.Flux.VC.TestWrappingAddOverflowingCount
+import ExternSpecs.FluxCorePtr14.User.Proof.TestWrappingAddOverflowingCountProof
+
+#check (F.TestWrappingAddOverflowingCount_proof : F.TestWrappingAddOverflowingCount)
+#print axioms F.TestWrappingAddOverflowingCount_proof

@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreSlice00.Flux.VC.TestSplitAtMutCheckedLengths
+import ExternSpecs.FluxCoreSlice00.User.Proof.TestSplitAtMutCheckedLengthsProof
+
+#check (F.TestSplitAtMutCheckedLengths_proof : F.TestSplitAtMutCheckedLengths)
+#print axioms F.TestSplitAtMutCheckedLengths_proof

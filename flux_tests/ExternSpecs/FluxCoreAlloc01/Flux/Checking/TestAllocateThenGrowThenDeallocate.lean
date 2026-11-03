@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreAlloc01.Flux.VC.TestAllocateThenGrowThenDeallocate
+import ExternSpecs.FluxCoreAlloc01.User.Proof.TestAllocateThenGrowThenDeallocateProof
+
+#check (F.TestAllocateThenGrowThenDeallocate_proof : F.TestAllocateThenGrowThenDeallocate)
+#print axioms F.TestAllocateThenGrowThenDeallocate_proof

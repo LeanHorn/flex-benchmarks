@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtr13.Flux.VC.TestWriteUnalignedPackedUnion
+import ExternSpecs.FluxCorePtr13.User.Proof.TestWriteUnalignedPackedUnionProof
+
+#check (F.TestWriteUnalignedPackedUnion_proof : F.TestWriteUnalignedPackedUnion)
+#print axioms F.TestWriteUnalignedPackedUnion_proof

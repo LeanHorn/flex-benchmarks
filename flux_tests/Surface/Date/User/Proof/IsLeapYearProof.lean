@@ -1,0 +1,73 @@
+import Flex
+import Surface.Date.Flux.Prelude
+import Surface.Date.Flux.VC.IsLeapYear
+open Classical
+set_option linter.unusedVariables false
+
+
+namespace F
+
+namespace IsLeapYearQualifs
+
+@[qualif]
+def EqTrue (y₀ : Prop) : Prop :=
+  y₀
+
+@[qualif]
+def EqFalse (y₀ : Prop) : Prop :=
+  (¬y₀)
+
+@[qualif]
+def EqZero (y₀ : Int) : Prop :=
+  (y₀ = 0)
+
+@[qualif]
+def GtZero (y₀ : Int) : Prop :=
+  (y₀ > 0)
+
+@[qualif]
+def GeZero (y₀ : Int) : Prop :=
+  (y₀ ≥ 0)
+
+@[qualif]
+def LtZero (y₀ : Int) : Prop :=
+  (y₀ < 0)
+
+@[qualif]
+def LeZero (y₀ : Int) : Prop :=
+  (y₀ ≤ 0)
+
+@[qualif]
+def Eq (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ = a'₁)
+
+@[qualif]
+def Gt (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ > a'₁)
+
+@[qualif]
+def Ge (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ ≥ a'₁)
+
+@[qualif]
+def Lt (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ < a'₁)
+
+@[qualif]
+def Le (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ ≤ a'₁)
+
+@[qualif]
+def Le1 (y₀ : Int) (a'₁ : Int) : Prop :=
+  (y₀ ≤ (a'₁ - 1))
+
+end IsLeapYearQualifs
+
+open IsLeapYearQualifs
+
+set_option maxHeartbeats 5000000
+#time def IsLeapYear_proof : IsLeapYear := by
+  unfold IsLeapYear
+  flex (proof := first | omega | simp_all)
+
+end F

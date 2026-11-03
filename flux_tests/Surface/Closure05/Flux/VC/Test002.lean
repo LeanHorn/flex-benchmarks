@@ -1,0 +1,41 @@
+import Surface.Closure05.Flux.Prelude
+open Classical
+set_option linter.unusedVariables false
+
+
+namespace F
+
+
+
+def Test002 := ∀ (c0 : Prop), ∃ k0 : (a0 : Int) -> (a1 : Int) -> Prop, ∃ k1 : (a0 : Int) -> (a1 : Int) -> Prop, ∃ k2 : (a0 : Int) -> (a1 : Int) -> Prop, ∃ k4 : (a0 : Int) -> (a1 : Int) -> Prop, 
+ ∀ (f₀ : Int),
+  (∀ (a'₁ : Int),
+   ((k0 a'₁ f₀)) ->
+    ∀ (a'₂ : Int),
+     ((k1 a'₂ f₀)) ->
+      ∀ (a'₃ : Int),
+       ((k2 a'₃ f₀)) ->
+        ((0 ≤ a'₂)) ∧
+        ((0 ≤ a'₃)) ∧
+        (∀ (a'₄ : Int),
+         ((k0 a'₄ f₀)) ->
+          ∀ (a'₅ : Int),
+           ((k1 a'₅ f₀)) ->
+            ∀ (a'₆ : Int),
+             ((k2 a'₆ f₀)) ->
+              ((0 ≤ a'₅)) ∧
+              ((0 ≤ a'₆)) ∧
+              (∀ (v₀ : Int),
+               ((10 ≤ v₀)) ->
+                (k4 v₀ f₀))
+              )
+        ) ∧
+  ((False -> ((c0) ∨ False))) ∧
+  ((k0 f₀ f₀)) ∧
+  ((k1 99 f₀)) ∧
+  ((k2 100 f₀)) ∧
+  (∀ (a'₈ : Int),
+   ((k4 a'₈ f₀)) ->
+    (0 ≤ a'₈))
+  
+end F

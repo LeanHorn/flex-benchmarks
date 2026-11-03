@@ -1,0 +1,29 @@
+import Surface.Date.Flux.Prelude
+import Surface.Date.Flux.Fun.IsMonth30
+open Classical
+set_option linter.unusedVariables false
+
+
+namespace F
+
+
+
+def IsMonth30 := ∃ k0 : (a0 : Int) -> Prop, 
+ ∀ (m₀ : Int),
+  ((m₀ ≥ 0)) ->
+   (((m₀ ≠ 4)) ->
+    (((m₀ ≠ 6)) ->
+     (((m₀ ≠ 9)) ->
+      ((m₀ = 11) = (is_month30 m₀))) ∧
+     (((¬(m₀ ≠ 9))) ->
+      (k0 m₀))
+     ) ∧
+    (((¬(m₀ ≠ 6))) ->
+     (k0 m₀))
+    ) ∧
+   (((¬(m₀ ≠ 4))) ->
+    (k0 m₀)) ∧
+   (((k0 m₀)) ->
+    (True = (is_month30 m₀)))
+   
+end F

@@ -1,0 +1,35 @@
+name = "lean_bench_all"
+version = "0.1.0"
+defaultTargets = ["LeanBenchAll"]
+
+[[lean_lib]]
+name = "LeanBenchAll"
+roots = ["AllProofs"]
+globs = [
+  "AllProofs",
+  "AbstractRefinements.**",
+  "Array.**",
+  "BuiltinAssocRefts.**",
+  "Casts.**",
+  "ConstGenerics.**",
+  "Constructors.**",
+  "Detached.**",
+  "Enums.**",
+  "ExternSpecs.**",
+  "FnPtrs.**",
+  "FoldUnfold.**",
+  "ImplTrait.**",
+  "Lifetimes.**",
+  "PtrCast1700.**",
+  "Structs.**",
+  "Surface.**",
+  "TraitObject.**",
+  "TupleEncoding.**",
+  "UserQualifiers.**",
+  "Vec.**",
+]
+
+[[require]]
+name = "flex"
+git = "https://github.com/LeanHorn/Flex"
+rev = "main"

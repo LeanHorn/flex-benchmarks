@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCorePtrNonNull04.Flux.VC.TestSliceFromRawPartsPartial
+import ExternSpecs.FluxCorePtrNonNull04.User.Proof.TestSliceFromRawPartsPartialProof
+
+#check (F.TestSliceFromRawPartsPartial_proof : F.TestSliceFromRawPartsPartial)
+#print axioms F.TestSliceFromRawPartsPartial_proof

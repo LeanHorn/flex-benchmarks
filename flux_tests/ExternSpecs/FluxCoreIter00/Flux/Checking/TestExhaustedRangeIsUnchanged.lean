@@ -1,0 +1,5 @@
+import ExternSpecs.FluxCoreIter00.Flux.VC.TestExhaustedRangeIsUnchanged
+import ExternSpecs.FluxCoreIter00.User.Proof.TestExhaustedRangeIsUnchangedProof
+
+#check (F.TestExhaustedRangeIsUnchanged_proof : F.TestExhaustedRangeIsUnchanged)
+#print axioms F.TestExhaustedRangeIsUnchanged_proof
