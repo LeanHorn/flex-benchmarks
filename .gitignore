@@ -1,1 +1,11 @@
 logs/
+
+# Local tooling builds, translations, and evaluation outputs
+**/__pycache__/
+*.pyc
+*.olean
+*.ilean
+/liquid-haskell/.lake/
+/liquid-haskell/lake-manifest.json
+/liquid-haskell/.tooling/
+/tooling/liquid-haskell/.build/
