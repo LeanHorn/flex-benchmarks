@@ -11,7 +11,7 @@ set_option linter.unusedVariables false
 namespace F
 
 def VecDequeTestRemoveGet_proof : VecDequeTestRemoveGet := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
   intro c0
   vc_close [vs_at, vg_at, vr_at]
 

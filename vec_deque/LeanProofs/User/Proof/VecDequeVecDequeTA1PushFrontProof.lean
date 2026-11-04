@@ -31,7 +31,7 @@ theorem vs_comp_pf {t0 : Type} [Inhabited t0] (b0 b1 b2 : SmtMap Int t0) (h0 h1 
   exact hp
 
 def VecDequeVecDequeTA1PushFront_proof : VecDequeVecDequeTA1PushFront := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
   intro c0
   have idx (h c i : Int) :
       (if (h + i) % (num_usize_MAX + 1) ≥ c then

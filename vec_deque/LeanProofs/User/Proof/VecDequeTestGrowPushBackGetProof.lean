@@ -10,7 +10,7 @@ set_option linter.unusedVariables false
 namespace F
 
 def VecDequeTestGrowPushBackGet_proof : VecDequeTestGrowPushBackGet := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
   intro c0
   vc_close [vs_at]
 

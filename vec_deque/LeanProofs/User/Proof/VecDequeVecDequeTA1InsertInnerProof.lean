@@ -167,7 +167,7 @@ elab "normalize_insert_fields" : tactic => withMainContext do
 
 open Lean Meta Elab Tactic in
 elab "ins_leaf" : tactic => withMainContext do
-  try evalTactic (← `(tactic| dsimp only)) catch _ => pure ()
+  try evalTactic (← `(tactic| dsimp only at *)) catch _ => pure ()
   if (← getGoals).isEmpty then return
   let target := (← instantiateMVars (← getMainTarget)).consumeMData.headBeta
   if target.isAppOf ``vec_deque_view_gap then
@@ -185,7 +185,10 @@ set_option maxHeartbeats 8000000 in
 set_option maxRecDepth 16384 in
 attribute [local irreducible] vec_deque_view_gap vec_deque_ring_moved vec_deque_view_shift in
 def VecDequeVecDequeTA1InsertInner_proof : VecDequeVecDequeTA1InsertInner := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
+  simp (config := { maxSteps := 1000000, decide := false }) only
+    [ExistsAndEq.existsAndEq, eq_self, true_and, and_true, false_and, and_false,
+      true_or, or_true, false_or, or_false, true_implies, false_implies, imp_true_iff, exists_false]
   unfold_defs
   intro c0
   by_cases hc : c0 = 0

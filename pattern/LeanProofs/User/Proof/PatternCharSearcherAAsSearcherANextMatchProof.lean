@@ -19,7 +19,8 @@ theorem char_len_pos (c : Int) : 1 ≤ ghost_char_len c := by
 -- The loop of `CharSearcher::next_match`: the fingers stay in order inside the haystack, `finger` only
 -- increases, the haystack and `finger_back` do not change, and `finger_back` stays a boundary.
 def PatternCharSearcherAAsSearcherANextMatch_proof : PatternCharSearcherAAsSearcherANextMatch := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true, closeLeaves := false, totalTimeout := 300 })
+  all_goals simp (config := { maxSteps := 1000000, decide := false }) only [true_and, and_true, true_implies, imp_true_iff]
   refine ⟨(fun a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 => a0 = a5 ∧ a1 = a6 ∧ a3 = a8 ∧ a4 = a9 ∧ a7 ≤ a2 ∧ a2 ≤ a3 ∧ a3 ≤ a0 ∧ ghost_is_boundary a1 a0 a3), ?_⟩
   intro s0 ⟨hf, hb, hbf, hbb⟩
   refine ⟨⟨rfl, rfl, rfl, rfl, Int.le_refl _, hf, hb, hbb⟩, ?_⟩

@@ -12,9 +12,9 @@ namespace F
 
 set_option maxHeartbeats 4000000 in
 def PatternTwoWaySearcherMaximalSuffix_proof : PatternTwoWaySearcherMaximalSuffix := by
-  flex
-  name_witness fun left right offset period k m og => MIF m k og left right offset period
-  lazy_unfold witness
+  flex (backends := []) (config := { postprocess := true, splitFree := true })
+  all_goals simp (config := { maxSteps := 1000000, decide := false }) only [true_and, and_true, true_implies, imp_true_iff]
+  refine ⟨(fun left right offset period k m og => MIF m k og left right offset period), ?_⟩
   intro k m og hk1 hk
   refine ⟨MIF_init hk1, ?_⟩
   intro left right offset period hI a7 _ _ hg7 o ho

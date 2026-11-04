@@ -12,7 +12,8 @@ namespace F
 set_option maxHeartbeats 8000000 in
 set_option maxRecDepth 16384 in
 def PatternStrSearcherABAsSearcherANext_proof : PatternStrSearcherABAsSearcherANext := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true })
+  all_goals simp (config := { maxSteps := 1000000, decide := false }) only [true_and, and_true, true_implies, imp_true_iff]
   letI : BEq Int := instBEqOfDecidableEq
   constructor
   · refine ⟨(fun b n mh k mn tag p e c cb pe m mb c0 cb0 pe0 p1 e1 mem0 memb0 _ rk ra rb tc tcb tp tpos tend tmem tmemb a1 b1 b2 _ _ =>
@@ -61,12 +62,10 @@ def PatternStrSearcherABAsSearcherANext_proof : PatternStrSearcherABAsSearcherAN
         intro b m hm hd hb
         exact sinv1_step hinv hm hd hb
       intro r t hpost
-      rcases hpost with ⟨hne, r0, t0, hp0, hrk0, hmat0, hrej0, r1, r2, t2, hinner, hframe⟩ | ⟨heq, hframe⟩
-      · rcases hinner with ⟨r3, t3, hp3, hrk3, hmat3, hrej3, hbranch⟩
-        rcases hbranch with hmatch | hskip | hdone
-        all_goals split_hyp_and_exist
-        all_goals grind [num_max, ghost_tw_dyn, ghost_is_boundary]
-      · grind
+      rcases hpost with hrun | hstop
+      all_goals split_hyp_and_exist
+      all_goals grind (splits := 40) [num_max, ghost_tw_dyn, ghost_is_boundary]
+
   · intro s0 hinv hn hk
     rcases s0 with ⟨n, mh, k, mn, tag, p, e, crit, critb, period, mem, memb⟩
     dsimp only at *

@@ -2,7 +2,10 @@ import Flex.Tactic
 import LeanProofs.Flux.Prelude
 import LeanProofs.User.Lib.FlexVC
 import LeanProofs.Flux.VC.PatternStrSearcherABAsSearcherANextMatch
+
 import LeanProofs.User.StrLemmas
+
+set_option flex.fixpointTimeout 180
 open Classical
 set_option linter.unusedVariables false
 
@@ -12,7 +15,7 @@ namespace F
 set_option maxHeartbeats 8000000 in
 set_option maxRecDepth 16384 in
 def PatternStrSearcherABAsSearcherANextMatch_proof : PatternStrSearcherABAsSearcherANextMatch := by
-  flex
+  flex (scrape := deep) (config := { totalTimeout := 300, postprocess := true, splitFree := true })
   intro s0 hinv hn hk
   rcases s0 with ⟨n, mh, k, mn, tag, p, e, crit, critb, period, mem, memb⟩
   dsimp only at *

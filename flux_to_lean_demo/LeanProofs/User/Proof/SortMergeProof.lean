@@ -3,7 +3,7 @@ import LeanProofs.Flux.VC.SortMerge
 import LeanProofs.Lib.Lemmas
 import Flex
 
-set_option maxHeartbeats 2000000
+set_option maxHeartbeats 8000000
 set_option maxRecDepth 16384
 
 open Classical
@@ -209,10 +209,10 @@ private theorem a3_le_merge (a3 old : Arr Int) (lo k mid hi m n : Int)
   · exact hL m n ⟨h1, hmn, h2⟩
   · exact hR m n ⟨h1, hmn, h2⟩
 
-set_option maxHeartbeats 2000000
+set_option maxHeartbeats 8000000
 
 theorem SortMerge_proof : SortMerge := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true, totalTimeout := 300 })
   all_goals
     exists sortmerge_k0 ; exists sortmerge_k1 ; exists sortmerge_k2; exists sortmerge_k3 ;
     intros _ lo

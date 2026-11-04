@@ -51,7 +51,8 @@ theorem S1_bounds (mem0 crit m k : Int) (hc : 0 ≤ crit ∧ crit ≤ k) (hmk : 
     split <;> omega
 
 def PatternTwoWaySearcherNext_proof : PatternTwoWaySearcherNext := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true })
+  all_goals simp (config := { maxSteps := 1000000, decide := false }) only [ExistsAndEq.existsAndEq, true_and, and_true, true_implies, imp_true_iff, false_or, or_false, false_and, and_false, false_implies, exists_false, eq_self, not_false_eq_true, not_true_eq_false]
   intro c3 c2 c4 c5
   refine ⟨(fun j p m mn k crit critb period pos0 end0 mem0 memb0 mh n lp b7 a8 => TwJ mh n mn k pos0 end0 memb0 mem0 p m), ?_⟩
   intro mn k s0 mh n lp

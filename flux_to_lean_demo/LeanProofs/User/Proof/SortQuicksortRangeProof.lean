@@ -72,7 +72,7 @@ end F
 namespace F
 
 theorem SortQuicksortRange_proof : SortQuicksortRange := by
-  flex
+  flex (config := { postprocess := true, splitFree := true, totalTimeout := 300 })
   all_goals
     intro old₀ lo₀ hi₀ hlolen hhilen hlen hlo hhi
     refine ⟨?_, ?_⟩
