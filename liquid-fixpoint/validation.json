@@ -1,0 +1,18 @@
+{
+  "lean": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "checked_statements": 75,
+  "failed_statements": 0,
+  "source_hashes_verified": true,
+  "active_predicates": 186,
+  "regeneration": "All 75 regenerated Lean files match committed hashes.",
+  "note": "Statement checking is not a proof of the CHC or of translation correctness.",
+  "lake_build": {
+    "target": "LiquidFixpoint",
+    "status": "passed",
+    "query_modules": 75
+  },
+  "conversion_checks": {
+    "existing_python_checks_passed": 40,
+    "regenerated_matching_files": 75
+  }
+}
