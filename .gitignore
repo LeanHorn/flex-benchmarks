@@ -5,7 +5,8 @@ logs/
 *.pyc
 *.olean
 *.ilean
-/liquid-haskell/.lake/
-/liquid-haskell/lake-manifest.json
-/liquid-haskell/.tooling/
-/tooling/liquid-haskell/.build/
+
+/liquid-fixpoint/.lake/
+/liquid-fixpoint/lake-manifest.json
+/liquid-fixpoint/.tooling/
+/tooling/liquid-fixpoint/.build/
