@@ -158,7 +158,7 @@ elab "wc_leaf" : tactic => do
     else if tgt.isConstOf ``True then evalTactic (← `(tactic| exact True.intro))
     else if tgt.isAppOf ``Or && !(tgt.find? fun e => e.isConstOf ``HMod.hMod).isSome then
       evalTactic (← `(tactic| first | (left; trivial) | (right; left; rfl) | (clear_junk; omega)))
-    else evalTactic (← `(tactic| (try dsimp only); (clear_junk; omega)))
+    else evalTactic (← `(tactic| (try dsimp only at *); (clear_junk; omega)))
 
 -- Introduce everything and split conjunctions (`ring_moved` is kept folded), then close
 -- each leaf.
@@ -219,7 +219,10 @@ set_option maxHeartbeats 8000000 in
 set_option maxRecDepth 16384 in
 attribute [local irreducible] vec_deque_ring_moved ghost_seq_shift in
 def VecDequeVecDequeTA0WrapCopy_proof : VecDequeVecDequeTA0WrapCopy := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
+  simp (config := { maxSteps := 1000000, decide := false }) only
+    [ExistsAndEq.existsAndEq, eq_self, true_and, and_true, false_and, and_false,
+      true_or, or_true, false_or, or_false, true_implies, false_implies, imp_true_iff, exists_false]
   unfold_defs
   intro c0
   intro len src S dst

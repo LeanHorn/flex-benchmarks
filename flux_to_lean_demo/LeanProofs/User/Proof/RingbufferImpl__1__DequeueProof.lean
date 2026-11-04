@@ -23,10 +23,16 @@ private theorem mod_silly (a b : Int) : 0 <= a -> 0 <= b -> a < b ->  (a % b) = 
   exact Int.emod_eq_of_lt ha hab
 
 def RingbufferImpl__1__Dequeue_proof : RingbufferImpl__1__Dequeue := by
-  flex
+  flex (config := { postprocess := true, splitFree := true, closeLeaves := false, totalTimeout := 300 })
   all_goals
     simp only [and_imp]
-    repeat' (first | (intro) | apply And.intro | grind)
+    repeat' (first | (intro) | apply And.intro | grind | omega |
+      (solve | apply Int.emod_nonneg; grind) | (solve | apply Int.emod_lt_of_pos; grind))
+    all_goals try dsimp only at *
+    · rename_i s hInv hL hH0 hHL hT0 hTL hLeq hHdExtra hTlExtra hHneT
+      apply hInv s.hd hH0 hHL
+      rw [show s.hd + s.len - s.hd = s.len by omega, Int.emod_self]
+      split <;> (try split) <;> omega
     · rename_i s hInv hL hH0 hHL hT0 hTL hLeq hHdExtra hTlExtra hHneT
         history hLge0 hLneZero a1 ha0 haL hPos
       have hb1 : 0 ≤ (s.hd + 1) % ringbuffer_fslice_len s.elems := mod_non_neg _ _ (by omega)
@@ -67,9 +73,5 @@ def RingbufferImpl__1__Dequeue_proof : RingbufferImpl__1__Dequeue := by
         (rw [hg1, hf1] at hPos
          rw [hg0]
          (try split at hPos) <;> (try split) <;> omega)
-    · apply Int.emod_nonneg
-      grind
-    · apply Int.emod_lt_of_pos
-      grind
 
 end F

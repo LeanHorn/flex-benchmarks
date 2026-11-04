@@ -12,7 +12,8 @@ set_option maxRecDepth 16384
 namespace F
 
 def PatternTwoWaySearcherNextBack_proof : PatternTwoWaySearcherNextBack := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true })
+  all_goals simp (config := { maxSteps := 1000000, decide := false }) only [ExistsAndEq.existsAndEq, true_and, and_true, true_implies, imp_true_iff, false_or, or_false, false_and, and_false, false_implies, exists_false, eq_self, not_false_eq_true, not_true_eq_false]
   intro c6 c7 c8 c9
   refine ⟨(fun _ e m mn k c cb pe pos end0 mem memb0 mh n lp _ => BJ mh n mn k pos mem end0 memb0 e m), ?_⟩
   intro mn k s0 mh n lp ⟨hst, hdyn, hlp, hutf, hmbd0⟩ hn hk

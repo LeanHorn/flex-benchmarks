@@ -58,7 +58,7 @@ elab "rotr_leaf" : tactic => withMainContext do
 set_option maxHeartbeats 2000000 in
 attribute [local irreducible] vec_deque_view_rot vec_deque_ring_moved in
 def VecDequeVecDequeTA1RotateRightInner_proof : VecDequeVecDequeTA1RotateRightInner := by
-  flex
+  flex (config := { postprocess := true, splitFree := true })
   unfold_defs
   intro c0
   by_cases hc : c0 = 0

@@ -34,7 +34,7 @@ private theorem move_take_all {α : Type} (xs : List α) (i : Int)
   omega
 
 def BucketMapImpl__0__MoveElements_proof : BucketMapImpl__0__MoveElements := by
-  flex
+  flex (backends := []) (config := { postprocess := true, splitFree := true })
   all_goals
     exists moveelements_inv2, moveelements_inv1
     simp only [moveelements_inv1, moveelements_inv2, svec_len, and_imp] at *

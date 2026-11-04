@@ -9,4 +9,4 @@ globs = ["LeanProofs.+"]
 [[require]]
 name = "Flex"
 git = "https://github.com/LeanHorn/Flex"
-rev = "d8a01a77053e95274742ebdd53ecd88e807a38a4"
+rev = "e170a04bb5282334d1c45491140c56cc30169c22"

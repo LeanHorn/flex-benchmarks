@@ -100,9 +100,10 @@ theorem circ_step (hd tl len a5 : Int) (h1 : 1 < len) (h2 : 0 ≤ hd) (h3 : hd <
     omega
 
 def RingbufferImpl__1__Push_proof : RingbufferImpl__1__Push := by
-  flex
+  flex (config := { postprocess := true, splitFree := true, closeLeaves := false, totalTimeout := 300 })
   all_goals
     repeat' (first | (intro) | apply And.intro | grind)
+    all_goals try dsimp only at *
     · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0
       obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
       rw [← hlenset] at hC
@@ -110,7 +111,7 @@ def RingbufferImpl__1__Push_proof : RingbufferImpl__1__Push := by
       refine inv_hyp s0.hd ⟨hd_ge0, hhdl⟩ ?_
       rw [circ_diff s0.hd s0.hd s0.len hd_ge0 hhdl hd_ge0 hhdl]
       rcases mod_succ s0.tl s0.len (by omega) (by omega) with hm | ⟨hm, hm2⟩ <;> omega
-    · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0 hex len_ge0 len_ne0 a2 ha2bound hdist
+    · rename_i s0 val0 inv_hyp inv0 hC hd_ge0 tl_ge0 len_ge0 len_ne0 a2 ha2bound hdist
       obtain ⟨hlen1, hhd0, hhdl, htl0, htll, hlenset⟩ := inv0
       rw [← hlenset] at hC
       have hC' : s0.hd = (s0.tl + 1) % s0.len := not_not.mp hC
