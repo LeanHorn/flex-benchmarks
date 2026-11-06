@@ -1,0 +1,3513 @@
+{
+  "kind": "flux",
+  "projects": [
+    "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi",
+    "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque",
+    "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo"
+  ],
+  "count": 245,
+  "cases": [
+    {
+      "case": "pldi/BsearchBinarySearch",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/BsearchBinarySearch.lean",
+      "declaration": "F.BsearchBinarySearch",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/BsearchBinarySearch.lean",
+      "vc_sha256": "6fa3e872b8dd8beac30f8369dab2b579cc393067eb1333d504549b9d65e0c246",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BsearchBinarySearch"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/DotprodDotprod",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/DotprodDotprod.lean",
+      "declaration": "F.DotprodDotprod",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/DotprodDotprod.lean",
+      "vc_sha256": "d8fe925175e16818bc5717fe62c9d0c3751f5041eb93db0bcafbc62ecd5942c3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotprodDotprod"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftDoit",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftDoit.lean",
+      "declaration": "F.FftDoit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftDoit.lean",
+      "vc_sha256": "836f183fad67c8d39d66d5b2c678ebc95c120db9ba6af1e0454a8f38b0a52f6f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftDoit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftFft",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftFft.lean",
+      "declaration": "F.FftFft",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftFft.lean",
+      "vc_sha256": "9ddfe4aaf3e0e384a77676935c20711e45e1b44bd778c050d21f22b0bb33d020",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftFft"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftFftTest",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftFftTest.lean",
+      "declaration": "F.FftFftTest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftFftTest.lean",
+      "vc_sha256": "e55273e468ec35c612119116357b84cc1fc4ed771d429ac3e713bcef98d1c66d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftFftTest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftLoopA",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftLoopA.lean",
+      "declaration": "F.FftLoopA",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftLoopA.lean",
+      "vc_sha256": "d0f852879dafeb5902dc7ba365d3db802525c36e9c5a9946c9fe482d2e85e4f5",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftLoopA"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftLoopB",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftLoopB.lean",
+      "declaration": "F.FftLoopB",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftLoopB.lean",
+      "vc_sha256": "1b89f69a830217e71021b0b9c65b6b5789bd4b25b8f617f2d851c619d367572c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftLoopB"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftLoopC",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftLoopC.lean",
+      "declaration": "F.FftLoopC",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftLoopC.lean",
+      "vc_sha256": "a0b0aa6d8ea599ccfc43501d40a1cf266e378207d72160922e5ed2edb7c2ab84",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftLoopC"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/FftLoopC1",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/FftLoopC1.lean",
+      "declaration": "F.FftLoopC1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/FftLoopC1.lean",
+      "vc_sha256": "b59c2fc33e790fc3c9d3c9db3f94a8b09f8b1e9d9a39df0880578ffc833a99c4",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.FftLoopC1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/HeapsortHeapSort",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/HeapsortHeapSort.lean",
+      "declaration": "F.HeapsortHeapSort",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/HeapsortHeapSort.lean",
+      "vc_sha256": "44e606ab352e4b038c0f6d3c8d3a89fa7e1fe54faf2550a5426dd1bc239c1c9e",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.HeapsortHeapSort"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/HeapsortShiftDown",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/HeapsortShiftDown.lean",
+      "declaration": "F.HeapsortShiftDown",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/HeapsortShiftDown.lean",
+      "vc_sha256": "2494b878bdd39f7553b8eec8a84465d91958cd034ed76092ef95c84edfbba646",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.HeapsortShiftDown"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/HeapsortSwap",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/HeapsortSwap.lean",
+      "declaration": "F.HeapsortSwap",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/HeapsortSwap.lean",
+      "vc_sha256": "71527a24da5dab77a699159fd0377143d20a1383de41a8f4ae4703b330c40f14",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.HeapsortSwap"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansAdd",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansAdd.lean",
+      "declaration": "F.KmeansAdd",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansAdd.lean",
+      "vc_sha256": "147185b41b99ac076813905c2219760c18cab4a462369288520755e43cdfb942",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansAdd"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansDist",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansDist.lean",
+      "declaration": "F.KmeansDist",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansDist.lean",
+      "vc_sha256": "c5adcdfe7958bf75f3a2d394ccbd8a77ec693971afab41316ead13cbee55294f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansDist"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansInitCenters",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansInitCenters.lean",
+      "declaration": "F.KmeansInitCenters",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansInitCenters.lean",
+      "vc_sha256": "ed02d6fa8c0c3de055eb1f6aca233ea0d66653d5ef72829506fd7bc4576bd019",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansInitCenters"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansKmeans",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansKmeans.lean",
+      "declaration": "F.KmeansKmeans",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansKmeans.lean",
+      "vc_sha256": "4289ac1fe133a37e4065cdf1f154a48cf2d50010993ec965d4a745c947923806",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansKmeans"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansKmeansStep",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansKmeansStep.lean",
+      "declaration": "F.KmeansKmeansStep",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansKmeansStep.lean",
+      "vc_sha256": "804097da8f6fd449182bbaad9d24db89e09126af5d8c2b0c34afb1b6be5e5168",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansKmeansStep"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansNearest",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansNearest.lean",
+      "declaration": "F.KmeansNearest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansNearest.lean",
+      "vc_sha256": "3634cb9cad7789a80e446910cdb2d7e19a6e687cc8dacd3fd0a6dc2f1910c29d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansNearest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansNormal",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansNormal.lean",
+      "declaration": "F.KmeansNormal",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansNormal.lean",
+      "vc_sha256": "ac1d6baf85e8dbba04531fd57335fc827d85d23fd76b5a5f95528d35fa355db6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansNormal"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmeansNormalizeCenters",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmeansNormalizeCenters.lean",
+      "declaration": "F.KmeansNormalizeCenters",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmeansNormalizeCenters.lean",
+      "vc_sha256": "249dd833c25a70cddfa1965faddd68a609e9e3acd10de24637e1acaf68caaec2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansNormalizeCenters"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmpKmpSearch",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmpKmpSearch.lean",
+      "declaration": "F.KmpKmpSearch",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmpKmpSearch.lean",
+      "vc_sha256": "eb481496f8942f14e9e5965e6d6b691f3224b3c2a26d13660ddd296c2f0a6f26",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmpKmpSearch"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/KmpKmpTable",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/KmpKmpTable.lean",
+      "declaration": "F.KmpKmpTable",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/KmpKmpTable.lean",
+      "vc_sha256": "6346a33a3abe041af1c178e92c74f406361e8332f8f841063bdda837fbbab89f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmpKmpTable"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/RmatImpl__0__Get",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/RmatImpl__0__Get.lean",
+      "declaration": "F.RmatImpl__0__Get",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/RmatImpl__0__Get.lean",
+      "vc_sha256": "0018bd8e4ec5e6046198e9ce5dfe8295cf16ed12cb669445e7a9e1515b04046c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RmatImpl__0__Get"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/RmatImpl__0__GetMut",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/RmatImpl__0__GetMut.lean",
+      "declaration": "F.RmatImpl__0__GetMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/RmatImpl__0__GetMut.lean",
+      "vc_sha256": "ed1ed4e4586f8a58996525a0b9918f1b218112cbcf911c9b5719ef5282c0915e",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RmatImpl__0__GetMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/RmatImpl__0__New",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/RmatImpl__0__New.lean",
+      "declaration": "F.RmatImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/RmatImpl__0__New.lean",
+      "vc_sha256": "7b77eb77546010954a9bba91260a5af0d5b52c7b46df54b94af5f11071708622",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RmatImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/RvecImpl__0__Index",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/RvecImpl__0__Index.lean",
+      "declaration": "F.RvecImpl__0__Index",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/RvecImpl__0__Index.lean",
+      "vc_sha256": "6f29b0bb2f80b0cfb5952c16e439fd455391dac4bff2b90e6020293c372fd12d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RvecImpl__0__Index"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexDepartVar",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexDepartVar.lean",
+      "declaration": "F.SimplexDepartVar",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexDepartVar.lean",
+      "vc_sha256": "9fa5c975079b13a2b89d8c850f864276e873cefaf38a2f4b34e91a3ebd481cce",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexDepartVar"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexEnterVar",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexEnterVar.lean",
+      "declaration": "F.SimplexEnterVar",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexEnterVar.lean",
+      "vc_sha256": "94ff3ac984aef7c366169d319d7f9ae80855684d2d77361f6720d73d48979072",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexEnterVar"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexInitRatioC",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexInitRatioC.lean",
+      "declaration": "F.SimplexInitRatioC",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexInitRatioC.lean",
+      "vc_sha256": "2b1d186e57b5b8cb9fb621e1f24b683b89be90865ee6ee7cb3bdd63674b3a45d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexInitRatioC"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexInitRatioI",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexInitRatioI.lean",
+      "declaration": "F.SimplexInitRatioI",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexInitRatioI.lean",
+      "vc_sha256": "57110cb4e78adbdc59ed8ecb64f4c7ce58f599c4c6943a616f8c2a98d048a5ee",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexInitRatioI"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexIsNeg",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexIsNeg.lean",
+      "declaration": "F.SimplexIsNeg",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexIsNeg.lean",
+      "vc_sha256": "9da64a70105d24c99c43547809d5721f310f4f25d39aead7851ed3acb47d3175",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexIsNeg"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexRowOp",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexRowOp.lean",
+      "declaration": "F.SimplexRowOp",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexRowOp.lean",
+      "vc_sha256": "c117ae911171c657e17190406c530b6bcb56cce2f06b50c21cb3aff0b884d8fd",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexRowOp"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexSimplex",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexSimplex.lean",
+      "declaration": "F.SimplexSimplex",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexSimplex.lean",
+      "vc_sha256": "afa7d99ef56391eda908e9b3d6764d63b9f49f5c52663f465068ca637d80d3ff",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexSimplex"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/SimplexUnb1",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/SimplexUnb1.lean",
+      "declaration": "F.SimplexUnb1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/SimplexUnb1.lean",
+      "vc_sha256": "af6a9443b4b9cf4c778df33e1efcdf885b61769cbb24dd0ecb677f99b9b4f22b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SimplexUnb1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/VecFromElemN",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/VecFromElemN.lean",
+      "declaration": "F.VecFromElemN",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/VecFromElemN.lean",
+      "vc_sha256": "8f58fb8938f149a31b9ed1398d3b25ed5fde86e5e698b3800bb82236a7422404",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecFromElemN"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/VecVecGet",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/VecVecGet.lean",
+      "declaration": "F.VecVecGet",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/VecVecGet.lean",
+      "vc_sha256": "373e9d698e6ef11b168f6f31c722dc327576b9b7f0bd348f9d2cc4d95eb5281d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecVecGet"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "pldi/VecVecGetMut",
+      "suite": "pldi",
+      "format": "lean_statement",
+      "generated": "statements/pldi/VecVecGetMut.lean",
+      "declaration": "F.VecVecGetMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/pldi/LeanProofs/Flux/VC/VecVecGetMut.lean",
+      "vc_sha256": "5fd3b64538ef57e5944f7b2008040b8b178031e34d2f10982b929dffc1a5958c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecVecGetMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecAllocGuard",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecAllocGuard.lean",
+      "declaration": "F.RawVecAllocGuard",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecAllocGuard.lean",
+      "vc_sha256": "0f592970756705aba941e9da3dcf44bfc7091cd89f61d7b91a188edd4dd8e6e5",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecAllocGuard"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__0__New",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__0__New.lean",
+      "declaration": "F.RawVecImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__0__New.lean",
+      "vc_sha256": "ac0912e874428b2cc1600e7d9169d5e9bfa516173377d0237a1b83db27972f9d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__0__WithCapacity",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__0__WithCapacity.lean",
+      "declaration": "F.RawVecImpl__0__WithCapacity",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__0__WithCapacity.lean",
+      "vc_sha256": "4639fa20618c81c0e16c62ed863b88c2fabf3a0237ac25e2b4786b305ad64bfe",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__0__WithCapacity"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__0__WithCapacityZeroed",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__0__WithCapacityZeroed.lean",
+      "declaration": "F.RawVecImpl__0__WithCapacityZeroed",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__0__WithCapacityZeroed.lean",
+      "vc_sha256": "1d4114eeb8f5189a8d59657832f5e8e3d1dd2135e555291e07d9b59c9e3abc22",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__0__WithCapacityZeroed"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__Allocator",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__Allocator.lean",
+      "declaration": "F.RawVecImpl__1__Allocator",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__Allocator.lean",
+      "vc_sha256": "bc6f1313bf617a7bbfaead547e1ee8218cfcf959604725297fb9556cb1f0ae73",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__Allocator"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__Capacity",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__Capacity.lean",
+      "declaration": "F.RawVecImpl__1__Capacity",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__Capacity.lean",
+      "vc_sha256": "b487fd35aab11c6220d0a6ff57a7959a91e3bd41bbdb3485f95547b00e5e8592",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__Capacity"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__CurrentMemory",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__CurrentMemory.lean",
+      "declaration": "F.RawVecImpl__1__CurrentMemory",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__CurrentMemory.lean",
+      "vc_sha256": "ba353b53e1d0b1e6820f89d0288447add9a4bb9c7fd04f2ae7b4c9775d70c5c1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__CurrentMemory"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__NewIn",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__NewIn.lean",
+      "declaration": "F.RawVecImpl__1__NewIn",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__NewIn.lean",
+      "vc_sha256": "8a34a8c6e878897280ef599433a14675d87044c0457f85ec1464ded6d1bf0d41",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__NewIn"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__Reserve",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__Reserve.lean",
+      "declaration": "F.RawVecImpl__1__Reserve",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__Reserve.lean",
+      "vc_sha256": "c6d0245beb033bbc936af6e670a06c0b054e82c54c8f6ee9fc1dbe8ac19ba2fb",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__Reserve"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__ReserveDoReserveAndHandle",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__ReserveDoReserveAndHandle.lean",
+      "declaration": "F.RawVecImpl__1__ReserveDoReserveAndHandle",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__ReserveDoReserveAndHandle.lean",
+      "vc_sha256": "297878b3a9df1cabfab25ba4916f352df7ec1d3aa09ace273eeedf8a04923f6f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__ReserveDoReserveAndHandle"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__ReserveForPush",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__ReserveForPush.lean",
+      "declaration": "F.RawVecImpl__1__ReserveForPush",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__ReserveForPush.lean",
+      "vc_sha256": "3f5d382f3465a9cc8f4b0129d6cca3b888b142129ec183aa9208efa1a0e5ea2b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__ReserveForPush"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__ShrinkToFit",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__ShrinkToFit.lean",
+      "declaration": "F.RawVecImpl__1__ShrinkToFit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__ShrinkToFit.lean",
+      "vc_sha256": "63e042debd5a19b50744fc2f4c5e0509c542d17b85866c921de9a2b1671d6a4c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__ShrinkToFit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__TryReserve",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__TryReserve.lean",
+      "declaration": "F.RawVecImpl__1__TryReserve",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__TryReserve.lean",
+      "vc_sha256": "cfb77ec0f792770897d18eca6446a69ecba3876b448113d4ebdcc339e9fae7e8",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__TryReserve"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__TryReserveExact",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__TryReserveExact.lean",
+      "declaration": "F.RawVecImpl__1__TryReserveExact",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__TryReserveExact.lean",
+      "vc_sha256": "dadf295af298cbf614dee6973dc40e5693db93a6788d229b2b7757cc2546b760",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__TryReserveExact"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__1__WithCapacityZeroedIn",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__1__WithCapacityZeroedIn.lean",
+      "declaration": "F.RawVecImpl__1__WithCapacityZeroedIn",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__1__WithCapacityZeroedIn.lean",
+      "vc_sha256": "4bd13fc62cfac4b45a8e8b9fa13a474ec7f37ddcb2b8d19d990ef1a40cbab710",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__1__WithCapacityZeroedIn"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__2__NeedsToGrow",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__2__NeedsToGrow.lean",
+      "declaration": "F.RawVecImpl__2__NeedsToGrow",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__2__NeedsToGrow.lean",
+      "vc_sha256": "b440d8b87c3d9690222d66b81c426e2e10d99dbee871e103716a8594861c363f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__2__NeedsToGrow"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/RawVecImpl__3__Drop",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/RawVecImpl__3__Drop.lean",
+      "declaration": "F.RawVecImpl__3__Drop",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/RawVecImpl__3__Drop.lean",
+      "vc_sha256": "63df02f781371eeacd3dc649384f59b57dc1b4baff6d03b5be5dbc80adcf8620",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RawVecImpl__3__Drop"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeAssert",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeAssert.lean",
+      "declaration": "F.VecDequeAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeAssert.lean",
+      "vc_sha256": "49ed9e289d3ed0cfd7f37751b07c6ebfca34e93a69b6215edc257a68644ca60a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeCount",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeCount.lean",
+      "declaration": "F.VecDequeCount",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeCount.lean",
+      "vc_sha256": "13639eb427f0ea8f1f1c955982d3ecb865aea79afa952a0f4a4faf71622f3fe9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeCount"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__0__Default",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__0__Default.lean",
+      "declaration": "F.VecDequeImpl__0__Default",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__0__Default.lean",
+      "vc_sha256": "96bafb4ffa00167e757d9c8c4fd51cdd2e05dd81b6a6e91883fe36f91130d140",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__0__Default"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__BufferWrite",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__BufferWrite.lean",
+      "declaration": "F.VecDequeImpl__1__BufferWrite",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__BufferWrite.lean",
+      "vc_sha256": "91d8a7be23b12562b40fda3a556069f976b0b100250e1de60312283f7c83cc1f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__BufferWrite"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__CopyNonoverlapping",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__CopyNonoverlapping.lean",
+      "declaration": "F.VecDequeImpl__1__CopyNonoverlapping",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__CopyNonoverlapping.lean",
+      "vc_sha256": "e99772b441967bbe97f7e4126842d86afb95bf020dfc5a7e40b8fc54d06ea77c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__CopyNonoverlapping"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__HandleCapacityIncrease",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__HandleCapacityIncrease.lean",
+      "declaration": "F.VecDequeImpl__1__HandleCapacityIncrease",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__HandleCapacityIncrease.lean",
+      "vc_sha256": "ac29f481e8df30fc1742e8877a70e1c57abed16a31e474151fcacfe1bf84e66e",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__HandleCapacityIncrease"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__IsFull",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__IsFull.lean",
+      "declaration": "F.VecDequeImpl__1__IsFull",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__IsFull.lean",
+      "vc_sha256": "dff4b1d04329678b6579639dc97fd78fa09c20e3eb270b9f4d5447530af15e03",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__IsFull"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__Ptr",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__Ptr.lean",
+      "declaration": "F.VecDequeImpl__1__Ptr",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__Ptr.lean",
+      "vc_sha256": "04434b8cb7bc87e233f73f6bac16bd51bcc9f3dd04d101687e0f57972bf8d08a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__Ptr"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__WrapAdd",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__WrapAdd.lean",
+      "declaration": "F.VecDequeImpl__1__WrapAdd",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__WrapAdd.lean",
+      "vc_sha256": "b27d48f1eaad3baab69c384acb59d8c9e784b8abaff92e568501ed0e535e923f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__WrapAdd"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__1__WrapSub",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__1__WrapSub.lean",
+      "declaration": "F.VecDequeImpl__1__WrapSub",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__1__WrapSub.lean",
+      "vc_sha256": "212cdf0ba7ea4b8ce812abb4ad7ed8cf07089e7d0d0bc9ad3367aee9733d39c1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__1__WrapSub"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__2__New",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__2__New.lean",
+      "declaration": "F.VecDequeImpl__2__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__2__New.lean",
+      "vc_sha256": "37b3767f7ae43dd539d6fabd73bd40d33d2f02b875e98be882239ef9eaf1b117",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__2__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__2__WithCapacity",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__2__WithCapacity.lean",
+      "declaration": "F.VecDequeImpl__2__WithCapacity",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__2__WithCapacity.lean",
+      "vc_sha256": "e1da3b980213b6b4342b3139b48568a3fc4d2902dbdc6984fd8c7fb7cf11e1dc",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__2__WithCapacity"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Back",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Back.lean",
+      "declaration": "F.VecDequeImpl__3__Back",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Back.lean",
+      "vc_sha256": "403bb533c658392486e470cb8a5d0ec72a899b557010149c464d0531172bd36f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Back"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Capacity",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Capacity.lean",
+      "declaration": "F.VecDequeImpl__3__Capacity",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Capacity.lean",
+      "vc_sha256": "48ceb5ed484ddde0767a3fde3de40e5932355227755a41b6a982b266e1b3833b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Capacity"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Front",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Front.lean",
+      "declaration": "F.VecDequeImpl__3__Front",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Front.lean",
+      "vc_sha256": "dd924416b285130645751468cb7cae16879b612aa32c75ec02845e910090d92d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Front"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__FrontMut",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__FrontMut.lean",
+      "declaration": "F.VecDequeImpl__3__FrontMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__FrontMut.lean",
+      "vc_sha256": "df33e50f29013a64725935bd3aab47457cedb244ea3b50144253d856335190b0",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__FrontMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Grow",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Grow.lean",
+      "declaration": "F.VecDequeImpl__3__Grow",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Grow.lean",
+      "vc_sha256": "845070b6d635e9a14386565970852c7a0f93444fb21521152593e9c54cd463ef",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Grow"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__IsEmpty",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__IsEmpty.lean",
+      "declaration": "F.VecDequeImpl__3__IsEmpty",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__IsEmpty.lean",
+      "vc_sha256": "ad8c57b4d0bd5b677c6f1d898f4d0f3cbb569725f975b1abceb2c02d5692a07e",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__IsEmpty"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Len",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Len.lean",
+      "declaration": "F.VecDequeImpl__3__Len",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Len.lean",
+      "vc_sha256": "30f60bbc2581df391aad5a4ece7f4f4eb7a9335d828d4ff832ce8023b4dfc6cd",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Len"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__NewIn",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__NewIn.lean",
+      "declaration": "F.VecDequeImpl__3__NewIn",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__NewIn.lean",
+      "vc_sha256": "06f10736d51936b5e537db95ac1a5fdccfffb05d49fff03e1b182155a9fc9370",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Fun.VecDequeMAXIMUMZSTCAPACITY",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__NewIn"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__PushBack",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__PushBack.lean",
+      "declaration": "F.VecDequeImpl__3__PushBack",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__PushBack.lean",
+      "vc_sha256": "fbfcfd1b5fd9f324952d5304785099a85beef873dead42fb7234b82fdff8ff6d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__PushBack"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__PushFront",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__PushFront.lean",
+      "declaration": "F.VecDequeImpl__3__PushFront",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__PushFront.lean",
+      "vc_sha256": "eeaf8bbba81cd1a600aea86e961cadcb529c0d51000b9b1ddc913388eb62f676",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__PushFront"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__Reserve",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__Reserve.lean",
+      "declaration": "F.VecDequeImpl__3__Reserve",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__Reserve.lean",
+      "vc_sha256": "b7058757def95610af47705ae2f6319fa69fe4d5c417b891d872a5d471913684",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.VecDequeVecDeque",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__Reserve"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "vecdeque/VecDequeImpl__3__WithCapacityIn",
+      "suite": "vecdeque",
+      "format": "lean_statement",
+      "generated": "statements/vecdeque/VecDequeImpl__3__WithCapacityIn.lean",
+      "declaration": "F.VecDequeImpl__3__WithCapacityIn",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/vecdeque/LeanProofs/Flux/VC/VecDequeImpl__3__WithCapacityIn.lean",
+      "vc_sha256": "9d4c563b1b1d9d64597d55f4e8938d363f013f8a3b40da949cca7aedae419e46",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.User.Fun.VecDequePow2",
+        "LeanProofs.Flux.Fun.VecDequeMAXIMUMZSTCAPACITY",
+        "LeanProofs.Flux.VC.VecDequeImpl__3__WithCapacityIn"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfBin",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfBin.lean",
+      "declaration": "F.AnfBin",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfBin.lean",
+      "vc_sha256": "3c1cd86c485c2863c4615a7b3f56893d3af022a2bc1d8bb606199fdac373b261",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfBin"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfCheck",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfCheck.lean",
+      "declaration": "F.AnfCheck",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfCheck.lean",
+      "vc_sha256": "f19911a5d036189dc271741e24cb4095b0d1e446de1f8f764f0455f10151e51f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfCheck"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfExp0",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfExp0.lean",
+      "declaration": "F.AnfExp0",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfExp0.lean",
+      "vc_sha256": "2c3fd85d81176dda05daa32da7f099ef99f5b2001337180330ff887325f4ab2b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfExp0"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfExp1",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfExp1.lean",
+      "declaration": "F.AnfExp1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfExp1.lean",
+      "vc_sha256": "d6d79e8cb8bfb28ed331572694285c0ea4d5e90127d1e78c744b7d1092a4623e",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfExp1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfFreshId",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfFreshId.lean",
+      "declaration": "F.AnfFreshId",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfFreshId.lean",
+      "vc_sha256": "2276a54f1a1e83f1bc92ee6d09c507be0d55bc14686b96de29ac1e592e87c1f1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfFreshId"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfImpl__0__IsAnf",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfImpl__0__IsAnf.lean",
+      "declaration": "F.AnfImpl__0__IsAnf",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfImpl__0__IsAnf.lean",
+      "vc_sha256": "7c09d69c1edf3e3d52da161e9fcbceba0ed6b8cc08e37c870a1a4b04b02fb3e5",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfImpl__0__IsAnf"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfImpl__0__IsImm",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfImpl__0__IsImm.lean",
+      "declaration": "F.AnfImpl__0__IsImm",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfImpl__0__IsImm.lean",
+      "vc_sha256": "2076488c541f2a4902b7ec013217a5bb16067ad19d8172108af2875fc9b540ad",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfImpl__0__IsImm"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfImpl__0__ToAnf",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfImpl__0__ToAnf.lean",
+      "declaration": "F.AnfImpl__0__ToAnf",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfImpl__0__ToAnf.lean",
+      "vc_sha256": "a09c51fea706b310d7776cd3ae64812777ee5fca5c1fecb7a39e566590aef98c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfImpl__0__ToAnf"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfImpl__0__ToImm",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfImpl__0__ToImm.lean",
+      "declaration": "F.AnfImpl__0__ToImm",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfImpl__0__ToImm.lean",
+      "vc_sha256": "58845e6b7ca88d850ce070feadc1401fbe32e67147ad09df17cbb6bc59eab6d7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfImpl__0__ToImm"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfImpl__1__Compile",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfImpl__1__Compile.lean",
+      "declaration": "F.AnfImpl__1__Compile",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfImpl__1__Compile.lean",
+      "vc_sha256": "bfec9d175a15c20de6100b7e3874262dfed9928af0461951623b72b769716e9c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfImpl__1__Compile"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfLet",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfLet.lean",
+      "declaration": "F.AnfLet",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfLet.lean",
+      "vc_sha256": "56a872bd0bb47a9516f8e73e613a518fd20f87807342bf51b1bdd01363d52ad7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.AnfExp",
+        "LeanProofs.Flux.VC.AnfLet"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfNum",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfNum.lean",
+      "declaration": "F.AnfNum",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfNum.lean",
+      "vc_sha256": "93e53e35379ad3f56c06d3ac32230613edbb1fb67dbbfa9f8c890cbc00e4b5d1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfNum"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfTestAnf",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfTestAnf.lean",
+      "declaration": "F.AnfTestAnf",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfTestAnf.lean",
+      "vc_sha256": "3a0e653681b2eccf368d4be446ed63e428ef0b692f3f7670367138e567f158cc",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfTestAnf"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/AnfVar",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/AnfVar.lean",
+      "declaration": "F.AnfVar",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/AnfVar.lean",
+      "vc_sha256": "389800a56bfaea5957b638d08cbfe46e9febe315c38fa1083c7c562b579c8913",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.AnfVar"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysAdd2BadButRustCatches",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysAdd2BadButRustCatches.lean",
+      "declaration": "F.ArraysAdd2BadButRustCatches",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysAdd2BadButRustCatches.lean",
+      "vc_sha256": "a5c5436823337a2161434600399854859ae26fa3216c508509b8ef301afe7e9f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ArraysAdd2BadButRustCatches"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysAdd2Good",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysAdd2Good.lean",
+      "declaration": "F.ArraysAdd2Good",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysAdd2Good.lean",
+      "vc_sha256": "0b6c5e712e86cfed8d88dd7c11dea38123641efdabe8547839b050120a557134",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ArraysAdd2Good"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysAdd2N",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysAdd2N.lean",
+      "declaration": "F.ArraysAdd2N",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysAdd2N.lean",
+      "vc_sha256": "dab158d861ed73d25a83ac7b703e542d58b5d90338f6f2eb90aebbee02a10ef5",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ArraysAdd2N"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysAddNK",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysAddNK.lean",
+      "declaration": "F.ArraysAddNK",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysAddNK.lean",
+      "vc_sha256": "3072d4d7c19c7a8fa4d1d8e035767b93f0048812ab496423acebb7d5fae5f058",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.ArraysAddNK"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysAverageColor",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysAverageColor.lean",
+      "declaration": "F.ArraysAverageColor",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysAverageColor.lean",
+      "vc_sha256": "10bc1692d2e0c01bb0ea3486b7b630483727b3395ee4b340010dd82c086a5151",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.ArraysAverageColor"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysDot",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysDot.lean",
+      "declaration": "F.ArraysDot",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysDot.lean",
+      "vc_sha256": "a19bcc3c6e52c71318459935b350190fa6c0154b3a4e0d56bbb3534fa8a1b65a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.ArraysDot"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysDotK",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysDotK.lean",
+      "declaration": "F.ArraysDotK",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysDotK.lean",
+      "vc_sha256": "e79623e59ca1e78b10c1560c834c8f84ad00a760712623141fe6fa5c3c60cca3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.ArraysDotK"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysRed",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysRed.lean",
+      "declaration": "F.ArraysRed",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysRed.lean",
+      "vc_sha256": "4a44fcefa501279aebf0c15776352c3c364c58224dfa5fd469e194cfa7cdd6e6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ArraysRed"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ArraysTest",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ArraysTest.lean",
+      "declaration": "F.ArraysTest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ArraysTest.lean",
+      "vc_sha256": "c872512e3d40ec82581ef28eb9b520cf148cab87c1e9686b493efa69f27ef8ce",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ArraysTest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsAbs",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsAbs.lean",
+      "declaration": "F.BasicsAbs",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsAbs.lean",
+      "vc_sha256": "04d5e1285b6e1ac5a859f2a67f4c1917286a13043a2ed483104ab24d0a81f37d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsAbs"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsAssert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsAssert.lean",
+      "declaration": "F.BasicsAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsAssert.lean",
+      "vc_sha256": "5cb81af49d9595d4b02db8c919ef8c5947f87f93d721d80fc8bb60725c0d973b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsBurpi",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsBurpi.lean",
+      "declaration": "F.BasicsBurpi",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsBurpi.lean",
+      "vc_sha256": "036e005d432f411521a1ae34f5b1a1af4c747712b4329333bbb202807185da95",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsBurpi"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsFf",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsFf.lean",
+      "declaration": "F.BasicsFf",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsFf.lean",
+      "vc_sha256": "a338a4c828b1699c195683c69e6efb40b22677384ff55f25885a2afcb69257bb",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsFf"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsFive",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsFive.lean",
+      "declaration": "F.BasicsFive",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsFive.lean",
+      "vc_sha256": "21a127c725f41c46c7f99e593d09b72ec7523c46807ffbb1f08b967c1667c5b2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsFive"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsGet0",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsGet0.lean",
+      "declaration": "F.BasicsGet0",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsGet0.lean",
+      "vc_sha256": "6ad5e9c23b13838ce30f408e3ba00e1fb9ce6834abfe840a4a88c1c204c9ad05",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsGet0"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsImpl__0__Foo",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsImpl__0__Foo.lean",
+      "declaration": "F.BasicsImpl__0__Foo",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsImpl__0__Foo.lean",
+      "vc_sha256": "494f7ee6d368c1bb9ffe7a6d3073e7bc24289900f84ca5bbbc1b0fd924e2eb89",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsImpl__0__Foo"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsInc",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsInc.lean",
+      "declaration": "F.BasicsInc",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsInc.lean",
+      "vc_sha256": "8a0ebb53c950792b18141403dad50c806bbcc33217c4fd2ad09866ce87d45dc6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsInc"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsIsPos",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsIsPos.lean",
+      "declaration": "F.BasicsIsPos",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsIsPos.lean",
+      "vc_sha256": "900acfe7bad8516087104945d957da683bf342a45d2b6d4eabd4ce71eac34350",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsIsPos"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsJumbo",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsJumbo.lean",
+      "declaration": "F.BasicsJumbo",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsJumbo.lean",
+      "vc_sha256": "350b64476db57b9a876e95662699f0ce73aba002c894cd6b41b98ac29524d8c4",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsJumbo"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsLet2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsLet2.lean",
+      "declaration": "F.BasicsLet2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsLet2.lean",
+      "vc_sha256": "82c4a1316f8e84d9c796a908cb5e2872e323d7e7f426feebbf05f6cde61bbec9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsLet2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsSix",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsSix.lean",
+      "declaration": "F.BasicsSix",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsSix.lean",
+      "vc_sha256": "fdef147a56ed968d76795d60d4b3b872cf6e27fb850996b0d0e34de545fd50dd",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsSix"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTestAbs",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTestAbs.lean",
+      "declaration": "F.BasicsTestAbs",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTestAbs.lean",
+      "vc_sha256": "4534962935c1629cef7611ac124b59a7c8d488330457d5783f5f12a30d2dc893",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTestAbs"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTestInc",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTestInc.lean",
+      "declaration": "F.BasicsTestInc",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTestInc.lean",
+      "vc_sha256": "f996698b436cd277a61a5139585bb88f101da460eb72c7cb6e99c91cd7a35b92",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTestInc"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTestOwnership",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTestOwnership.lean",
+      "declaration": "F.BasicsTestOwnership",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTestOwnership.lean",
+      "vc_sha256": "440832473c9b68971777117817c7ce6247048c6743604b5b3eedc9e69b43ccc3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTestOwnership"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTestPlus",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTestPlus.lean",
+      "declaration": "F.BasicsTestPlus",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTestPlus.lean",
+      "vc_sha256": "26f929751cb14e5665ea3f06579ef0af161e897eb94c62e0305bba1b1795192d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTestPlus"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTt",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTt.lean",
+      "declaration": "F.BasicsTt",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTt.lean",
+      "vc_sha256": "67facd6a59b45a4fc3c1a5f1e44ac8e9511abb535d8ea07d703655d51a21d392",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTt"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BasicsTwelve",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BasicsTwelve.lean",
+      "declaration": "F.BasicsTwelve",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BasicsTwelve.lean",
+      "vc_sha256": "ce0038a4a150b61c69b9d758b4a072d76e40d0db6ca100c7bae66bacb275dc90",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BasicsTwelve"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsAliasing",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsAliasing.lean",
+      "declaration": "F.BorrowsAliasing",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsAliasing.lean",
+      "vc_sha256": "7ce5b2ac93510bb6c4b513dff204969637bcc80a049dbd10a8b51d939d841f68",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsAliasing"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsCheckVal",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsCheckVal.lean",
+      "declaration": "F.BorrowsCheckVal",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsCheckVal.lean",
+      "vc_sha256": "e22dfab779cc8c7fe31993ca48bae1392afed6414d1bff97f1c9388235901cc7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsCheckVal"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsDecr",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsDecr.lean",
+      "declaration": "F.BorrowsDecr",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsDecr.lean",
+      "vc_sha256": "9710ba53bb1118a81363c4f05f76926e0e39fe06a69f439a0dc2848d09bf75a3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsDecr"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsDecrement",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsDecrement.lean",
+      "declaration": "F.BorrowsDecrement",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsDecrement.lean",
+      "vc_sha256": "3701bedd8d83b25730be15791ac5634e3dcfb3759bcd479e879773389bca3d32",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsDecrement"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsIncMut",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsIncMut.lean",
+      "declaration": "F.BorrowsIncMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsIncMut.lean",
+      "vc_sha256": "6950045a5e457fa7887fd8d187c079368d0bcf439da22a9983e3d504624b68ee",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsIncMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsIncr",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsIncr.lean",
+      "declaration": "F.BorrowsIncr",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsIncr.lean",
+      "vc_sha256": "e3375a279b823ec106c946b529c8b6ae57931da147a9879e34f409af8eeeec88",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsIncr"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsSimple",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsSimple.lean",
+      "declaration": "F.BorrowsSimple",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsSimple.lean",
+      "vc_sha256": "e11c03e47869c2b2a1d8a42b1b5acebf4e03bb76d6ca09ecf5811f199be0ce93",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsSimple"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsTestAssert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsTestAssert.lean",
+      "declaration": "F.BorrowsTestAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsTestAssert.lean",
+      "vc_sha256": "e8cca24a16ff41f80c1ebc0f41abe95044f36d3cd7857962ef164a213e69d1d4",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsTestAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsTestIncMut",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsTestIncMut.lean",
+      "declaration": "F.BorrowsTestIncMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsTestIncMut.lean",
+      "vc_sha256": "4c04eaab2a07ff9a8ae7318e6ecb171c45a053d2e59b8e3742182230b3aff078",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsTestIncMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/BorrowsTestIncr",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/BorrowsTestIncr.lean",
+      "declaration": "F.BorrowsTestIncr",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/BorrowsTestIncr.lean",
+      "vc_sha256": "2a56fab7392c1965dd586c1f2639d9997ddc6e70372c37b01d10a8d35989eaf6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.BorrowsTestIncr"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvCsv",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvCsv.lean",
+      "declaration": "F.CsvCsv",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvCsv.lean",
+      "vc_sha256": "1d091f882e8cff15ed40fa30666ab524558639fd6d6b9c19e30ba36b493453e4",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.CsvCsv"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvCsvOpt",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvCsvOpt.lean",
+      "declaration": "F.CsvCsvOpt",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvCsvOpt.lean",
+      "vc_sha256": "6f3d94e4bfafeb7b22125db9140bf0d09a8ebfe05325640b02171588e7461a9d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.CsvCsvOpt"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvImpl__0__Cols",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvImpl__0__Cols.lean",
+      "declaration": "F.CsvImpl__0__Cols",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvImpl__0__Cols.lean",
+      "vc_sha256": "044a2b59db9045dd3290206ea4370cacdc9a3facd4d0caeccb6ae0bbf5af409d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvImpl__0__Cols"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvImpl__0__Convert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvImpl__0__Convert.lean",
+      "declaration": "F.CsvImpl__0__Convert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvImpl__0__Convert.lean",
+      "vc_sha256": "1153ac9050d426346c2ac4b643f6e683dabba7dbcc4e85f43317977438381437",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvImpl__0__Convert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvImpl__0__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvImpl__0__New.lean",
+      "declaration": "F.CsvImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvImpl__0__New.lean",
+      "vc_sha256": "1d86432266dfd45994a80b2c9ffbef1fef146d3e20a18d3aadf9776d50c285d9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvImpl__0__Push",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvImpl__0__Push.lean",
+      "declaration": "F.CsvImpl__0__Push",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvImpl__0__Push.lean",
+      "vc_sha256": "557921b11541f7799d243405fe3e552129a7c3d9d39b0d34e9e33d18f2e2a759",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvImpl__0__Push"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvTest1",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvTest1.lean",
+      "declaration": "F.CsvTest1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvTest1.lean",
+      "vc_sha256": "d1ee807e1a7cb7e12c3afb51e40ca86c42c15905e8a020f48b641d79f89e3f8f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvTest1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvTest2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvTest2.lean",
+      "declaration": "F.CsvTest2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvTest2.lean",
+      "vc_sha256": "ffbfe9cc91aa0cdc500ff7b1599b1ebd43bd11aa2efec6fd1aaff1fc1096e7d2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvTest2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/CsvTest3",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/CsvTest3.lean",
+      "declaration": "F.CsvTest3",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/CsvTest3.lean",
+      "vc_sha256": "4ba8b954cd0a73f194e8394ecc38cc2870f0d7ae475b5e3bdff91819fec8abba",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.CsvTest3"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoAbs",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoAbs.lean",
+      "declaration": "F.DemoAbs",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoAbs.lean",
+      "vc_sha256": "7a2a73c8074ffce4df06c98aa9595a9032adb0df0a4c3a57ca2a5fa9a0328488",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoAbs"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoAssert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoAssert.lean",
+      "declaration": "F.DemoAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoAssert.lean",
+      "vc_sha256": "b8eaf3e57cf699358d18db39c3f52825aec2e14b0ba398b4a0a1c03da4168434",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoDecrMut",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoDecrMut.lean",
+      "declaration": "F.DemoDecrMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoDecrMut.lean",
+      "vc_sha256": "6c063c8a6595508b75d8973dd3aba51f5ee287f0ea15f3fe474383db7ae6af81",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoDecrMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoDot",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoDot.lean",
+      "declaration": "F.DemoDot",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoDot.lean",
+      "vc_sha256": "117757bbb9f27e6d2d6037bc5189bb6ee447cd9df30934d31ad10340e84a7e30",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoDot"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoFive",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoFive.lean",
+      "declaration": "F.DemoFive",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoFive.lean",
+      "vc_sha256": "5cf17d9ed34526499a0309878e99b6810dde25d2eb74ba5ae627c65d61cd6d82",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoFive"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoGet",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoGet.lean",
+      "declaration": "F.DemoGet",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoGet.lean",
+      "vc_sha256": "83ab7e25b216d9638b2e95d660f9196c9ea1d39c6f3c891773654333e19e2d82",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoGet"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoGetNth",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoGetNth.lean",
+      "declaration": "F.DemoGetNth",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoGetNth.lean",
+      "vc_sha256": "0e17de9736010ce97bf2d3dd49f043f84635719c83d7929edd030f1b3f131f51",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoGetNth"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoImpl__0__Forward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoImpl__0__Forward.lean",
+      "declaration": "F.DemoImpl__0__Forward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoImpl__0__Forward.lean",
+      "vc_sha256": "a11ef97fc153ee282cda77c670a47109e22c657a9200c8b86508bfc6f21b8cf0",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.DemoLayer",
+        "LeanProofs.Flux.VC.DemoImpl__0__Forward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoImpl__0__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoImpl__0__New.lean",
+      "declaration": "F.DemoImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoImpl__0__New.lean",
+      "vc_sha256": "398e46ebfaf79c0b920b21bc0bd9ccccd1b9a369e27d30d09eb121828db771a2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoImpl__1__Forward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoImpl__1__Forward.lean",
+      "declaration": "F.DemoImpl__1__Forward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoImpl__1__Forward.lean",
+      "vc_sha256": "c641ab43cc6e57d265d25f49f07f0fbac1a71db453d1a3f0af2b85a37a4cbdca",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.DemoNeuralNetwork",
+        "LeanProofs.Flux.VC.DemoImpl__1__Forward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoInc",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoInc.lean",
+      "declaration": "F.DemoInc",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoInc.lean",
+      "vc_sha256": "bbb3e25ed0c0e21b9b3906a59baaf8dadc2f31f1321502e08053e6eaf1304759",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoInc"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoIncrFunny",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoIncrFunny.lean",
+      "declaration": "F.DemoIncrFunny",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoIncrFunny.lean",
+      "vc_sha256": "2994f2b793227fb9238944a87e5ad81babc86336ff58006ff930e42f74ca4ea9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoIncrFunny"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoIncrMut",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoIncrMut.lean",
+      "declaration": "F.DemoIncrMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoIncrMut.lean",
+      "vc_sha256": "9cd32c4233b166974bbc095680be150726f6a81a6091b4d33cab745bf23a5e49",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoIncrMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoInit",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoInit.lean",
+      "declaration": "F.DemoInit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoInit.lean",
+      "vc_sha256": "ff2bd20f2dc3c10492646b8252016c0a9894b9c6adcde34c59bbd1b64f62c098",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoInit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoIsPos",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoIsPos.lean",
+      "declaration": "F.DemoIsPos",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoIsPos.lean",
+      "vc_sha256": "2f2997e311b2155e3c2af16dbb5bec3176a058f8015d7c128c65852d585de216",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoIsPos"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoNever",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoNever.lean",
+      "declaration": "F.DemoNever",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoNever.lean",
+      "vc_sha256": "e56def2dd52a0119c499b91fababee8332fd6ce8b9ccc9e1405c48f3c9e91bb7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoNever"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoSigmoid",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoSigmoid.lean",
+      "declaration": "F.DemoSigmoid",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoSigmoid.lean",
+      "vc_sha256": "020aa2011feee09d7f06664804a3048fb5694ee1a7fd1e6db652e6d34b85a94d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoSigmoid"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoTest",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoTest.lean",
+      "declaration": "F.DemoTest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoTest.lean",
+      "vc_sha256": "6f8a7fdddd2ca94c8ac6ab075526bb490259825484458eb4f717859ae41eb8f0",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoTest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoTestInstr",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoTestInstr.lean",
+      "declaration": "F.DemoTestInstr",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoTestInstr.lean",
+      "vc_sha256": "539579b0519a8269f8baec00f286f88551bfb193d3a5cb7fd92e4ae600f3e803",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoTestInstr"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoTestMut",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoTestMut.lean",
+      "declaration": "F.DemoTestMut",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoTestMut.lean",
+      "vc_sha256": "982acb3f76924dba062b4f59edc56b01a247489f7549dde7bd11ea041d425c93",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoTestMut"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DemoTestRvec",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DemoTestRvec.lean",
+      "declaration": "F.DemoTestRvec",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DemoTestRvec.lean",
+      "vc_sha256": "cd391929747b2d2cd7e54eb031bf234e8bdb4c1fa8b2fb523b1d8a764785286d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DemoTestRvec"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductDot0",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductDot0.lean",
+      "declaration": "F.DotproductDot0",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductDot0.lean",
+      "vc_sha256": "a3d65ba76b524ea184f76514f9600440fbacca0584910d23e3619e8ca7b6497a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductDot0"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductDot1",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductDot1.lean",
+      "declaration": "F.DotproductDot1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductDot1.lean",
+      "vc_sha256": "29c59b72e2ff4366c207d84c2a7240e2a0b2312d547367cee355368c844ac732",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductDot1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductDot2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductDot2.lean",
+      "declaration": "F.DotproductDot2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductDot2.lean",
+      "vc_sha256": "0fc02aff530c4aae4e3db0b0ae5c20e6e3e6077a2728c146798268fc3dca2d6d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductDot2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductDot3",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductDot3.lean",
+      "declaration": "F.DotproductDot3",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductDot3.lean",
+      "vc_sha256": "67c02718ab14457593c5f09e9d07d25202fa39fcf25b31bf204b33598ad4f46d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductDot3"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductDot4",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductDot4.lean",
+      "declaration": "F.DotproductDot4",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductDot4.lean",
+      "vc_sha256": "d293fceba7f49a398330dcd40b0ec1d7a98322ddbe1fb83d007f0f8ad06d75ec",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductDot4"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductGet",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductGet.lean",
+      "declaration": "F.DotproductGet",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductGet.lean",
+      "vc_sha256": "4ab3cebcbc1ba3a2e7b7e7c5c229f8b38a75ec2d8f83d9fe445b281f03c2b771",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductGet"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductRepeat1",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductRepeat1.lean",
+      "declaration": "F.DotproductRepeat1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductRepeat1.lean",
+      "vc_sha256": "8a067eabae6b5cd19df3d83b03b7ccdaf1ad972de89f229d42b9795c24897b05",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductRepeat1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductRepeat2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductRepeat2.lean",
+      "declaration": "F.DotproductRepeat2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductRepeat2.lean",
+      "vc_sha256": "cf5780a320c1bdcee91d4002944c8a1d1b3c04d4837523686acdbf0abdb6b5dc",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.DotproductRepeat2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/DotproductSet",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/DotproductSet.lean",
+      "declaration": "F.DotproductSet",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/DotproductSet.lean",
+      "vc_sha256": "5b49c2cd53c63380dda63f167c915adc9b024b90df8186d064c5453812fc67fb",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.DotproductSet"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansAssert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansAssert.lean",
+      "declaration": "F.KmeansAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansAssert.lean",
+      "vc_sha256": "1e80a3ea89cf52490d5ec90a59490a92324e5b1f226528008377c8ea432e8076",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansCentroid",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansCentroid.lean",
+      "declaration": "F.KmeansCentroid",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansCentroid.lean",
+      "vc_sha256": "c69b18c2c81faa4bd016d9343c3cbc8d4dca276ece3f1eb5478c54b4e273c6a3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansCentroid"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansDistance",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansDistance.lean",
+      "declaration": "F.KmeansDistance",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansDistance.lean",
+      "vc_sha256": "be1644772c335e19b83b65aee0a22f5677b8dab558e0a131b7e0f7bd018e6d0d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.KmeansDistance"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansFdiv",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansFdiv.lean",
+      "declaration": "F.KmeansFdiv",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansFdiv.lean",
+      "vc_sha256": "2a340d153aef56806236b68ace1b22d6bd2939a41cfdb6cb9d78a2ec98ace8be",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansFdiv"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansKmeans",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansKmeans.lean",
+      "declaration": "F.KmeansKmeans",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansKmeans.lean",
+      "vc_sha256": "595bea0d5abbbc6fed37ab9f166a85bb9a2da4ffad43b59bad79182fa76023bf",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.KmeansKmeans"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansMinIndex",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansMinIndex.lean",
+      "declaration": "F.KmeansMinIndex",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansMinIndex.lean",
+      "vc_sha256": "0dd5ecb32999ee624934c3f70287580c39655fda5b400dec5eab3d38e060c9ea",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.KmeansMinIndex"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansNearest",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansNearest.lean",
+      "declaration": "F.KmeansNearest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansNearest.lean",
+      "vc_sha256": "b5a4f7bc17fecc49a4e68c25a025c9f56ab8c0a1a4f1e23275f3d3395eba74b9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.KmeansNearest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/KmeansPlus",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/KmeansPlus.lean",
+      "declaration": "F.KmeansPlus",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/KmeansPlus.lean",
+      "vc_sha256": "9a29645dad441f689c774dc5dd1c5a0a02209fa2a6d3a5b1b22db47e1a7f4d88",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.KmeansPlus"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsAppend",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsAppend.lean",
+      "declaration": "F.ListsAppend",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsAppend.lean",
+      "vc_sha256": "0158be8458181a14e3f370b904ec59b89418238ec12dd8ebfe47a50588edded6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsAppend"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsClone",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsClone.lean",
+      "declaration": "F.ListsClone",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsClone.lean",
+      "vc_sha256": "106ec02887f5834f805ec7d09f2b81356e8522a6af1aeb21efe0bc9cb613ff43",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsClone"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsEmpty",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsEmpty.lean",
+      "declaration": "F.ListsEmpty",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsEmpty.lean",
+      "vc_sha256": "e8bcf67b9f3bf40f7ed2f0a264d05b5d1969ecaf482c0b052388bea6388547dc",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsEmpty"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsGetNth",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsGetNth.lean",
+      "declaration": "F.ListsGetNth",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsGetNth.lean",
+      "vc_sha256": "f51b5cb63be15bf380b31f6150d5873b87b1a1e14703cba5cb79eb56db99e0d9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsGetNth"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsHead",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsHead.lean",
+      "declaration": "F.ListsHead",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsHead.lean",
+      "vc_sha256": "e98c8dc324c37a5a4e28e4923059604b7697bc0c8c5d194a14c1a2ff41e29c1b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsHead"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsLen",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsLen.lean",
+      "declaration": "F.ListsLen",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsLen.lean",
+      "vc_sha256": "abad30aead82dddcd07dcbe5209e1b0529b37e31720b1e143ae0c4e0f51f6f33",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsLen"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsMappend",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsMappend.lean",
+      "declaration": "F.ListsMappend",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsMappend.lean",
+      "vc_sha256": "3ec91c579c53a129f09278adcd9885ceb579c38d149d1b2a8993972911e013f7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsMappend"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsNever",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsNever.lean",
+      "declaration": "F.ListsNever",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsNever.lean",
+      "vc_sha256": "80f1bc2706bfeea74fedbcc43071a6e9f9dfa4b498d05b82b6b0556b19227641",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsNever"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/ListsTail",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/ListsTail.lean",
+      "declaration": "F.ListsTail",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/ListsTail.lean",
+      "vc_sha256": "834a2548cce0131893e526e7db863c5a85e2bd0628ca99f7f085441a121d2850",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.ListsTail"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/Main",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/Main.lean",
+      "declaration": "F.Main",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/Main.lean",
+      "vc_sha256": "8a4cbaf087bd9dcc683174bae750c28dd4ba0ff5290f4a32bf8d1e28c5c60366",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.Main"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/MapreduceGroup",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/MapreduceGroup.lean",
+      "declaration": "F.MapreduceGroup",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/MapreduceGroup.lean",
+      "vc_sha256": "bb8d04037494732209d57904582cebb03cad609c0e426484c52c238721f77543",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.MapreduceGroup"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/MapreduceMap",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/MapreduceMap.lean",
+      "declaration": "F.MapreduceMap",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/MapreduceMap.lean",
+      "vc_sha256": "21660b9cc0799400e2c3249e85d224ddf712a05c67c9a3ec5216213a134ee571",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.MapreduceMap"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/MapreduceSmap",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/MapreduceSmap.lean",
+      "declaration": "F.MapreduceSmap",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/MapreduceSmap.lean",
+      "vc_sha256": "57c1e2299927c5078a095534ea57e466c66aadc6d244f2f11d60de2a27fb9ebb",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.MapreduceSmap"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralDotProduct",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralDotProduct.lean",
+      "declaration": "F.NeuralDotProduct",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralDotProduct.lean",
+      "vc_sha256": "3dc29c2c5717c7e8727d2d24077093be163b687a5bd023bbeafc50d538968482",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.NeuralDotProduct"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralDotProduct2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralDotProduct2.lean",
+      "declaration": "F.NeuralDotProduct2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralDotProduct2.lean",
+      "vc_sha256": "a635b141ce908c8e7b2a5daa0a04f1f597e59305565b3bdbd8063df4530e0db7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralDotProduct2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__0__Backward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__0__Backward.lean",
+      "declaration": "F.NeuralImpl__0__Backward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__0__Backward.lean",
+      "vc_sha256": "b74d720d1a38ace0db879a62a5c561a7a909033badab984d4e76378cb73457be",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.NeuralLayer",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.NeuralImpl__0__Backward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__0__Forward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__0__Forward.lean",
+      "declaration": "F.NeuralImpl__0__Forward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__0__Forward.lean",
+      "vc_sha256": "d635fe750b0ad0e8106433b3e84d526a082ffd5d88058f9634a726fdd319867c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.NeuralLayer",
+        "LeanProofs.Flux.VC.NeuralImpl__0__Forward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__0__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__0__New.lean",
+      "declaration": "F.NeuralImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__0__New.lean",
+      "vc_sha256": "3b3f40cfa6bb69ce4f3b8eb4788652b198235392e39ffbb18249f4280346d3b1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__1__Backward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__1__Backward.lean",
+      "declaration": "F.NeuralImpl__1__Backward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__1__Backward.lean",
+      "vc_sha256": "2ed72a246d39f4db0b5700db0103e5d1183ecb3d0199b37484cacb839b9ab844",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.NeuralNeuralNetwork",
+        "LeanProofs.Flux.VC.NeuralImpl__1__Backward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__1__Forward",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__1__Forward.lean",
+      "declaration": "F.NeuralImpl__1__Forward",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__1__Forward.lean",
+      "vc_sha256": "7676b860d2ffabd8c3a98bbaab5a32d1f73eb300c9855f298a9d725f16f61886",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.NeuralNeuralNetwork",
+        "LeanProofs.Flux.VC.NeuralImpl__1__Forward"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralImpl__1__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralImpl__1__New.lean",
+      "declaration": "F.NeuralImpl__1__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralImpl__1__New.lean",
+      "vc_sha256": "c66750ea1936a4e0a247a1a4980fd12ea5e99a1012bb57a732de71619e5d40a2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.NeuralNeuralNetwork",
+        "LeanProofs.Flux.VC.NeuralImpl__1__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralInit",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralInit.lean",
+      "declaration": "F.NeuralInit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralInit.lean",
+      "vc_sha256": "eb8ae48595b3fbf6cb4171535b630530f1a8411b13a4cb99a666e2e6d56f7c9a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.NeuralInit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralInit0",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralInit0.lean",
+      "declaration": "F.NeuralInit0",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralInit0.lean",
+      "vc_sha256": "0290bc207626b98f89ca6322f716b7dc1e67b129c5f9abaec46cfa0ef5099e46",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralInit0"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralInit2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralInit2.lean",
+      "declaration": "F.NeuralInit2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralInit2.lean",
+      "vc_sha256": "b5b2bde89886eca2efdc387feb639bac2c1e4a082c49c694fcf47783240a3ba7",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralInit2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralMeanSquaredError",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralMeanSquaredError.lean",
+      "declaration": "F.NeuralMeanSquaredError",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralMeanSquaredError.lean",
+      "vc_sha256": "552c9fbc440b83662cc48a9ff9f49fc1b4b974c3e214098cc68e7e45eb95cf75",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralMeanSquaredError"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralMkWeights",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralMkWeights.lean",
+      "declaration": "F.NeuralMkWeights",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralMkWeights.lean",
+      "vc_sha256": "5fffe8deb1b3767f724d0f427019e33f6caf569f54c3a6ccfb571288edf41688",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralMkWeights"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralSigmoid",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralSigmoid.lean",
+      "declaration": "F.NeuralSigmoid",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralSigmoid.lean",
+      "vc_sha256": "b4efb6a425e990c70a456d389ae2435d1dd9133687c0a846f51e2e2e8e374447",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralSigmoid"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/NeuralTest",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/NeuralTest.lean",
+      "declaration": "F.NeuralTest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/NeuralTest.lean",
+      "vc_sha256": "a89f972058dae43b24d9ae38093ba7e11284a8d9feddbab6d56b831a6036332b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.NeuralTest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RangeImpl__3__Next",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RangeImpl__3__Next.lean",
+      "declaration": "F.RangeImpl__3__Next",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RangeImpl__3__Next.lean",
+      "vc_sha256": "d9dc3c5095391c10702cc81572aa3dfde6ae1cb3a5c09192b4bd7214f694644c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RangeUsizeRange",
+        "LeanProofs.Flux.VC.RangeImpl__3__Next"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RangeImpl__4__Next",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RangeImpl__4__Next.lean",
+      "declaration": "F.RangeImpl__4__Next",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RangeImpl__4__Next.lean",
+      "vc_sha256": "43f826e07094cc435a0d39659fdccf63a52b2f2f5b8df22e6763a06f38c50bf3",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RangeI32Range",
+        "LeanProofs.Flux.VC.RangeImpl__4__Next"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RangeSpreadI32",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RangeSpreadI32.lean",
+      "declaration": "F.RangeSpreadI32",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RangeSpreadI32.lean",
+      "vc_sha256": "f02ec15b293404887315719cc121aa6e707cc63d0f0ba146af0e394bd2002685",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RangeSpreadI32"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RangeSpreadUsize",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RangeSpreadUsize.lean",
+      "declaration": "F.RangeSpreadUsize",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RangeSpreadUsize.lean",
+      "vc_sha256": "9bb74424e5cc51702a7eedd3f613a32ab9abe7f2e891dd39442cd0c9c89e2a29",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RangeSpreadUsize"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__Dequeue",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__Dequeue.lean",
+      "declaration": "F.RingbufferImpl__2__Dequeue",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__Dequeue.lean",
+      "vc_sha256": "1d01d988d814527011ef64f9051b49ded212658a68e66d2f11cccf81d4902545",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__Dequeue"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__Enqueue",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__Enqueue.lean",
+      "declaration": "F.RingbufferImpl__2__Enqueue",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__Enqueue.lean",
+      "vc_sha256": "636c11ed01b72e4c07023cf6afb3a818dc50484ac30dc38b9061765d6e2e397c",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__Enqueue"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__GetInternal",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__GetInternal.lean",
+      "declaration": "F.RingbufferImpl__2__GetInternal",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__GetInternal.lean",
+      "vc_sha256": "1f8267781f30a6dab64f7825204603320aef905eea05a9d88770d551f2050250",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__GetInternal"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__HasElements",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__HasElements.lean",
+      "declaration": "F.RingbufferImpl__2__HasElements",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__HasElements.lean",
+      "vc_sha256": "42076babeeebbae0fbdbca07803b917700d6783b3168c982a99e05462028656f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__HasElements"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__IsFull",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__IsFull.lean",
+      "declaration": "F.RingbufferImpl__2__IsFull",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__IsFull.lean",
+      "vc_sha256": "71c8f99564f4e2d8117aef026fec3066d58d60acb97fe377d3a3aaf5798e1fc9",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__IsFull"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__IsValid",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__IsValid.lean",
+      "declaration": "F.RingbufferImpl__2__IsValid",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__IsValid.lean",
+      "vc_sha256": "cc34933a9d24f46b73ccb7199b7cec882a1ec8d611270ec50d755015eb441e6d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__IsValid"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__Len",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__Len.lean",
+      "declaration": "F.RingbufferImpl__2__Len",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__Len.lean",
+      "vc_sha256": "26adb853f8ab6f2db570691fe571323abe0ce5c9b2ef08a674245455b0a5a163",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.RingbufferRingBuffer",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__Len"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RingbufferImpl__2__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RingbufferImpl__2__New.lean",
+      "declaration": "F.RingbufferImpl__2__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RingbufferImpl__2__New.lean",
+      "vc_sha256": "d73ea60b16481cb3263654eee2a55371fd6ab40a71d84d5f01fa77cfe122aa4d",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RingbufferImpl__2__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RvecImpl__1__Index",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RvecImpl__1__Index.lean",
+      "declaration": "F.RvecImpl__1__Index",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RvecImpl__1__Index.lean",
+      "vc_sha256": "cb5a2dd5987dcc5c0b04996417678bda22b8caa30dc3163ddbf5200907227893",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RvecImpl__1__Index"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/RvecImpl__2__CollectRvec",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/RvecImpl__2__CollectRvec.lean",
+      "declaration": "F.RvecImpl__2__CollectRvec",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/RvecImpl__2__CollectRvec.lean",
+      "vc_sha256": "2faed501b24c4540eed88f00564ef61d498b4b42f4d6bc573be242ba8a8ac993",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.RvecImpl__2__CollectRvec"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseExample1",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseExample1.lean",
+      "declaration": "F.SparseExample1",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseExample1.lean",
+      "vc_sha256": "6a332a25333c6a535fe574cef04ef4a5dbba476c125a6f7739b39a3024f1481f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SparseExample1"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseExample2",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseExample2.lean",
+      "declaration": "F.SparseExample2",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseExample2.lean",
+      "vc_sha256": "f98204d62ea5cf618c74940c44cda82f43858a864dfaabd550a127334871cdc8",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SparseExample2"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseImpl__0__Get",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseImpl__0__Get.lean",
+      "declaration": "F.SparseImpl__0__Get",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseImpl__0__Get.lean",
+      "vc_sha256": "53c7d670a2a7d42dcafa38c3840ae7cd446f8e0b05a8b678b74bf5b061c92e87",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SparseCSRMatrix",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.SparseImpl__0__Get"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseImpl__0__Multiply",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseImpl__0__Multiply.lean",
+      "declaration": "F.SparseImpl__0__Multiply",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseImpl__0__Multiply.lean",
+      "vc_sha256": "868894518334a118a916032141d545d27dec418043e132f22d7068d6b07776d8",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SparseCSRMatrix",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.SparseImpl__0__Multiply"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseImpl__0__New",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseImpl__0__New.lean",
+      "declaration": "F.SparseImpl__0__New",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseImpl__0__New.lean",
+      "vc_sha256": "e935ad136f870ff74c25ada11c1e7c9764b7cfe7c011d0495845cf116fd2b368",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.SparseImpl__0__New"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/SparseTestAssert",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/SparseTestAssert.lean",
+      "declaration": "F.SparseTestAssert",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/SparseTestAssert.lean",
+      "vc_sha256": "714d2fcabac6f13ca676255ec624b17a3a101e50d393bd2973c1597f0ef86a06",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.SparseTestAssert"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/TypestateImpl__1__IntoInputHighZ",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/TypestateImpl__1__IntoInputHighZ.lean",
+      "declaration": "F.TypestateImpl__1__IntoInputHighZ",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/TypestateImpl__1__IntoInputHighZ.lean",
+      "vc_sha256": "e9171f3b420c3a71d8d6e1a659b21953d3189229ad4752ec0e8b379fd6d28df4",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.TypestateImpl__1__IntoInputHighZ"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/TypestateTest",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/TypestateTest.lean",
+      "declaration": "F.TypestateTest",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/TypestateTest.lean",
+      "vc_sha256": "f58d803765d601c4439edee2f962282f21d51ad0f18519b32645bffa69ad9a1a",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.TypestateGpioConfig",
+        "LeanProofs.Flux.VC.TypestateTest"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/UninitFillFromAndVec",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/UninitFillFromAndVec.lean",
+      "declaration": "F.UninitFillFromAndVec",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/UninitFillFromAndVec.lean",
+      "vc_sha256": "a45a6a1d107e540f8ded3998a469a2e5eba88749669d93e24419410d8717d32f",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.UninitFillFromAndVec"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/UninitFillFromSlice",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/UninitFillFromSlice.lean",
+      "declaration": "F.UninitFillFromSlice",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/UninitFillFromSlice.lean",
+      "vc_sha256": "88e79699e6a4a2697502bce15c7446e23bc443123bd7163a43c9d00830ee98c6",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.UninitFillFromSlice"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/UninitImpl__0__FromFullyUninit",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/UninitImpl__0__FromFullyUninit.lean",
+      "declaration": "F.UninitImpl__0__FromFullyUninit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/UninitImpl__0__FromFullyUninit.lean",
+      "vc_sha256": "1398ad622b0bf190271189b4b51c4fd6e72260539186acd500ba2ffe72972c85",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.UninitImpl__0__FromFullyUninit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/UninitImpl__0__Push",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/UninitImpl__0__Push.lean",
+      "declaration": "F.UninitImpl__0__Push",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/UninitImpl__0__Push.lean",
+      "vc_sha256": "76db79c53f2dd93110fb3bffa3088c2d5d679a5220eda6198ddc9601c4df0fff",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.UninitImpl__0__Push"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsCopyWithIter",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsCopyWithIter.lean",
+      "declaration": "F.VectorsCopyWithIter",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsCopyWithIter.lean",
+      "vc_sha256": "d4ecaa3b5750dcf75ef68787eeab31c2565cd88b1a318dcf7ff7bd0c6518bb7b",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.VectorsCopyWithIter"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsCopyWithRange",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsCopyWithRange.lean",
+      "declaration": "F.VectorsCopyWithRange",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsCopyWithRange.lean",
+      "vc_sha256": "94a42d8ffdd46a6c0fb3ea831b07bddd77c854804da167a4bbb8a986aa5a7d02",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.VectorsCopyWithRange"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsCountGood",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsCountGood.lean",
+      "declaration": "F.VectorsCountGood",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsCountGood.lean",
+      "vc_sha256": "ba52716ea84d15261bd641c60a8ec58781a434fc195b475eb403f552e662d577",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.VectorsCountGood"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsCountSlice",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsCountSlice.lean",
+      "declaration": "F.VectorsCountSlice",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsCountSlice.lean",
+      "vc_sha256": "11df588403a4c0293a17ae4f069403717da3a3e6afa0e6b9c3a54a4fee5b0667",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.SliceIterIter",
+        "LeanProofs.Flux.VC.VectorsCountSlice"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsCountWithRange",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsCountWithRange.lean",
+      "declaration": "F.VectorsCountWithRange",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsCountWithRange.lean",
+      "vc_sha256": "e40e5a1ee9d9dde98b37375e5b86cdf4a45fe41cadc1a5bb791e8d29daba54ed",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.VectorsCountWithRange"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsDistance",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsDistance.lean",
+      "declaration": "F.VectorsDistance",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsDistance.lean",
+      "vc_sha256": "4d2f75e35ff51e9a2c69ab119c343ec23a8cdbe80182ec9ca3a2dc81df8f37ff",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.VectorsDistance"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsDot",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsDot.lean",
+      "declaration": "F.VectorsDot",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsDot.lean",
+      "vc_sha256": "89ac5c0c6ea6e1ebd5fb032437b5f42fe96781eb75e6fad40f87dce5f4487967",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsDot"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsInit",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsInit.lean",
+      "declaration": "F.VectorsInit",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsInit.lean",
+      "vc_sha256": "8bf4c4a9a3494bcce8d62a8a9436db29e3aa721f6266869394c610975cae1570",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsInit"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsMinIndex",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsMinIndex.lean",
+      "declaration": "F.VectorsMinIndex",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsMinIndex.lean",
+      "vc_sha256": "a4d0d82a973e69be66785152d597f7d4a3eb862c645de1ee1a244dcd4fb25794",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.VectorsMinIndex"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsRangeR",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsRangeR.lean",
+      "declaration": "F.VectorsRangeR",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsRangeR.lean",
+      "vc_sha256": "c606bb922b50d301b953602a3747b1d918163c8ab6a82713fb16e1e5b423c704",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsRangeR"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsTestPushLen",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsTestPushLen.lean",
+      "declaration": "F.VectorsTestPushLen",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsTestPushLen.lean",
+      "vc_sha256": "f921c6e16008724f29ef63ffa43cdf01d442e633b95103d981b58402492120c5",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsTestPushLen"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsTestRangeFor",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsTestRangeFor.lean",
+      "declaration": "F.VectorsTestRangeFor",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsTestRangeFor.lean",
+      "vc_sha256": "c9a7bd49778a7f460933b067d895f90c6e6c814beeab9cbf15ef98a22677c9f8",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.Struct.OpsRangeRange",
+        "LeanProofs.Flux.VC.VectorsTestRangeFor"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsTestRangeWhile",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsTestRangeWhile.lean",
+      "declaration": "F.VectorsTestRangeWhile",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsTestRangeWhile.lean",
+      "vc_sha256": "6f1ab9a033645ce3e043494b77f13390ac439a19f741ba5f5a92491f16c943f1",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsTestRangeWhile"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsTestRvec",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsTestRvec.lean",
+      "declaration": "F.VectorsTestRvec",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsTestRvec.lean",
+      "vc_sha256": "b387a7b6df76fe6637f9bb47bbc7dda79940d024f591729af3bcc5429e29eff2",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsTestRvec"
+      ],
+      "opaque_rewrites": []
+    },
+    {
+      "case": "flux_demo/VectorsTestRvec0",
+      "suite": "flux_demo",
+      "format": "lean_statement",
+      "generated": "statements/flux_demo/VectorsTestRvec0.lean",
+      "declaration": "F.VectorsTestRvec0",
+      "vc_file": "/home/petros/Desktop/flex-benchmarks/flux-medium/flux_demo/LeanProofs/Flux/VC/VectorsTestRvec0.lean",
+      "vc_sha256": "fc47edf6175107c686d9215572028c134dc95129b1fbae63d82a88aa79a51ce8",
+      "inlined_modules": [
+        "LeanProofs.Flux.Prelude",
+        "LeanProofs.Flux.VC.VectorsTestRvec0"
+      ],
+      "opaque_rewrites": []
+    }
+  ]
+}

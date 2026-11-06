@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-noncomputable def foo : Int -> Prop := sorry
+opaque foo : Int -> Prop
 
 
 end F

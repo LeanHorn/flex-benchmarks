@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-noncomputable def flag_set : Int -> Int -> Prop := sorry
+opaque flag_set : Int -> Int -> Prop
 
 
 end F

@@ -6,6 +6,6 @@ set_option linter.unusedVariables false
 namespace F
 
 --prim op uif: BitAnd(int)
-axiom PrimOpBitAndInt : (Int -> (Int -> Int))
+opaque PrimOpBitAndInt : (Int -> (Int -> Int))
 
 end F

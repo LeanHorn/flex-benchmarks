@@ -1,0 +1,757 @@
+{
+  "kind": "liquid-fixpoint",
+  "source": "liquid-fixpoint/manifest.json",
+  "count": 75,
+  "cases": [
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/arbitrary-kvar-arg-cyclic-anf",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/arbitrary-kvar-arg-cyclic-anf.lean",
+      "declaration": "LF_tests_horn_pos_arbitrary_kvar_arg_cyclic_anf.VC",
+      "source_sha256": "96398bdc8e010c792e6e3ab89951c3f929de2a086ceaa3c3640cdba03190d9e5",
+      "lean_sha256": "fb90512769e7e9065469a653a6db95540702b516379a963c66ca98225972e6c4",
+      "predicates": 3
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/arbitrary-kvar-arg-cyclic",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/arbitrary-kvar-arg-cyclic.lean",
+      "declaration": "LF_tests_horn_pos_arbitrary_kvar_arg_cyclic.VC",
+      "source_sha256": "c88c25bc8181b17ad69bc40b5740b09878f2f98b70656b542809867e3eaf68ac",
+      "lean_sha256": "0b93ecd7c8c0ec44e0f533982fd6158670464df10914c918859d97cadacc831e",
+      "predicates": 3
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/arbitrary-kvar-arg",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/arbitrary-kvar-arg.lean",
+      "declaration": "LF_tests_horn_pos_arbitrary_kvar_arg.VC",
+      "source_sha256": "d04d868cc01d20dc50884568f835ec9bab033ac2791ff316c28218291c24f004",
+      "lean_sha256": "08fbf50da4be8b38138f18c27b193e573c129ba2041d2d48904c6ae0f6b08bfb",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/comment",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/comment.lean",
+      "declaration": "LF_tests_horn_pos_comment.VC",
+      "source_sha256": "0cc1e61c305c11f647971319ccf602ebbf072d3a58c0ddd03146debde0208f5e",
+      "lean_sha256": "e34af0e9c383a9a5bc5c7171babce98d576cc71a8b2e2942c7ef66f424ba31e5",
+      "predicates": 6
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/constant",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/constant.lean",
+      "declaration": "LF_tests_horn_pos_constant.VC",
+      "source_sha256": "7dba0347cb6ee400c5505b3d57982aa46919fcba973d041fe0c051e32603d9ee",
+      "lean_sha256": "9e7aa3790fa00c87d813b40d0d2921035a5ba8daf891457d7fd8a3814dfdfcc6",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/exists_oddity",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/exists_oddity.lean",
+      "declaration": "LF_tests_horn_pos_exists_oddity.VC",
+      "source_sha256": "5805e2e2745a939bd1a91f682dbf4d633811783511f4f5980dd77e840353e66e",
+      "lean_sha256": "ebf8bc2a00892a3a9d704b283ee8c2bacce8e2347291283d71490a201af5419d",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/flux-no-anf-append",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/flux-no-anf-append.lean",
+      "declaration": "LF_tests_horn_pos_flux_no_anf_append.VC",
+      "source_sha256": "526be80521a53f5ccb301c9ce9d35a73d9e7f24d253d538381b5e129f059c8dd",
+      "lean_sha256": "435f77fd2ad543cdd20b77a3440c4245beace83c1519bf238fce8da1a0dac1d9",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/flux-no-anf-dup",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/flux-no-anf-dup.lean",
+      "declaration": "LF_tests_horn_pos_flux_no_anf_dup.VC",
+      "source_sha256": "6a36076be2e8ea1ce65b5a2dbec86cbce135a4a3804c8c42d7fd323f9f67b1c8",
+      "lean_sha256": "4599fd3d27e7f3af98f542f929effcca741b08609843dae0e022f9ccd4296626",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/hof_qual",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/hof_qual.lean",
+      "declaration": "LF_tests_horn_pos_hof_qual.VC",
+      "source_sha256": "2cf66ba068a4be6dd4714f858562173c9928a5ff9fd78ab28abe2d58253fb7fd",
+      "lean_sha256": "1e55d9628c50c08aa79adf24441244ad366b89ac9464ce0b6ef228c03a9aabc5",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/icfp17-ex1",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/icfp17-ex1.lean",
+      "declaration": "LF_tests_horn_pos_icfp17_ex1.VC",
+      "source_sha256": "6dee70ad2aac993ecec8bc292eaf8f5f9817838d7d32037bdcd075ccb8842bea",
+      "lean_sha256": "16715e9bc00e51227c2ce06e3e8a25f43e5b5b9249274a58e96bcc668a980107",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/icfp17-ex2",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/icfp17-ex2.lean",
+      "declaration": "LF_tests_horn_pos_icfp17_ex2.VC",
+      "source_sha256": "7f7122bbc0ee9c5c6ecf0767168bb77856f667ea85fbb7d07fcfdc5a8da6aad6",
+      "lean_sha256": "c6bda3b8ed7945f7b51eb491f2df8a7233df15e5b6f3c554f10b6901409facd6",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/icfp17-ex3",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/icfp17-ex3.lean",
+      "declaration": "LF_tests_horn_pos_icfp17_ex3.VC",
+      "source_sha256": "2c40b0d5e2abaa1a216e46f46c59007adaa7fc18eaadff4d8809a6686ba706cb",
+      "lean_sha256": "2e20bb290ffc66d5d20a7c4aad9d67750301e3195d550592234e6ce63b08ee8f",
+      "predicates": 3
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/kut00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/kut00.lean",
+      "declaration": "LF_tests_horn_pos_kut00.VC",
+      "source_sha256": "1718e9dc8d35a5c783dcb5969e6bb38b27b251a246594bbfbc49970533efd804",
+      "lean_sha256": "fdba8d492245af528510e8ceb6a8e08d6d257f2dfaf0810a8aa5ed4c4373dff0",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/mod00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/mod00.lean",
+      "declaration": "LF_tests_horn_pos_mod00.VC",
+      "source_sha256": "a7a7a5b93c381a54883e01a99b0badf52be54c884ff4bdfc3c8295e718b31a35",
+      "lean_sha256": "b6e85278530de900881c1adb8d1ea3f1712c285d5f13887dd0e04b55e3253b10",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/numeric-sort-00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/numeric-sort-00.lean",
+      "declaration": "LF_tests_horn_pos_numeric_sort_00.VC",
+      "source_sha256": "a9cbb96e9a7ac49b928bdd1028a795355db3e57628ca18697b640eccdb50eb5b",
+      "lean_sha256": "fdc2c514e0b7c47309d5b6f53ee75dacca2283103938383e72ae634f098b628c",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/numeric-sort-01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/numeric-sort-01.lean",
+      "declaration": "LF_tests_horn_pos_numeric_sort_01.VC",
+      "source_sha256": "caf3ecfd68dda982d96867ef4f87e8a63d67c8bc2ccf4aaa9e9c478d055c4fe0",
+      "lean_sha256": "7c9c6ab6b0ab28542f863cefd68892cad29a5e22dd1e911bd8ece2c8ebd01bf6",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/numeric-sort-02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/numeric-sort-02.lean",
+      "declaration": "LF_tests_horn_pos_numeric_sort_02.VC",
+      "source_sha256": "3fa399cf55f4e8071da0597f8b9c09b0fda8ab608b601f3a9c2cc14e55715cf8",
+      "lean_sha256": "bde3b4cba112e951a42c72886cbbe263678ae83ecae6a4c154d3807254c4174b",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/numeric-sort-03",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/numeric-sort-03.lean",
+      "declaration": "LF_tests_horn_pos_numeric_sort_03.VC",
+      "source_sha256": "94805eeb1e4e0ce196f7fc16a36cb6c952c02aad71ce4c1b6d26fd2314f7b0be",
+      "lean_sha256": "c8b9a53d2709aa3846ab18291655e47f5d512ce249114536fff7d783cdbf0058",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/scrape00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/scrape00.lean",
+      "declaration": "LF_tests_horn_pos_scrape00.VC",
+      "source_sha256": "54961791dd363d3acd74cf8516a0bdbd9f81808a81ce81b8906b1b279bdcb8cd",
+      "lean_sha256": "85542fce6ce932eef849cfa45707c25b03553aecac6bc32d252b5b0b6ccd413a",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/scrape01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/scrape01.lean",
+      "declaration": "LF_tests_horn_pos_scrape01.VC",
+      "source_sha256": "edb73f676e01b9c93d4d5bec1b03ad280b861e53b180d305278f5544328bdb3f",
+      "lean_sha256": "ddf0720e3d23658658950ce2bb0a3e0c12b11dc3c3daf0a5b6a1a1509c3ee918",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/scrape02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/scrape02.lean",
+      "declaration": "LF_tests_horn_pos_scrape02.VC",
+      "source_sha256": "9d2285fdbda989d2c18bfc15a6cbd3608a7e9cf70adec3600559b05287db2e18",
+      "lean_sha256": "c6e58fc093680da4dc100b37b745dfe7c165fb23469094b64547a59ac8fca9bf",
+      "predicates": 6
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/scrape03",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/scrape03.lean",
+      "declaration": "LF_tests_horn_pos_scrape03.VC",
+      "source_sha256": "99372d3830cd8cffb1dc44a65fc69a2aa6fa4ce986f3f587ec180ac6b42c50cc",
+      "lean_sha256": "24ab9201c5431d42e12ad6cdc7e7567576d57876427ab5761bdd590a6d3427d2",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/sum-rec-ok",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/sum-rec-ok.lean",
+      "declaration": "LF_tests_horn_pos_sum_rec_ok.VC",
+      "source_sha256": "1d4b1fb41641fb53bdfeade6f80a471e1729ccd49ee26bbda243f018f3c99eec",
+      "lean_sha256": "c810ff1b57b7f8d79089f424add7c7b1f12b1e08a86e0e8d1180c0d56a93d268",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/sum-rec",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/sum-rec.lean",
+      "declaration": "LF_tests_horn_pos_sum_rec.VC",
+      "source_sha256": "3340802cae87d4fa76ba272dac635f64cca08be4ab1a5d27b1893dcc38d37efe",
+      "lean_sha256": "b21c123659f3ac150a1c1462004f6994b3098bc48a59e7ee75e864e43420e943",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/test02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/test02.lean",
+      "declaration": "LF_tests_horn_pos_test02.VC",
+      "source_sha256": "4f02aa66378481286d57c99d23d54346b021062372ee6f165a604f1e20e6de02",
+      "lean_sha256": "a41e11ac51de8e4aebf1145eb26feb6dab549508379f0ec2423d59bfd72755d8",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/test03",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/test03.lean",
+      "declaration": "LF_tests_horn_pos_test03.VC",
+      "source_sha256": "dc08faf6f26b37925223e734d4da215f71fea615a0d29985cca1655a8861fe77",
+      "lean_sha256": "7293a5ea91550a3bd8f5b9f29eea73b6961112141405dae068219b81cc34ed70",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/wild_lits00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/wild_lits00.lean",
+      "declaration": "LF_tests_horn_pos_wild_lits00.VC",
+      "source_sha256": "2ac3df1c9a5a4e98f3018fe35c64711d415fed824c1be33d2d06da552920a11d",
+      "lean_sha256": "59953af5905beda7f0d969bd74bb203fa6caefef2e08370976506bc9c35df464",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/wild_lits01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/wild_lits01.lean",
+      "declaration": "LF_tests_horn_pos_wild_lits01.VC",
+      "source_sha256": "341ee62e53984d3b61f0d015a6f848c894527cb42a278c299b083752453d72a3",
+      "lean_sha256": "ab75234de51685b6c4994cf0c346729d21f78708d83e8da517f416bac71cd337",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/div00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/div00.lean",
+      "declaration": "LF_tests_elim_div00.VC",
+      "source_sha256": "f49d2087304afbd53e87dce593e7b7f2fe3271c3c6fcf06a2abce565d5c1193d",
+      "lean_sha256": "fca8e3f1efc708db44cc6b1be180446722be8e6da4e90c98834a4e80b4e36991",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/elim00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/elim00.lean",
+      "declaration": "LF_tests_elim_elim00.VC",
+      "source_sha256": "5d47cdd54a813bca9ff0f166a06c2aedfd73f95e84dc2585bee5bbca08d440da",
+      "lean_sha256": "3ef35d169d0bdf125f8c27cf479d6fcd63b976d5aa8aa63d8a02b979c6281a62",
+      "predicates": 16
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/kvparam00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/kvparam00.lean",
+      "declaration": "LF_tests_elim_kvparam00.VC",
+      "source_sha256": "57134e0b175d2cd1e3d26ecd1c3c9314e27e01e9662f6fb0af10cc748c98d23d",
+      "lean_sha256": "262bb009af9793fc62378b7c99ef048062458b6e134eedc0db408f32b03f2420",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/len00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/len00.lean",
+      "declaration": "LF_tests_elim_len00.VC",
+      "source_sha256": "edf9a8d5042839686260df9636720ff5adc42f8336c5c0b66a8fe2b2bd9bd65c",
+      "lean_sha256": "223aecafceda6e76d39c77e20f7c91762ff6ae938becc9dc0d1b32cd21a38901",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/test00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/test00.lean",
+      "declaration": "LF_tests_elim_test00.VC",
+      "source_sha256": "ebe2b70764cab66088cd1e6a0f6eaf12cf6cd19b7fb8c235b5c35bab7bb47c3f",
+      "lean_sha256": "a3837bb38681071886a5745b4a2576c2a58a44602fba6c01f2748b3ab29d88b5",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/test00a",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/test00a.lean",
+      "declaration": "LF_tests_elim_test00a.VC",
+      "source_sha256": "3a65d0ffcb1585e509be055087d28818c88e3bccb3db73402ec6c97d28bf7c62",
+      "lean_sha256": "0e36cdb3b873f72541ce3f7fcb94b55625163f1559c3ce81157c1f142c510250",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/test1",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/test1.lean",
+      "declaration": "LF_tests_elim_test1.VC",
+      "source_sha256": "a29d283a746221a2825a49e6781eb8a0a8b4d7265dc27ce5a049670a4339da56",
+      "lean_sha256": "b4f66278c270815170bcdcf145306fe4f27cb1226b80659698703d425bc1ee83",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/test2",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/test2.lean",
+      "declaration": "LF_tests_elim_test2.VC",
+      "source_sha256": "10bffca340b4b748fc9be8a4686915312e6b5130a550daf36dd8ebddd0f95391",
+      "lean_sha256": "0633234b16f993ab27f8956edd6f7cd95de6f3d90cf1765e772b78a0ef7e2d57",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/test780",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/test780.lean",
+      "declaration": "LF_tests_elim_test780.VC",
+      "source_sha256": "391d1dbd0fe70f70cddbfca1684bdd40c8750d138cf62c78f0d64dd634850eb8",
+      "lean_sha256": "05a39e855edfcfeb0ab63a330709f08778bfc1021cb625e84ab643cd0d28b4d9",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/tuple00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/tuple00.lean",
+      "declaration": "LF_tests_elim_tuple00.VC",
+      "source_sha256": "b473e7959a968e0ff5849b83d7349593bdeefa44a28d1a9fa33994e283481623",
+      "lean_sha256": "2a47b9f15bb6f8006d875fbb542865643a1fbc3fa5be8adfe2ff70029e4e9b94",
+      "predicates": 8
+    },
+    {
+      "case": "liquid-fixpoint/tests/elim/tuple01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/elim/tuple01.lean",
+      "declaration": "LF_tests_elim_tuple01.VC",
+      "source_sha256": "5850c86733cbbf89ff04b21a3af13b20b2e8eeda1ba93c4f1e56e7822bd2d0d4",
+      "lean_sha256": "62b2f90be4b4278276effbe9086aeeb8703e2e297fb8a6d59932f8ba171ca68c",
+      "predicates": 10
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/LogicCurry1.hs",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/LogicCurry1.hs.lean",
+      "declaration": "LF_tests_pos_LogicCurry1_hs.VC",
+      "source_sha256": "a3b666e2409953544e0db2565728e051a9ad90fdb7615a5fb58d33f0edaa2dd2",
+      "lean_sha256": "526c7a2a0429bb35103688d23e9c408d787ad78f2fc6a4e4f6912a1382e5ff2f",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/MergeSort",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/MergeSort.lean",
+      "declaration": "LF_tests_pos_MergeSort.VC",
+      "source_sha256": "97ebf0bc92e847e01d6d1fb7119d4be615d4207e41cab0f4da3a6abc4a58e47c",
+      "lean_sha256": "93602e2a5e1dafe73fc066a0861f79311de09922011f42cbafcaf922ed6a4893",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/NonLinear-pack",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/NonLinear-pack.lean",
+      "declaration": "LF_tests_pos_NonLinear_pack.VC",
+      "source_sha256": "beb79e8e33660085bb6a58630a9fb4d399e6e9ab01ede4ad4ca0a8a12777a496",
+      "lean_sha256": "49c02354f387edad7bf5726248af7d9d5174863d630e7aff973f61a961051267",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/adt_qual",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/adt_qual.lean",
+      "declaration": "LF_tests_pos_adt_qual.VC",
+      "source_sha256": "77a01db1905e35d36f3ea4d349fa484529ac97f4268f9c5cb353737695757b53",
+      "lean_sha256": "829d5dae4b34af079b47bdc55daf64089d38ecba55ecadd134a1705b5208256b",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/bad-subst00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/bad-subst00.lean",
+      "declaration": "LF_tests_pos_bad_subst00.VC",
+      "source_sha256": "bdee90af90d6221ce2fca0f64b3e4799d5ddbffea635eaf792d08d7d6cb3af09",
+      "lean_sha256": "ab7602a19498dc20dada9fa200ebb545568b84e3466a405010e5047ce7afc2fe",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/bad-subst01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/bad-subst01.lean",
+      "declaration": "LF_tests_pos_bad_subst01.VC",
+      "source_sha256": "32e9554224213bc0219e6859fe25b6ccdec153ade57daeea5a3b810406fd0081",
+      "lean_sha256": "1234363e5906e5e72a3df32566a92870eddd240e1fe12e909ae94f3b64ce38ef",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/bad-subst02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/bad-subst02.lean",
+      "declaration": "LF_tests_pos_bad_subst02.VC",
+      "source_sha256": "ec8510d879646cd5c78979de2b39ff52249a58188ca64264407d31c25e9e201a",
+      "lean_sha256": "8b0f89967c2cc078c1afc2fe4456b9c413c5118fc8484a446e4ccdf910bf054e",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/bool00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/bool00.lean",
+      "declaration": "LF_tests_pos_bool00.VC",
+      "source_sha256": "1c040a6f4d7770ccabe007114bb404865e5a77111c86f1bc5c6c8d5e0d59c2fe",
+      "lean_sha256": "2ff1ea70c897eec75a1907bed1edb093ea2adbf260c0731d85fd04ee140f59e5",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/bool03",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/bool03.lean",
+      "declaration": "LF_tests_pos_bool03.VC",
+      "source_sha256": "50aa0dc30c685effd58c827150d193a03cd9535b42caed99e5b315521d91e5b0",
+      "lean_sha256": "e14e9678ba67824b08e24fbf3e2b70227cab5e9d4ec24571593c9f096c3b406c",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/elim00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/elim00.lean",
+      "declaration": "LF_tests_pos_elim00.VC",
+      "source_sha256": "83dda7ba769aa823f754225498d1355e89857b33464e3eee7ed9651633cdacba",
+      "lean_sha256": "e56578275491b24e071d75c9789eb1df085eff435c475f1d782256428bd9e5b3",
+      "predicates": 16
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/gfp00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/gfp00.lean",
+      "declaration": "LF_tests_pos_gfp00.VC",
+      "source_sha256": "9d354fc90986ac7f03b44babda4da54d3169feed38053b22256eefff90ad62a8",
+      "lean_sha256": "52bff12e8f56839ae90f5a8b0dfdb37d8f7ab120fe6bb005d0d5b0d54cdd86f0",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/ho00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/ho00.lean",
+      "declaration": "LF_tests_pos_ho00.VC",
+      "source_sha256": "82aa03d581409ab49acfe2259ab44e9a66c61087cf616f219ed0550814462765",
+      "lean_sha256": "1fbcde5662808d4567f9e04800a8016fa97387fe7c236e15f9339530acc1c396",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/kvar-param-poly-00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/kvar-param-poly-00.lean",
+      "declaration": "LF_tests_pos_kvar_param_poly_00.VC",
+      "source_sha256": "0763f1726bba24b3966800ac667fd7b259164807284b0498f19b6e138d7da315",
+      "lean_sha256": "622cb83d5569f300d9b5160be8aeef0608cc51ba78970a1552e0ad791ab3446c",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/len00-rename",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/len00-rename.lean",
+      "declaration": "LF_tests_pos_len00_rename.VC",
+      "source_sha256": "926a2b549016bb2e456d3b057b3af766ada54fd5b475c86c784dd4f882453824",
+      "lean_sha256": "98fce11048f2c424cd3b6d4335cb9b2db46aa97b4f3318376fcc9bdc274f216e",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/len00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/len00.lean",
+      "declaration": "LF_tests_pos_len00.VC",
+      "source_sha256": "a1ba1d78d5e1d3ee243a9dff6e41664b14111008f3a1267f78807e4f21a80e37",
+      "lean_sha256": "71587b9e25e6f76aa8bc22c8544f2a1c435aa71dec9e78549c0436b94e07edb6",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/listqual.hs",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/listqual.hs.lean",
+      "declaration": "LF_tests_pos_listqual_hs.VC",
+      "source_sha256": "70d2c6c865cd19efa5250bde1a04b5fcb46bb037f78c8bc45fec3b9147aef0e2",
+      "lean_sha256": "6fa9bcb3f1c10b52d0130e7aeff8c6d8429e0737e7709c4cd5b0408e583ceda6",
+      "predicates": 9
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/meas00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/meas00.lean",
+      "declaration": "LF_tests_pos_meas00.VC",
+      "source_sha256": "ab6d4129255769a20f57a88dd1087f488cc7a59f1df1f3eb0045efb9e0ad5a37",
+      "lean_sha256": "205e50da4ab1efb64f0bc7b917de2da72ee91eb934150d237248c6b4ebc848e6",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/meas02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/meas02.lean",
+      "declaration": "LF_tests_pos_meas02.VC",
+      "source_sha256": "c3c271868ba83ae6361e664c2cf2b98bf38fc5b2c3e25f0c6ef3c359828a6494",
+      "lean_sha256": "c6efc501affb3e3f420a7f0e5c21deab7f9a437fe98d9618969606c11e67a679",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/min00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/min00.lean",
+      "declaration": "LF_tests_pos_min00.VC",
+      "source_sha256": "232fde810a6f797a18726c229bb48f3bcb3d1ce6930ec28455ee4b53bb528705",
+      "lean_sha256": "26740bba34fac98ea7e89ae5a75d8db35c61d024831fa2abca730ddb4a824c66",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/num00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/num00.lean",
+      "declaration": "LF_tests_pos_num00.VC",
+      "source_sha256": "baf126130c549311f19f085e537038c0227060c5c2a7db344c286ace50210702",
+      "lean_sha256": "fe5001a9fb59adf13001ddb1b30ad5f34d6f8d08140aa1df2fec655ad0cd11b1",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/numoverload00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/numoverload00.lean",
+      "declaration": "LF_tests_pos_numoverload00.VC",
+      "source_sha256": "11d23a0585be575a75632efcff934a764a625fb9dc0154b987d984d4af103717",
+      "lean_sha256": "effddf836abff5672e831001c87f676648eb3d6264fab7556c74dddbb6cba5c0",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/qualif-inst",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/qualif-inst.lean",
+      "declaration": "LF_tests_pos_qualif_inst.VC",
+      "source_sha256": "6428034b7c3c43f1fedc47b024762ced430c83916490e9fa8b4df0e7972f3203",
+      "lean_sha256": "9b0288be42de22556d1e861a7b27d55fb2a9972b4694e9d7c31a77ee200c4606",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/qualif-template-00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/qualif-template-00.lean",
+      "declaration": "LF_tests_pos_qualif_template_00.VC",
+      "source_sha256": "bf0496d07e85d98ae92bcbeeea51d29d7759d45538168fb3fe164e37c2e18c07",
+      "lean_sha256": "e37881aceccb722ae2029aaf90531f4fb1b0c7d1c0368545ccd8e22c4eda489d",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/qualif-template-01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/qualif-template-01.lean",
+      "declaration": "LF_tests_pos_qualif_template_01.VC",
+      "source_sha256": "a4a687afbd829a2028822cd77d2d29f9c3fe11cd93c22cb81a1cc5a250d37c1b",
+      "lean_sha256": "b88efa69a9d49e0cc1faf95a62c9a7beb29f0015ed13cd5700ba319967c6816a",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/qualif-template-02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/qualif-template-02.lean",
+      "declaration": "LF_tests_pos_qualif_template_02.VC",
+      "source_sha256": "28ce1f111164a8a7e18f26e3b680e6eb0548778086a455775a130832801fc8ec",
+      "lean_sha256": "574745b3f60dcb644d7698a3e0a288ef0ecffe852336c1abc2f10a0fdb8283b5",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test00.hs",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test00.hs.lean",
+      "declaration": "LF_tests_pos_test00_hs.VC",
+      "source_sha256": "2eaa0832f179d55120e7dcfb23ca80a4080c19e04d8cec4a6fbe0e29010c52b1",
+      "lean_sha256": "6f41fb6731169c500ab34f2629d1aa320ada3154bae84f8cf4fefb7ef5fe66ae",
+      "predicates": 6
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test00.lean",
+      "declaration": "LF_tests_pos_test00.VC",
+      "source_sha256": "00323f40c554d76d015620d9f493e9eeda7af437bb76a85e9009ab94fa4c8563",
+      "lean_sha256": "77389d9fdfea79960123c29f990dbc8d66764ffa4c43742ac3db083599ca9435",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test000.hs",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test000.hs.lean",
+      "declaration": "LF_tests_pos_test000_hs.VC",
+      "source_sha256": "34b5632f653549effd2e97db5659a4d2c7ef9efaa8931c4e7846a12cd10d2a5a",
+      "lean_sha256": "8a4d4738e56caa61cfb25752dea4744b17f8ea6f423bc45bd3d7b90c2fd03381",
+      "predicates": 3
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test00a",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test00a.lean",
+      "declaration": "LF_tests_pos_test00a.VC",
+      "source_sha256": "2922cd7031d00042250170dc0db8717664d6b62823618de690254be22cfa53c4",
+      "lean_sha256": "19becba5389e379358ca68bd5c1610f60b42f4c4574bcfff480c0fe763c52476",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test1",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test1.lean",
+      "declaration": "LF_tests_pos_test1.VC",
+      "source_sha256": "5fb8dd680e17e0587c951d13f7cfe0531018fe9e51b989fbd8fd77c455dc9aca",
+      "lean_sha256": "c47c0692805818938b6d0de404845ed95b3c237db8f557c504adfce03006cba1",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test2",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test2.lean",
+      "declaration": "LF_tests_pos_test2.VC",
+      "source_sha256": "f4d8a2aa980ffea7464c287abe101303c4148d1330c1d6dadc193860b027b887",
+      "lean_sha256": "ef9fae857cf686abf99753cbe724d6a8ab32b0fd366f12f53934819e4f1a4978",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test3",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test3.lean",
+      "declaration": "LF_tests_pos_test3.VC",
+      "source_sha256": "48138ded310747cbc15d4e508a15933722d69763114cd7d44fe4a9f8591f2719",
+      "lean_sha256": "281881b455c8cdff2db6b4a01c5d9c6fa0e6d01229787f67f790f3be129a82f4",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/test4",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/test4.lean",
+      "declaration": "LF_tests_pos_test4.VC",
+      "source_sha256": "2eeac951ee61d35a2f4dd8dbe4700ba050d16b250663e57b05c5fc25f9300c70",
+      "lean_sha256": "189ccee993a52e16fa3c3d3247a87c6e1d9f3e856b7b9cb4c5dfece98e7079c8",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/wl00",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/wl00.lean",
+      "declaration": "LF_tests_pos_wl00.VC",
+      "source_sha256": "841bbb0e80cadd134dc3bde774bc875164aa9877c901cbf284e37849b755bc58",
+      "lean_sha256": "8aa02e4ce08b1ce85223f49841cd6ff0f085bc3ef9aa5cdc4686493cce3afb2b",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/wl01",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/wl01.lean",
+      "declaration": "LF_tests_pos_wl01.VC",
+      "source_sha256": "95fbaeacf354cb5a3fb65138abec74e604a2fddfa9a49a0393b154e984851b8f",
+      "lean_sha256": "e3d442973c4b41b8c8f1a0c9712aff8e7ffc0d23a56f05e866f08991512bd650",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/pos/wl02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/pos/wl02.lean",
+      "declaration": "LF_tests_pos_wl02.VC",
+      "source_sha256": "3b8782d089e699ce44c166d384c5d1a4039f6ec3d946e93ecb1b7a46059f6b8a",
+      "lean_sha256": "9ef212e2b32700f41b557fef1d4f80b33b50b80f89da2c6fd3d77deaeef2d8c6",
+      "predicates": 21
+    }
+  ]
+}

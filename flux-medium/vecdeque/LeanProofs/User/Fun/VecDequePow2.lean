@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-noncomputable def vec_deque_pow2 : Int -> Prop := sorry
+opaque vec_deque_pow2 : Int -> Prop
 
 
 end F
