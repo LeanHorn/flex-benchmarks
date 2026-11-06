@@ -10,7 +10,5 @@ namespace F
 
 def BucketMapImpl__0__RemoveFromList_proof : BucketMapImpl__0__RemoveFromList := by
   flex
-  all_goals
-    elim_leaves
 
 end F

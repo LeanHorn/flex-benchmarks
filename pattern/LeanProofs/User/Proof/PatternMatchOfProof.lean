@@ -10,6 +10,5 @@ namespace F
 
 def PatternMatchOf_proof : PatternMatchOf := by
   flex
-  vc_close
 
 end F
