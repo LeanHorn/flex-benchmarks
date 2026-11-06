@@ -1,41 +1,56 @@
 # RQ1 case-study proofs
 
-The 61 predicate-bearing case-study VCs were checked on 4 November 2026 with
-Lean 4.34.0 and Flex `e170a04bb5282334d1c45491140c56cc30169c22`.
-The five suite manifests pin Flex and its dependencies. VC statements and
-specification definitions are unchanged; the 70 predicate-free case-study VCs
-and all other benchmark suites are outside this check.
+The corpus contains 61 predicate-bearing case-study VCs and 227 predicates.
+VC statements and specification definitions are unchanged; the 70
+predicate-free case-study VCs and all other suites are outside this check.
 
-| Measure | Previous proofs | Updated proofs |
-| --- | ---: | ---: |
-| Predicates inferred, including Zap | 212/227 | 214/227 |
-| VCs with every predicate inferred | 50/61 | 52/61 |
-| Remaining manual predicate witnesses | 15 | 13 |
+| Measure | Current proofs |
+| --- | ---: |
+| Predicates inferred, including Zap | 212/227 |
+| CHCs with every predicate inferred | 50/61 |
+| CHCs with at least one predicate inferred | 59/61 |
+| Confirmed closures at `flex` | 28/61 |
+| Remaining manual predicate witnesses | 15 in 11 CHCs |
 
-The additional witnesses are in `SortPartition` and `MoveElementsFromList`.
-All **61 complete proofs** check, including manual residual proofs and the nine
-VCs that still supply predicates. Inference coverage does not mean one-shot
-proof coverage. Existing qualifier definitions and helper lemmas are retained.
+Eight redundant trailing proofs were removed after confirming that `flex`
+already closed their goals. `FibFibFasto` and `Clear` now supply their invariants
+and residual proofs explicitly after `flex`, without custom oracle hooks.
+Fibonacci's five supplied qualifiers were also removed. These two cases no
+longer count as automatic inference or proof completion.
+
+All 61 have checked complete proofs, including manual residuals. The 28 automatic
+closures are confirmed; the exact closure count for the remaining scripts was
+not separately measured. Inference coverage does not imply proof completion.
 
 ## Configuration
 
 These are maintained proofs with per-VC settings, not a uniform timing run.
-The heavier Fix proofs explicitly select Deep scraping, a 180-second synthesis
-budget and a 300-second total budget. Cleanup is enabled where the residual
-proof needs it. Some large residuals additionally simplify equality-bound
-existential witnesses. The nine proofs with remaining manual predicates use
-Zap-only `flex (backends := [])`, followed by their manual witnesses and proofs.
-`Clear` uses `nlinarith` as its proof oracle; `FibFibFasto` supplies its existing
-Fibonacci monotonicity argument during safety checking.
+The heavier Fix proofs select Deep scraping, a 180-second synthesis budget and
+a 300-second total budget. Cleanup is enabled where needed. Nine proofs use
+Zap-only `flex (backends := [])` before supplying manual witnesses; Fibonacci
+and `Clear` attempt ordinary `flex` before their explicit manual proofs.
+There are no per-case synthesis, proof, or oracle tactic overrides in these
+61 proofs.
 
 ## Checking
 
-[verification.csv](verification.csv) lists the exact 61 VCs, source hashes and
-predicate counts. Counts of manual predicate witnesses are audited from source;
-data witnesses are excluded. Each proof was elaborated against current Flex,
-without importing an earlier compiled proof, with `--error=hasSorry`; its
-transitive axioms were restricted to `propext`, `Classical.choice` and
-`Quot.sound`. Verification times are not reported as performance measurements.
+The original 61 proofs were checked on 4 November 2026 with Lean 4.34.0 and Flex
+`e170a04bb5282334d1c45491140c56cc30169c22`. The ten modified proofs were rechecked
+on 6 November with Flex `e2ef599d195f316c0093e2fed466711c0f65ad1a`; the other
+51 retain their earlier checks. This is a targeted refresh, not a new full-corpus
+run. The five suite manifests pin the newer revision.
+
+[verification.csv](verification.csv) records source hashes, predicate counts,
+check dates and the exact Flex revision used for each proof. Manual predicate
+counts are audited from source; data witnesses are excluded.
+`confirmed_flex_closure=true` records a confirmed closure, `false` records the
+two cases observed to retain an existential, and an empty field means no exact
+boundary observation was recorded.
+
+Checks use `--error=hasSorry` without importing earlier compiled proofs.
+The original 61 checks also restricted transitive axioms to `propext`,
+`Classical.choice`, and `Quot.sound`; this audit was repeated for the two new
+manual proofs. Verification times are not performance measurements.
 
 To build one proof and its dependencies, run from its suite directory:
 

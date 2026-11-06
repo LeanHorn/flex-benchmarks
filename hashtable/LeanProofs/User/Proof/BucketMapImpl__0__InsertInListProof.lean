@@ -10,7 +10,5 @@ namespace F
 
 def BucketMapImpl__0__InsertInList_proof : BucketMapImpl__0__InsertInList := by
   flex
-  all_goals
-    elim_leaves
 
 end F

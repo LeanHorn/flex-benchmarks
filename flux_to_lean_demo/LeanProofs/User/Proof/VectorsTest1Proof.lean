@@ -11,7 +11,5 @@ namespace F
 
 def VectorsTest1_proof : VectorsTest1 := by
   flex
-  all_goals
-    solve_fixpoint
 
 end F

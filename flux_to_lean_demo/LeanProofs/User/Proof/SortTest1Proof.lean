@@ -10,7 +10,5 @@ namespace F
 
 def SortTest1_proof : SortTest1 := by
   flex
-  all_goals
-    solve_fixpoint
 
 end F

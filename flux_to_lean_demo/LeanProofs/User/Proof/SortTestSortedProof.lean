@@ -11,8 +11,5 @@ namespace F
 
 def SortTestSorted_proof : SortTestSorted := by
   flex
-  all_goals
-    solve_fixpoint
-    exact left 0 1 (by omega) (by omega) (by omega)
 
 end F
