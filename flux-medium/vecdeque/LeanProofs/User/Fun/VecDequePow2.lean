@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-opaque vec_deque_pow2 : Int -> Prop
+axiom vec_deque_pow2 : Int -> Prop
 
 
 end F

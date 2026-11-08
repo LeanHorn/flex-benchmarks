@@ -5,8 +5,8 @@ set_option linter.unusedVariables false
 
 namespace F
 
-opaque GhostTokenIdCarrier : (α : Type) × Inhabited α := ⟨Unit, ⟨()⟩⟩
-def GhostTokenId  : Type := GhostTokenIdCarrier.1
-instance : Inhabited (GhostTokenId) := GhostTokenIdCarrier.2
+axiom GhostTokenId : Type
+axiom instInhabitedGhostTokenId : Inhabited GhostTokenId
+attribute [instance] instInhabitedGhostTokenId
 
 end F

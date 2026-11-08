@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-opaque foo : Int -> Prop
+axiom foo : Int -> Prop
 
 
 end F

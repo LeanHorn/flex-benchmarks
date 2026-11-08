@@ -5,7 +5,7 @@ set_option linter.unusedVariables false
 
 namespace F
 
-opaque flag_set : Int -> Int -> Prop
+axiom flag_set : Int -> Int -> Prop
 
 
 end F

@@ -4,6 +4,8 @@ open Classical
 set_option linter.unusedVariables false
 
 
+noncomputable section
+
 namespace F
 
 @[ext]
