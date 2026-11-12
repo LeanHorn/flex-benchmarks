@@ -484,7 +484,7 @@
     {
       "case": "tests/pos/LogicCurry1.hs",
       "source": "fixpoint-queries/tests/pos/LogicCurry1.hs.fq",
-      "source_sha256": "a3b666e2409953544e0db2565728e051a9ad90fdb7615a5fb58d33f0edaa2dd2",
+      "source_sha256": "ec17fd0b46198cd87a1246bb9b68478f7e0a90165cfd6501e213fec7884615ac",
       "lean": "lean-chc-queries/tests/pos/LogicCurry1.hs.lean",
       "lean_sha256": "526c7a2a0429bb35103688d23e9c408d787ad78f2fc6a4e4f6912a1382e5ff2f",
       "declaration": "LF_tests_pos_LogicCurry1_hs.VC",
@@ -664,7 +664,7 @@
     {
       "case": "tests/pos/listqual.hs",
       "source": "fixpoint-queries/tests/pos/listqual.hs.fq",
-      "source_sha256": "70d2c6c865cd19efa5250bde1a04b5fcb46bb037f78c8bc45fec3b9147aef0e2",
+      "source_sha256": "e8b113c85eac89332bd8b4acefb1c4d4af3eaf703491fd37c2ff6c19daad2b21",
       "lean": "lean-chc-queries/tests/pos/listqual.hs.lean",
       "lean_sha256": "6fa9bcb3f1c10b52d0130e7aeff8c6d8429e0737e7709c4cd5b0408e583ceda6",
       "declaration": "LF_tests_pos_listqual_hs.VC",
@@ -784,7 +784,7 @@
     {
       "case": "tests/pos/test00.hs",
       "source": "fixpoint-queries/tests/pos/test00.hs.fq",
-      "source_sha256": "2eaa0832f179d55120e7dcfb23ca80a4080c19e04d8cec4a6fbe0e29010c52b1",
+      "source_sha256": "d0e8379fffb01b8dea69d95b8716d12b2aee1f531d9d0cca19db84d954d9ce2d",
       "lean": "lean-chc-queries/tests/pos/test00.hs.lean",
       "lean_sha256": "6f41fb6731169c500ab34f2629d1aa320ada3154bae84f8cf4fefb7ef5fe66ae",
       "declaration": "LF_tests_pos_test00_hs.VC",
@@ -808,7 +808,7 @@
     {
       "case": "tests/pos/test000.hs",
       "source": "fixpoint-queries/tests/pos/test000.hs.fq",
-      "source_sha256": "34b5632f653549effd2e97db5659a4d2c7ef9efaa8931c4e7846a12cd10d2a5a",
+      "source_sha256": "1a0299c1915187dbf7a95297134ba9a2adac900be5284c37a8d3d4d901d92dec",
       "lean": "lean-chc-queries/tests/pos/test000.hs.lean",
       "lean_sha256": "8a4d4738e56caa61cfb25752dea4744b17f8ea6f423bc45bd3d7b90c2fd03381",
       "declaration": "LF_tests_pos_test000_hs.VC",
