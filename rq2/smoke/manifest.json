@@ -1,0 +1,48 @@
+{
+  "kind": "liquid-fixpoint",
+  "source": "liquid-fixpoint/manifest.json",
+  "count": 4,
+  "cases": [
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/arbitrary-kvar-arg",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/arbitrary-kvar-arg.lean",
+      "declaration": "LF_tests_horn_pos_arbitrary_kvar_arg.VC",
+      "source_sha256": "d04d868cc01d20dc50884568f835ec9bab033ac2791ff316c28218291c24f004",
+      "lean_sha256": "08fbf50da4be8b38138f18c27b193e573c129ba2041d2d48904c6ae0f6b08bfb",
+      "predicates": 2
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/comment",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/comment.lean",
+      "declaration": "LF_tests_horn_pos_comment.VC",
+      "source_sha256": "0cc1e61c305c11f647971319ccf602ebbf072d3a58c0ddd03146debde0208f5e",
+      "lean_sha256": "e34af0e9c383a9a5bc5c7171babce98d576cc71a8b2e2942c7ef66f424ba31e5",
+      "predicates": 6
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/constant",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/constant.lean",
+      "declaration": "LF_tests_horn_pos_constant.VC",
+      "source_sha256": "7dba0347cb6ee400c5505b3d57982aa46919fcba973d041fe0c051e32603d9ee",
+      "lean_sha256": "9e7aa3790fa00c87d813b40d0d2921035a5ba8daf891457d7fd8a3814dfdfcc6",
+      "predicates": 1
+    },
+    {
+      "case": "liquid-fixpoint/tests/horn/pos/scrape02",
+      "suite": "liquid-fixpoint",
+      "format": "lean_statement",
+      "generated": "../../liquid-fixpoint/lean-chc-queries/tests/horn/pos/scrape02.lean",
+      "declaration": "LF_tests_horn_pos_scrape02.VC",
+      "source_sha256": "9d2285fdbda989d2c18bfc15a6cbd3608a7e9cf70adec3600559b05287db2e18",
+      "lean_sha256": "c6e58fc093680da4dc100b37b745dfe7c165fb23469094b64547a59ac8fca9bf",
+      "predicates": 6
+    }
+  ],
+  "note": "Smoke-test subset of rq2/liquid-fixpoint (two acyclic-only, two mixed)."
+}
