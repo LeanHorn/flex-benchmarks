@@ -496,7 +496,7 @@
     {
       "case": "tests/pos/MergeSort",
       "source": "fixpoint-queries/tests/pos/MergeSort.fq",
-      "source_sha256": "97ebf0bc92e847e01d6d1fb7119d4be615d4207e41cab0f4da3a6abc4a58e47c",
+      "source_sha256": "bbf7208cacb8e36bec2b27c29852dc09c50a88de59e9cc5d2c6921e50c871f0e",
       "lean": "lean-chc-queries/tests/pos/MergeSort.lean",
       "lean_sha256": "93602e2a5e1dafe73fc066a0861f79311de09922011f42cbafcaf922ed6a4893",
       "declaration": "LF_tests_pos_MergeSort.VC",
