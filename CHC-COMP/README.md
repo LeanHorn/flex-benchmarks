@@ -42,4 +42,5 @@ The translator used Lean 4.33.1 with `--mode chc --layout inline --max-rec-depth
 
 [Completed 30-second Spacer/Eldarica results](results/native-30s-20261101/README.md) include per-query outcomes, timings, solver settings, and raw model transcripts. Either solver returned a model for 1,454/1,730 tasks.
 
-RQ2–RQ4 execution instructions and configurations will be added separately.
+This corpus is used by RQ2, RQ3b and RQ4. Their instructions and configurations are in
+Flex's `evaluation/RQ2/README.md`, `evaluation/RQ3b/README.md` and `evaluation/RQ4/README.md`.
