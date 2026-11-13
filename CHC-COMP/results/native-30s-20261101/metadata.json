@@ -48,12 +48,6 @@
   "driver_sha256": "292608edaa90c8b3ab9ca651914be177ab65e6ea1c9c5ed17d251e94fc157cfe",
   "finished_at": "2026-11-01T11:56:13.430914+00:00",
   "git_head": "437efcdb0ccc43718a7cc75a0fb1c48ecc0596c8",
-  "host_reported_at_publication": {
-    "logical_cpus": 10,
-    "memory_bytes": 25769803776,
-    "platform": "macOS-26.2-arm64-arm-64bit",
-    "python": "3.9.6"
-  },
   "method": "Original SMT bytes unchanged; solver requests include model production. Identical source contents run once per backend, with explicit per-task mapping. No Lean startup or proof checking.",
   "original_metadata_sha256": "5fdc1182c88be369c86f3d29f5072fcae632320a6a7560ca9c31410958298fa9",
   "parallel_execution": {
